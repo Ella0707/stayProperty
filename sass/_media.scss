@@ -1,0 +1,17 @@
+.mobile {
+    display: none;
+}
+
+
+@media (max-width: 48em) {
+
+    .desctop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+   
+}
