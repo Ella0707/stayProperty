@@ -24,3 +24,35 @@ let select = function () {
 };
 
 select();
+
+
+const bannerSwiper = new Swiper('.banner__slider', {
+    slidesPerView: 1,
+    spaceBetween: 35,
+    speed: 800,
+    navigation: {
+        prevEl: '.swiper__arrow-prev',
+        nextEl: '.swiper__arrow-next',
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+      }, 
+
+    on: {
+        init: sliderNumber,
+        slideChange: sliderNumber
+    },
+});
+
+
+function sliderNumber() {
+    let currentSlide = this.realIndex + 1;
+    if (currentSlide < 10) {
+        currentSlide = '0' + currentSlide
+    }
+
+    $('.slider-number').text(currentSlide);
+}
