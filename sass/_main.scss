@@ -425,6 +425,7 @@
 .banner {
     position: relative;
     height: 100rem;
+    padding-top: 55rem;
 
 
     
@@ -435,16 +436,16 @@
         left: 0;
         right: 0;
         bottom: 0;
+        overflow: hidden;
+    }
 
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-        }
-    
+    &__slide-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
     }
     
     
@@ -456,6 +457,7 @@
     &__slide {
         display: flex;
         flex-direction: column;
+        padding: 11rem 18rem 5rem 18rem;
     
     }
    
@@ -472,8 +474,11 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        align-self: flex-end;
+        flex-shrink: 0;
 
-        padding: 1rem 1rem 2rem 1rem;
+        padding: 1rem 1rem 3.2rem 1rem;
+        margin-bottom: 21.7rem;
 
         position: relative;
 
@@ -482,31 +487,55 @@
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 2rem 2rem 2rem 2rem; /* размер и форма */ 
+            border-width: 1.3rem 1.3rem 1.3rem 1.5rem; /* размер и форма */ 
             border-color: transparent transparent transparent #ffffff;  /* red — цвет */ 
 
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-25%, -75%);
+            transform: translate(-25%, -85%);
         }
     
     }
     
     &__title {
-        @include text (7rem, 600, #ffffff);
+        @include text (6rem, 700, #ffffff);
         text-shadow: 0.5rem 0.5rem 2.8rem rgba(9, 13, 26, 0.25);
         align-self: center;
+        margin-bottom: 2rem;
 
     
     }
     
     &__btn {
-    
+        width: 48.8rem;
+        height: 7.6rem;
+        background: #FFFFFF;
+        border-radius: 100rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-self: center;
+        flex-shrink: 0;
+        padding: 0 4.3rem 0 3.8rem;
     }
+
     
     &__btn-title {
-    
+    @include text (1.7rem, 500, rgba(43, 47, 54, 1)); 
+    margin-right: 14rem;
+
+    span {
+    @include text (2.2rem, 700, rgba(43, 47, 54, 1)); 
+
+    }
+
+    }
+
+    &__btn-arrow {
+        width: 6rem;
+        height: 2rem;
     }
    
     
@@ -520,17 +549,112 @@
 
 
 .swiper-control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
     
 }
 .swiper__pagination-wrap {
+    display: flex;
+    align-items: center;
 }
-.swiper-pagination {
+.swiper__pagination {
+
+    span {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: #ffffff;
+
+        &:not(:last-child) {
+            margin-right: 1.6rem;
+        }
+    }
 }
-.slider-number {
+
+
+.slider__number {
+    @include text (6rem, 600, rgba(255, 255, 255, 1));
+    margin-right: 4.8rem;
 }
+
+
 .swiper__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.swiper__arrow-prev {
+
+
+.swiper__arrow {
+    width: 9.9rem;
+    height: 9.9rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    margin-right: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+    cursor: pointer;
+
+    img {
+        width: 1rem;
+        height: 2rem;
+        transition: 0.8s;
+    }
+
+    &.swiper-button-disabled {
+        width: 7.6rem;
+        height: 7.6rem;
+
+        img {
+            width: 0.5rem;
+            height: 1.5rem;
+        }
+     
+    }
 }
-.swiper__arrow-next {
-}
+
+
+// .swiper__arrow-prev {
+//     width: 9.9rem;
+//     height: 9.9rem;
+//     border-radius: 50%;
+//     background: #FFFFFF;
+//     margin-right: 1.5rem;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     transition: 0.8s;
+
+//     img {
+//         width: 1rem;
+//         height: 2rem;
+//         transition: 0.8s;
+//     }
+
+// }
+// .swiper__arrow-next {
+//     width: 7.6rem;
+//     height: 7.6rem;
+//     border-radius: 50%;
+//     background: #FFFFFF;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     transition: 0.8s;
+
+
+//     img {
+//         width: 0.5rem;
+//         height: 1.5rem;
+//         transition: 0.8s;
+//     }
+
+

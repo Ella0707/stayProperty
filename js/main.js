@@ -36,16 +36,32 @@ const bannerSwiper = new Swiper('.banner__slider', {
     },
 
     pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
+        el: ".swiper__pagination",
+        bullets: true,
         clickable: true,
-      }, 
-
-    on: {
-        init: sliderNumber,
-        slideChange: sliderNumber
     },
-});
+
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
+
+    // effect: "creative",
+    // creativeEffect: {
+    //     prev: {
+    //         // shadow: true,
+    //         translate: ["-20%", 0, -1],
+    //       },
+    //       next: {
+    //         translate: ["100%", 0, 0],
+    //       },
+    // },
+
+        on: {
+            init: sliderNumber,
+            slideChange: sliderNumber
+        },
+    });
 
 
 function sliderNumber() {
@@ -54,5 +70,5 @@ function sliderNumber() {
         currentSlide = '0' + currentSlide
     }
 
-    $('.slider-number').text(currentSlide);
+    $('.slider__number').text(currentSlide);
 }

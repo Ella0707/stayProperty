@@ -651,6 +651,7 @@ input[type=number] {
 .banner {
   position: relative;
   height: 100rem;
+  padding-top: 55rem;
 }
 .banner__slider {
   height: 76rem;
@@ -659,8 +660,9 @@ input[type=number] {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: hidden;
 }
-.banner__slider img {
+.banner__slide-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -676,6 +678,7 @@ input[type=number] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 11rem 18rem 5rem 18rem;
 }
 .banner__btn-video {
   width: 13.9rem;
@@ -697,7 +700,12 @@ input[type=number] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 1rem 2rem 1rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 1rem 1rem 3.2rem 1rem;
+  margin-bottom: 21.7rem;
   position: relative;
 }
 .banner__btn-video::before {
@@ -705,24 +713,146 @@ input[type=number] {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 2rem 2rem 2rem 2rem;
+  border-width: 1.3rem 1.3rem 1.3rem 1.5rem;
   /* размер и форма */
   border-color: transparent transparent transparent #ffffff;
   /* red — цвет */
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-25%, -75%);
-          transform: translate(-25%, -75%);
+  -webkit-transform: translate(-25%, -85%);
+          transform: translate(-25%, -85%);
 }
 .banner__title {
-  font-size: 7rem;
-  font-weight: 600;
+  font-size: 6rem;
+  font-weight: 700;
   color: #ffffff;
   text-shadow: 0.5rem 0.5rem 2.8rem rgba(9, 13, 26, 0.25);
   -ms-flex-item-align: center;
       align-self: center;
+  margin-bottom: 2rem;
 }
+.banner__btn {
+  width: 48.8rem;
+  height: 7.6rem;
+  background: #FFFFFF;
+  border-radius: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0 4.3rem 0 3.8rem;
+}
+.banner__btn-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #2b2f36;
+  margin-right: 14rem;
+}
+.banner__btn-title span {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2b2f36;
+}
+.banner__btn-arrow {
+  width: 6rem;
+  height: 2rem;
+}
+.swiper-control {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.swiper__pagination-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper__pagination span {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #ffffff;
+}
+.swiper__pagination span:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.slider__number {
+  font-size: 6rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 4.8rem;
+}
+
+.swiper__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.swiper__arrow {
+  width: 9.9rem;
+  height: 9.9rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin-right: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.swiper__arrow img {
+  width: 1rem;
+  height: 2rem;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.swiper__arrow.swiper-button-disabled {
+  width: 7.6rem;
+  height: 7.6rem;
+}
+.swiper__arrow.swiper-button-disabled img {
+  width: 0.5rem;
+  height: 1.5rem;
+}
+
 .mobile {
   display: none;
 }
