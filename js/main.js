@@ -51,14 +51,14 @@ const supportSwiper = new Swiper('.support__slider', {
     speed: 800,
 
     pagination: {
-        el: ".support__pagination",
+        el: ".support__slider-pagination",
         bullets: true,
         clickable: true,
     },
 
     navigation: {
-        prevEl: '.support__slider-pagination-prev',
-        nextEl: '.support__slider-pagination-next',
+        prevEl: '.support__slider-prev',
+        nextEl: '.support__slider-next',
     },
 
     effect: "fade",
