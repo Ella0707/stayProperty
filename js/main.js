@@ -26,6 +26,49 @@ let select = function () {
 select();
 
 
+
+const objectSwiper = new Swiper('.objects-box__slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 800,
+
+    pagination: {
+        el: ".objects-box__pagination",
+        bullets: true,
+        clickable: true,
+    },
+
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
+});
+
+
+const supportSwiper = new Swiper('.support__slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 800,
+
+    pagination: {
+        el: ".support__pagination",
+        bullets: true,
+        clickable: true,
+    },
+
+    navigation: {
+        prevEl: '.support__slider-pagination-prev',
+        nextEl: '.support__slider-pagination-next',
+    },
+
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
+});
+
+
+
 const bannerSwiper = new Swiper('.banner__slider', {
     slidesPerView: 1,
     spaceBetween: 35,
@@ -82,5 +125,7 @@ let dropdown = document.querySelector('.dropdown');
 dropdown.onclick = function() {
     dropdown.classList.toggle('active');
 }
+
+
 
 
