@@ -1,3 +1,4 @@
+
 let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
     let selectItem = document.querySelectorAll('.select__item');
@@ -125,6 +126,12 @@ let dropdown = document.querySelector('.dropdown');
 dropdown.onclick = function() {
     dropdown.classList.toggle('active');
 }
+
+
+
+
+
+
 
 
 

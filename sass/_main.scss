@@ -931,7 +931,7 @@
 
 
 .support {
-    margin-bottom: 17.5rem;
+    margin-bottom: 16rem;
     position: relative;
 
     &::before {
@@ -1086,17 +1086,140 @@
             width: 20rem;
         }
     }
-   
-    &__slider-prev {
-    
-    }
-   
-    
-    &__slider-next {
-    
-    }
-    
-    
+}
 
+
+.catalog {
+    margin-bottom: 17rem;
+
+    
+    &__title {
+        margin-bottom: 5.7rem;
+    }
+    
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    &__box-column {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.8rem;
+        height: 100%;
+
+        &:nth-child(2n) {
+            flex-direction: column-reverse;
+        }
+    
+    }
+    
+    &__box {
+        width: 36.2rem;
+        height: 25.3rem;
+        filter: drop-shadow(1rem 2rem 10rem rgba(40, 44, 78, 0.15));
+        border-radius: 3rem;
+        // position: relative;
+
+        &.photo-box,
+        &.map {
+            height: 20rem;
+        }
+
+        &.to-buy {
+            background: #ffffff;
+            padding: 2.2rem 3.2rem 3.2rem 3.2rem;
+        }
+
+        &.map {
+            position: relative;
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+  
+    
+    &__box-title {
+        @include text (2rem, 700, #2B2F36);
+        margin-bottom: 2rem;
+
+    
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 1.4rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1.1rem;
+        }
+
+       &:last-of-type {
+           margin-bottom: 2rem;
+       }
+    
+    }
+    
+    &__item-key {
+        color: #2B2F36;
+        padding-right: 2rem;
+    }
+    
+    &__item-value {
+        color: #BABFD3;
+    
+    }
+    
+    &__item-link {
+        display: flex;
+        align-items: center;
+        @include text (1.5rem, 700, #2B2F36);
+
+        img {
+            width: 1rem;
+            height: 1rem;
+            object-fit: contain;
+            margin-left: 1.7rem;
+        }
+    
+    }
+    
+    
+    &__box-map-link {
+        width: 10.9rem;
+        height: 10.9rem;
+        border-radius: 50%;
+        background: #0199E4;
+        box-shadow: 1rem 2rem 5rem rgba(83, 186, 243, 0.25);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include text (1.4rem, 600, #FFFFFF);
+        text-align: center;
+        margin: auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+    
+    }
+    
+    
 }
 
