@@ -1242,9 +1242,25 @@
     
     &__inner {
         display: flex;
-        // justify-content: space-between;
+        position: relative;
+        padding-bottom: 11rem;
+        padding-top: 6rem;
+        justify-content: space-between;
+    }
 
-    
+    &__img {
+        width: 63rem;
+        height: 74rem;
+
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        // transform: translateX(-50%);
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
     }
     
     &__calculation {
@@ -1253,9 +1269,6 @@
         background: #FFFFFF;
         border-radius: 3rem;
         height: 100%;
-        margin-right: 9.6rem;
-        margin-top: 6rem;
-    
     }
     
     &__title {
@@ -1375,19 +1388,11 @@
         display: flex;
     }
     
-    &__img {
-        width: 62.3rem;
-        height: 75.7rem;
-
-        img {
-            height: 100%;
-            object-fit: cover;
-        }
-    }
+ 
     
     &__about {
         width: 28rem;
-        margin-top: 14rem;
+        margin-top: 8rem;
         margin-left: auto;
     }
     
@@ -1396,7 +1401,6 @@
         margin-bottom: 8.5rem;
         line-height: 1.3;
         width: 80%;
-        margin-left: auto;
         text-align: right;
 
         span {
@@ -1486,10 +1490,394 @@
             width: 1.7rem;
             object-fit: contain;
         }
+    }
+}
+
+
+.real-estate {
+    margin-bottom: 17rem;
+
+    
+    &__inner {
+    
+    }
+    
+    &__title {
+        text-align: center;
+        margin-bottom: 5.5rem;
+    }
+   
+    
+    &__select {
+        position: relative;
+        
+        &.active {
+
+            .real-estate__wrapper {
+                svg {
+                    transform: rotate(175deg);
+                }
+            }
+
+            .real-estate__option {
+                display: block;
+            }
+        }
+    
+    }
+    
+    &__select-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3.8rem;
+    
+    }
+   
+    
+    &__wrapper {
+        width: 49.4rem;
+        height: 6rem;
+        background: #EFF0F8;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 2rem 2rem 2rem;
+        cursor: pointer;
+
+        svg {
+            width: 1.5rem;
+            height: 0.8rem;
+            transition: 0.5s;
+        }
+
+       
+    }
+    
+    
+    
+    &__current {
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: #8a91aa;
+    }
+    
+    &__option {
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        background: #F7F7FD;
+        box-shadow: 1rem 2rem 2rem rgb(40 44 78 / 9%);
+        border-radius: 0 0 1rem 1rem;
+        width: 100%;
+        display: none;
+    }
+    
+    &__type-item {
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: #8a91aa;
+        cursor: pointer;
+        padding: 0.75rem 2rem 0.75rem 2rem;
+        padding-top: 0.75rem;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        width: 100%;
+    }
+
+    &__ranger-wrap {
+        position: relative;
+        width: 39.2rem;
+
+        &::after {
+            content: "";
+            width: 39.2rem;
+            height: 6rem;
+            background: #EFF0F8;
+            border-radius: 1rem;
+
+            position: absolute;
+            bottom: 0.2rem;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    
+    &__ranger {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
+    }
+    
+    .irs-from,
+    .irs-to,
+    .irs-single {
+        display: none;
+    }
+
+    .irs {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .irs--round .irs-handle {
+        border: 0.5rem solid #ffffff;
+        background-color: #0199E4;
+    }
+
+    .irs-bar {
+        background: #0199E4;
+    }
+
+    .irs-line {
+        background: #e7e7f2;
+        height: 0.2rem;
+    }
+
+    .extra-controls {
+        position: absolute;
+        top: 1.5rem;
+        width: 39.2rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .input-wrap {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            span {
+                @include text (1.3rem, 500, #B1B1C5);
+                margin-right: 1rem;
+                padding-left: 2rem;
+
+                &.postfix {
+                    @include text (1.7rem, 500, #2B2F36);
+                    padding-right: 2rem;
+                    margin-right: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .price-from {
+            position: relative; 
+            @include text (1.7rem, 500, #2B2F36);
+            width:7rem;
+        }
+
+        .price-to {
+            position: relative; 
+            @include text (1.7rem, 500, #2B2F36);
+            width:7rem;
+        }
+
+    }
+
+
+
+    .price {
+    }
+    
+    &__button-top {
+        width: 13.824rem;
+    }
+    
+    
+    &___select-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7.3rem;
+    
+    }
+    
+    &__select-left {
+        display: flex;
+
+    
+    }
+    
+    &__button-bottom {
+        width: 18.8rem;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    
+    }
+    
+    &__select-right {
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    &__all {
+        @include text (2rem, 700, #2B2F36);
+        margin-right: 5.9rem;
+    }
+    
+    &__reset {
+        @include text (1.7rem, 500, #8A91AA);
+        display: flex;
+        align-items: center;
+    
+        img {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 1.2rem;
+        }
+    }
+
+
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3.8rem;
+    
+    }
+    
+    &__box {
+        width: 49.4rem;
+    
+    }
+    
+    &__box-inner {
+        padding: 2.3rem 2.3rem 0 2.3rem;
+        background: #FFFFFF;
+        -webkit-box-shadow: 1rem 2rem 10rem rgb(40 44 78 / 10%);
+        box-shadow: 1rem 2rem 10rem rgb(40 44 78 / 10%);
+        border-radius: 1.8rem 1.8rem 1.8rem 0;
+        padding-bottom: 2rem;
+
+    }
+    
+    &__slider {
+        height: 44rem;
+        margin-bottom: 1.6rem;
+        position: relative;
+    
+    }
+    .swiper-slider {
+    }
+    
+    &__slider-wrapper {
+        border-radius: 1.5rem;
+    
+    }
+    .swiper-wrapper {
+    }
+    
+    &__slide {
+    
+    }
+    
+    &__pagination {
+    
+    }
+    .swiper-pagination {
+    }
+    
+    &__text-block {
+        cursor: pointer;
+
+        &:hover {
+
+            .real-estate__box-hover {
+                display: block;
+            }
+        }
+
     
     }
 
+    &__box-hover {
+        display: none;
+    }
     
-
+    &__box-title {
+        font-size: 2.1rem;
+    font-weight: 700;
+    color: #2b2f36;
+    margin-bottom: 2.3rem;
+    line-height: 1.38;
+    width: 83%;
 }
+    
+    
+    
+    &__bottom-block {
+        display: flex;
+    
+    justify-content: space-between;
+    
+    }
+    
+    &__bottom-box-info {
+        background: #FFFFFF;
+        border-radius: 0 0 1.8rem 1.8rem;
+        padding-top: 2rem;
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+
+        box-shadow: 1rem 3rem 7rem rgb(40 44 78 / 10%);
+        width: 87%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__sity-wrap {
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    &__sity-img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__sity-name {
+        @include text (1.6rem, 400, #2B2F36);
+    
+    }
+    
+    &__box-price {
+        @include text (2.2rem, 600, #2B2F36);
+
+        span {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #99A2B5;
+        }
+
+        sup {
+            font-size: 1.5rem;
+        }
+    
+    }
+    
+    &__corner {
+    
+    }
+    .corner {
+    }
+    .objects-box__like {
+    }
+}
+
+
 
