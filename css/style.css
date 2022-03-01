@@ -2074,31 +2074,63 @@ input[type=number] {
 }
 .real-estate__box {
   width: 49.4rem;
+  height: 63.8rem;
+  position: relative;
 }
 .real-estate__box-inner {
-  padding: 2.3rem 2.3rem 0 2.3rem;
   background: #FFFFFF;
   -webkit-box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
-  box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
+          box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
   border-radius: 1.8rem 1.8rem 1.8rem 0;
   padding-bottom: 2rem;
+  height: 55.9rem;
+  overflow: hidden;
+}
+.real-estate__box-top {
+  padding: 2.3rem 2.3rem 0 2.3rem;
 }
 .real-estate__slider {
   height: 44rem;
   margin-bottom: 1.6rem;
   position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border-radius: 1.5rem;
+}
+.real-estate__slider img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.real-estate__slider.open {
+  height: 22rem;
 }
 .real-estate__slider-wrapper {
   border-radius: 1.5rem;
 }
+.real-estate__slide {
+  border-radius: inherit;
+}
 .real-estate__text-block {
   cursor: pointer;
+  padding: 0 2.3rem 8rem 2.3rem;
 }
 .real-estate__text-block:hover .real-estate__box-hover {
   display: block;
 }
+.real-estate__text-block:hover .real-estate__bottom-block .static {
+  display: none;
+}
+.real-estate__text-block:hover .real-estate__bottom-block .hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .real-estate__box-hover {
   display: none;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 .real-estate__box-title {
   font-size: 2.1rem;
@@ -2109,12 +2141,83 @@ input[type=number] {
   width: 83%;
 }
 .real-estate__bottom-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.real-estate__bottom-block .static {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.real-estate__bottom-block .hover {
+  display: none;
+}
+.real-estate__text-bottom {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #8a91aa;
+}
+.real-estate__box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.real-estate__box-item:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+.real-estate__box-item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+}
+.real-estate__box-item-left-key {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2b2f36;
+}
+.real-estate__box-item-left-value {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #2b2f36;
+}
+.real-estate__box-item-right {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2b2f36;
+}
+.real-estate__box-item-right span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.real-estate__box-item-right sup {
+  font-size: 1rem;
+  font-weight: 700;
 }
 .real-estate__bottom-box-info {
   background: #FFFFFF;
@@ -2134,6 +2237,15 @@ input[type=number] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.real-estate__bottom-box-info.hover {
+  padding-bottom: 2.5rem;
+  border-bottom: 0.1rem solid #DDE2F4;
+  margin-bottom: 2.5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0 0 0 0;
+  width: 100%;
 }
 .real-estate__sity-wrap {
   display: -webkit-box;
@@ -2167,10 +2279,12 @@ input[type=number] {
   font-size: 1.5rem;
   font-weight: 400;
   color: #99A2B5;
+  margin-right: 0.5rem;
 }
 .real-estate__box-price sup {
   font-size: 1.5rem;
 }
+
 .objects-box {
   width: 36.2rem;
 }

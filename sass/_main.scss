@@ -1696,8 +1696,6 @@
     
     &__select-left {
         display: flex;
-
-    
     }
     
     &__button-bottom {
@@ -1706,13 +1704,11 @@
         &:not(:last-child) {
             margin-right: 2rem;
         }
-    
     }
     
     &__select-right {
         display: flex;
         align-items: center;
-    
     }
     
     &__all {
@@ -1732,63 +1728,86 @@
         }
     }
 
-
     
     &__content {
         display: flex;
         flex-wrap: wrap;
         gap: 3.8rem;
-    
     }
     
     &__box {
         width: 49.4rem;
-    
+        height: 63.8rem;
+        position: relative;
     }
+
     
     &__box-inner {
-        padding: 2.3rem 2.3rem 0 2.3rem;
+        // padding: 2.3rem 2.3rem 0 2.3rem;
         background: #FFFFFF;
-        -webkit-box-shadow: 1rem 2rem 10rem rgb(40 44 78 / 10%);
         box-shadow: 1rem 2rem 10rem rgb(40 44 78 / 10%);
         border-radius: 1.8rem 1.8rem 1.8rem 0;
         padding-bottom: 2rem;
-
+        height: 55.9rem;
+        overflow: hidden;
     }
     
+    &__box-top {
+        padding: 2.3rem 2.3rem 0 2.3rem;
+    }
+
     &__slider {
         height: 44rem;
         margin-bottom: 1.6rem;
         position: relative;
-    
-    }
-    .swiper-slider {
+        transition: 0.6s;
+        border-radius: 1.5rem;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+
+        &.open {
+            height: 22rem;
+        }
     }
     
     &__slider-wrapper {
         border-radius: 1.5rem;
-    
     }
-    .swiper-wrapper {
-    }
-    
+
     &__slide {
-    
+        border-radius: inherit;
     }
     
     &__pagination {
     
     }
-    .swiper-pagination {
-    }
     
     &__text-block {
         cursor: pointer;
+        padding: 0 2.3rem 8rem 2.3rem;
 
         &:hover {
 
             .real-estate__box-hover {
                 display: block;
+
+                // .real-estate__box-item {
+                //     z-index: 1;
+                // }
+            }
+
+            .real-estate__bottom-block {
+                .static {
+                    display: none;
+                }
+        
+                .hover {
+                    display: flex;
+                }
             }
         }
 
@@ -1797,6 +1816,7 @@
 
     &__box-hover {
         display: none;
+        transition: 0.8s;
     }
     
     &__box-title {
@@ -1811,9 +1831,71 @@
     
     
     &__bottom-block {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
+        justify-content: space-between;
+
+        .static {
+            display: flex;
+            align-items: center;
+        }
+
+        .hover {
+            display: none;
+        }
     
-    justify-content: space-between;
+    }
+
+    &__text-bottom {
+        @include text (1.5rem, 400, rgba(138, 145, 170, 1));
+    }
+
+    
+    &__box-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.6s;
+
+        &:not(:last-child) {
+            margin-bottom: 1.4rem;
+        }
+    
+    }
+    
+    &__box-item-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 45%;
+    
+    }
+    
+    &__box-item-left-key {
+        @include text (1.6rem, 600,  rgba(43, 47, 54, 1));
+    }
+    
+    &__box-item-left-value {
+        @include text (1.6rem, 400,  rgba(43, 47, 54, 1));
+
+    }
+    
+    &__box-item-right {
+        @include text (1.6rem, 600,  rgba(43, 47, 54, 1));
+
+        span {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        sup {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
     
     }
     
@@ -1830,12 +1912,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        &.hover {
+            padding-bottom: 2.5rem;
+            border-bottom: 0.1rem solid #DDE2F4;
+            margin-bottom: 2.5rem;
+            box-shadow: none;
+            border-radius: 0 0 0 0;
+            width: 100%;
+        }
     }
     
     &__sity-wrap {
         display: flex;
         align-items: center;
-    
     }
     
     &__sity-img {
@@ -1847,12 +1937,10 @@
             height: 100%;
             object-fit: contain;
         }
-    
     }
     
     &__sity-name {
         @include text (1.6rem, 400, #2B2F36);
-    
     }
     
     &__box-price {
@@ -1862,20 +1950,12 @@
             font-size: 1.5rem;
             font-weight: 400;
             color: #99A2B5;
+            margin-right: 0.5rem;
         }
 
         sup {
             font-size: 1.5rem;
         }
-    
-    }
-    
-    &__corner {
-    
-    }
-    .corner {
-    }
-    .objects-box__like {
     }
 }
 

@@ -1,4 +1,22 @@
 
+
+var caption = document.querySelectorAll('.wrapper');
+var wrapper = document.querySelectorAll('.caption');
+
+[].forEach.call(caption, function(el) {
+    el.addEventListener('mouseenter', function() {
+        [].forEach.call(wrapper, function(elem) {
+            elem.classList.toggle('open');
+        });
+    });
+    el.addEventListener('mouseleave', function() {
+        [].forEach.call(wrapper, function(elem) {
+            elem.classList.toggle('open');
+        });
+    });
+});
+
+
 let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
     let selectItem = document.querySelectorAll('.select__item');
@@ -69,6 +87,23 @@ const supportSwiper = new Swiper('.support__slider', {
 });
 
 
+const realSwiper = new Swiper('.real-estate__slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 800,
+
+    pagination: {
+        el: ".real-estate__pagination",
+        bullets: true,
+        clickable: true,
+    },
+
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
+});
+
 
 const bannerSwiper = new Swiper('.banner__slider', {
     slidesPerView: 1,
@@ -132,7 +167,14 @@ dropdown.onclick = function() {
 
 
 
+// var caption = document.getElementsByClassName('caption');
+// var wrapper = document.getElementsByClassName('wrapper');
 
-
-
-
+// for (let i = 0; i < caption.length; i++) {
+//   caption[i].addEventListener('click', function() {
+//     for (let i = 0; i < wrapper.length; i++) {
+//       wrapper[i].style.background = 'white'
+//     }
+//     wrapper[i].style.background = 'red'
+//   })
+// }
