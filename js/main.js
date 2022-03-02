@@ -1,22 +1,17 @@
 
-
-var caption = document.querySelectorAll('.wrapper');
-var wrapper = document.querySelectorAll('.caption');
-
-[].forEach.call(caption, function(el) {
-    el.addEventListener('mouseenter', function() {
-        [].forEach.call(wrapper, function(elem) {
-            elem.classList.toggle('open');
-        });
+// появление дополнителньой информации в текстовом блоке карточек с недвижимостью на Главной странице
+$(document).ready(function () {
+    $('.real-estate__text-block').on('mouseenter', function () {
+        $(this).parent().toggleClass('active');
     });
-    el.addEventListener('mouseleave', function() {
-        [].forEach.call(wrapper, function(elem) {
-            elem.classList.toggle('open');
-        });
+    $('.real-estate__text-block').on('mouseleave', function () {
+        $(this).parent().toggleClass('active');
     });
 });
 
 
+
+// функция для кастомных селектов
 let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
     let selectItem = document.querySelectorAll('.select__item');
@@ -45,7 +40,7 @@ let select = function () {
 select();
 
 
-
+// слайдеры
 const objectSwiper = new Swiper('.objects-box__slider', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -105,6 +100,42 @@ const realSwiper = new Swiper('.real-estate__slider', {
 });
 
 
+const rewiewsSwiper = new Swiper('.rewiews__slider', {
+    slidesPerView: 3,
+    spaceBetween: 42,
+    speed: 800,
+    navigation: {
+        prevEl: '.rewiews__slider-prev',
+        nextEl: '.rewiews__slider-next',
+    },
+
+    pagination: {
+        el: ".rewiews__pagination",
+        bullets: true,
+        clickable: true,
+    },
+
+    // effect: "fade",
+    // fadeEffect: {
+    //     crossFade: true
+    // },
+
+    on: {
+        init: number,
+        slideChange: number
+    },
+});
+
+function number() {
+    let currentSlide = this.realIndex + 1;
+    if (currentSlide < 10) {
+        currentSlide = '0' + currentSlide
+    }
+
+    $('.rewiews__numbers').text(currentSlide);
+}
+
+
 const bannerSwiper = new Swiper('.banner__slider', {
     slidesPerView: 1,
     spaceBetween: 35,
@@ -136,11 +167,11 @@ const bannerSwiper = new Swiper('.banner__slider', {
     //       },
     // },
 
-        on: {
-            init: sliderNumber,
-            slideChange: sliderNumber
-        },
-    });
+    on: {
+        init: sliderNumber,
+        slideChange: sliderNumber
+    },
+});
 
 
 function sliderNumber() {
@@ -153,28 +184,15 @@ function sliderNumber() {
 }
 
 
-function show(anything) {
-    document.querySelector(".textBox").value = anything;
-}
-
-let dropdown = document.querySelector('.dropdown');
-dropdown.onclick = function() {
-    dropdown.classList.toggle('active');
-}
-
-
-
-
-
-
-// var caption = document.getElementsByClassName('caption');
-// var wrapper = document.getElementsByClassName('wrapper');
-
-// for (let i = 0; i < caption.length; i++) {
-//   caption[i].addEventListener('click', function() {
-//     for (let i = 0; i < wrapper.length; i++) {
-//       wrapper[i].style.background = 'white'
-//     }
-//     wrapper[i].style.background = 'red'
-//   })
+// function show(anything) {
+//     document.querySelector(".textBox").value = anything;
 // }
+
+// let dropdown = document.querySelector('.dropdown');
+// dropdown.onclick = function () {
+//     dropdown.classList.toggle('active');
+// }
+
+
+
+
