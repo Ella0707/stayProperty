@@ -1965,7 +1965,7 @@
 .partner {
     height: 83.5rem;
     padding-top: 8.1rem;
-    margin-bottom: 17.9rem;
+    margin-bottom: 17rem;
     position: relative;
 
     &__bg {
@@ -2096,7 +2096,8 @@
 
 
 .rewiews {
-    margin-bottom: 17rem;
+    margin-bottom: 12rem;
+    padding-top: 5rem;
     overflow: hidden;
 
 
@@ -2111,7 +2112,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
     }
     
     &__title {
@@ -2129,7 +2130,7 @@
     }
     
     &__slider {
-    
+        margin-bottom: 10rem;    
     }
    
     
@@ -2144,8 +2145,14 @@
         // box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
         // border-radius: 4rem;
         position: relative;
-        padding: 0 3.4rem 0 3.4rem;
+        // padding: 0 3.4rem 0 3.4rem;
         border-radius: 4rem;
+        padding: 3.2rem 3.4rem 6.1rem 3.2rem;
+        background: #FFFFFF;
+        box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
+
+
+
 
 
         // width: 40rem;
@@ -2153,11 +2160,7 @@
     
     
     &__slide-inner {
-        background: #FFFFFF;
-        box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
         border-radius: 4rem;
-        padding: 3.2rem 3.4rem 6.1rem 3.2rem
-    
     }
     
     &__slide-sity {
@@ -2173,71 +2176,50 @@
         border-radius:  0 3rem 0 3rem;
 
         position: absolute;
-        top: 11.4rem;
-        left: 0;
+        top: 11rem;
+        left: -3rem;
 
 
     }
     
     
     &__slide-name-wrap {
-        width: 24.4rem;
-        height: 20rem;
-        position: relative;
-        // overflow: hidden;
-        // border-top: 3rem solid #ffffff;
-        // border-right: 3rem solid #ffffff;
-        // border-left: 0rem solid transparent;
-        // border-bottom: 0rem solid transparent;
-        // border-radius: 4rem 0 4rem;
-        // box-shadow: 24px -22px 5px rgb(40 44 78 / 15%);
-        // background-color: #ffffff;
-
+        width: 38.2rem;
+        height: 35.6rem;
+        padding-left: 22rem;
+        padding-right: 2rem;
+        padding-top: 13.7rem;
         position: absolute;
-        top: 11.4rem;
-        right: 0;
+        top: 0;
+        right: -4rem;
 
-        //     // width: 20rem;
-        //     // height: 6rem;
-        //     // border-radius: 6rem;
-        //     // background-color: blueviolet;
-
-
-        // &::before {
-        //     content: "";
-        //     width: 23rem;
-        //     height: 6rem;
-        //     border-radius: 6rem;
-        //     background-color: #ffffff;
-        //     position: absolute;
-        //     top: 21%;
-        //     left: -16%;
-        //     transform: rotate(42deg);
-        //     box-shadow: 20px 20px 100px rgba(40, 44, 78, 0.15);
-        // }
-    
-        img {
-            height: 100%;
-            object-fit: contain;
+        svg {
+            width: 38.2rem;
+            height: 35.6rem;
             position: absolute;
-            top: 0;
-            right: 0;
-            z-index: -1;
+            top: 3rem;
+            right: -10rem;
         }
-    
     }
     
     &__slide-name {
-    
+        @include text(1.7rem, 600, rgba(43, 47, 54, 1));
+        margin-bottom: 1.5rem;
+        position: relative;
+        width: 12rem;
+        text-align: end;
     }
     
     &__slide-data {
-    
+        @include text (1.5rem, 400, rgba(138, 145, 170, 1));
+        position: relative;
+        text-align: end;
+        width: 12rem;
     }
     
     &__slide-link {
-        width: 7rem;
-        height: 7rem;
+        width: 8rem;
+        height: 8rem;
         border-radius: 50%;
         background-color: #E82E3D;
 
@@ -2246,8 +2228,8 @@
         justify-content: center;
 
         position: absolute;
-        right: 2rem;
-        bottom: 0;
+        right: 6.5rem;
+        bottom: -3rem;
 
         img {
             height: 2rem;
@@ -2261,17 +2243,14 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 5.2rem;
-    
     }
     
     &__slide-top-key {
         @include text (1.5rem, 400, #8A91AA);
-    
     }
     
     &__slide-top-value {
         @include text (1.5rem, 600, #2B2F36);
-    
     }
     
     &__slide-photo {
@@ -2282,6 +2261,7 @@
         filter: drop-shadow(2rem 2rem 10rem rgba(40, 44, 78, 0.15));
         margin: 0 auto;
         margin-bottom: 4rem;
+        margin-right: 14.5rem;
 
         img {
             height: 100%;
@@ -2289,12 +2269,12 @@
             background-size: cover;
             border-radius: inherit;
         }
-    
     }
     
     &__slide-text {
         @include text (2rem, 400, #2B2F36);
         line-height: 1.55;
+        width: 94%;
     }
     
     &__pagination-wrap {
@@ -2306,11 +2286,20 @@
     }
     
     &__pagination {
+        position: relative;
+
+        span {
+            background: transparent;
+            @include text (2rem, 600, rgba(43, 47, 54, 1));
+
+
+            &.swiper-pagination-bullet-active {
+                @include text (4rem, 600, rgba(43, 47, 54, 1));
+                margin-right: 4rem;
+            }
+        }
     
     }
-   
-    
-
 }
 
 

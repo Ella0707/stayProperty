@@ -102,7 +102,7 @@ const realSwiper = new Swiper('.real-estate__slider', {
 
 const rewiewsSwiper = new Swiper('.rewiews__slider', {
     slidesPerView: 3,
-    spaceBetween: 42,
+    spaceBetween: 109,
     speed: 800,
     navigation: {
         prevEl: '.rewiews__slider-prev',
@@ -114,19 +114,14 @@ const rewiewsSwiper = new Swiper('.rewiews__slider', {
         bullets: true,
         clickable: true,
     },
-
-    // effect: "fade",
-    // fadeEffect: {
-    //     crossFade: true
-    // },
-
     on: {
-        init: number,
-        slideChange: number
+        init: rewiewsNumbers,
+        slideChange: rewiewsNumbers
     },
 });
 
-function number() {
+
+function rewiewsNumbers() {
     let currentSlide = this.realIndex + 1;
     if (currentSlide < 10) {
         currentSlide = '0' + currentSlide
@@ -134,6 +129,67 @@ function number() {
 
     $('.rewiews__numbers').text(currentSlide);
 }
+
+
+
+    // pagination: {
+    //     el: ".rewiews__pagination",
+    //     clickable: true,
+    //     bullets: true,
+    //     // // renderBullet: function (index, className) {
+    //     // //   return '<span class="' + className + '">' + (index + 1) + "</span>";
+    //     // // },
+    //     // renderFraction: function (currentClass, totalClass, index, total) {
+    //     //     return '<span class="' + currentClass + '">0 '+ index +' </span>' +
+    //     //         ' / ' +
+    //     //         '<span class="' + totalClass + '">0 '+ total +' </span>';
+    //     // },
+    // },
+
+   
+    // });
+    
+
+    // effect: "fade",
+    // fadeEffect: {
+    //     crossFade: true
+    // },
+
+    // on: {
+    //     init: number,
+    //     slideChange: number
+    // },
+// });
+
+ 
+
+// // ADD ACTIVE CLASS TO THE CURRENT BULLET
+
+// // get all bullet elements
+// var bullets = $('.swiper-pagination-bullet');
+
+// swiper.on('slideChange', function () {
+// // Get current slide from fraction pagination number
+// var slide = "slide"+($('.swiper-pagination-current').html());
+// // Remove active class from all bullets
+// bullets.removeClass("swiper-pagination-bullet-active");
+// // Check each bullet element if it has slideNumber class
+// $.each(bullets, function (index, value) {
+//   if($(this).hasClass(slide)) {
+//     $(this).addClass("swiper-pagination-bullet-active");
+//     return false;
+//   }
+// });
+// });
+
+// function number() {
+//     let currentSlide = this.realIndex + 1;
+//     if (currentSlide < 10) {
+//         currentSlide = '0' + currentSlide
+//     }
+
+//     $('.rewiews__numbers').text(currentSlide);
+// }
 
 
 const bannerSwiper = new Swiper('.banner__slider', {
