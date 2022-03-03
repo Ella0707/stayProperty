@@ -2764,8 +2764,8 @@ input[type=number] {
 }
 
 .live {
-  padding: 8.5rem 0 9rem 0;
-  margin-bottom: 17rem;
+  padding: 8.5rem 0 10rem 0;
+  margin-bottom: 18rem;
   background: linear-gradient(175.32deg, #E6EEFB 4.9%, #EBF4FF 96.86%), #ECECF5;
 }
 .live__inner {
@@ -2932,9 +2932,6 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3014,7 +3011,7 @@ input[type=number] {
   width: 14.4rem;
   height: 4.7rem;
   background: #E82E3D;
-  border-radius: 3rem 0 3rem 0;
+  border-radius: 3.5rem 0 2.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3028,7 +3025,7 @@ input[type=number] {
   font-weight: 600;
   color: #FFFFFF;
   position: absolute;
-  top: -2.4rem;
+  top: -1.7rem;
   right: 1rem;
 }
 .news__left-item span:empty {
@@ -3048,11 +3045,14 @@ input[type=number] {
      object-fit: cover;
   border-radius: inherit;
 }
+.news__left-item-content {
+  padding-top: 1rem;
+}
 .news__left-item-data {
   font-size: 1.5rem;
   font-weight: 400;
   color: #8A91AA;
-  margin-bottom: 0.5re;
+  margin-bottom: 1rem;
 }
 .news__left-item-heading {
   font-size: 1.8rem;
@@ -3063,19 +3063,21 @@ input[type=number] {
 .news__center {
   width: 62.9rem;
   position: relative;
+  border-radius: 1.8rem 1.8rem 1.8rem 0;
+}
+.news__center-inner {
   background: #FFFFFF;
-  -webkit-box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
-          box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
-  border-radius: 1.8rem;
   padding: 3.5rem 3.5rem 0 3.5rem;
+  border-radius: inherit;
+  height: 46.2rem;
 }
 .news__center-absolut-block {
   width: 37.6rem;
   height: 34.7rem;
   position: absolute;
   right: -14rem;
-  top: 14rem;
-  padding: 10rem 12rem 13rem 10rem;
+  top: 12rem;
+  padding: 10.5rem 12rem 13rem 10rem;
 }
 .news__center-absolut-block svg {
   width: 100%;
@@ -3104,7 +3106,7 @@ input[type=number] {
 .news__center-photo {
   width: 100%;
   height: 23.5rem;
-  margin-bottom: 2.9rem;
+  margin-bottom: 3.1rem;
   border-radius: 2.2rem;
 }
 .news__center-photo img {
@@ -3117,7 +3119,7 @@ input[type=number] {
   font-size: 1.5rem;
   font-weight: 400;
   color: #8A91AA;
-  margin-bottom: 1.9rem;
+  margin-bottom: 2.5rem;
 }
 .news__center-heading {
   font-size: 2.6rem;
@@ -3131,7 +3133,9 @@ input[type=number] {
   font-weight: 400;
   color: #8A91AA;
   line-height: 1.588;
-  width: 80%;
+  width: 90%;
+  z-index: 2;
+  position: relative;
 }
 .news__center-bottom {
   position: absolute;
@@ -3146,14 +3150,20 @@ input[type=number] {
   background: #ffffff;
   border-radius: 0 0 1.8rem 1.8rem;
   width: 87%;
+  height: 8.5rem;
+  -webkit-box-shadow: -0.6rem 2.4rem 3rem rgba(76, 70, 203, 0.1);
+          box-shadow: -0.6rem 2.4rem 3rem rgba(76, 70, 203, 0.1);
+}
+.news .corner::before {
+  background: #fafaff;
 }
 .news__center-bottom-link {
   width: 6.5rem;
   height: 6.5rem;
   background: #0199E4;
-  -webkit-box-shadow: 0.4rem 0.4rem 5rem rgba(76, 70, 203, 0.1);
-          box-shadow: 0.4rem 0.4rem 5rem rgba(76, 70, 203, 0.1);
   border-radius: 1.6rem;
+  margin-top: 1.5rem;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3199,7 +3209,7 @@ input[type=number] {
   font-weight: 600;
   color: #000000;
   line-height: 1.44;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .news__right-data {
   font-size: 1.5rem;

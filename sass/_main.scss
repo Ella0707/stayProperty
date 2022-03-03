@@ -2443,8 +2443,8 @@
 
     
 .live {
-    padding: 8.5rem 0 9rem 0;
-    margin-bottom: 17rem;
+    padding: 8.5rem 0 10rem 0;
+    margin-bottom: 18rem;
     background: linear-gradient(175.32deg, #E6EEFB 4.9%, #EBF4FF 96.86%), #ECECF5;
 
     
@@ -2649,9 +2649,7 @@
     
     &__title-wrap {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-    
     }
     
     &__title {
@@ -2722,7 +2720,7 @@
             width: 14.4rem;
             height: 4.7rem;
             background: #E82E3D;
-            border-radius: 3rem 0 3rem 0;
+            border-radius: 3.5rem 0 2.5rem 0;
 
             display: flex;
             align-items: center;
@@ -2731,7 +2729,7 @@
             @include text (1.6rem, 600, #FFFFFF);
 
             position: absolute;
-            top: -2.4rem;
+            top: -1.7rem;
             right: 1rem;
 
             &:empty {
@@ -2757,13 +2755,14 @@
     }
     
     &__left-item-content {
+        padding-top: 1rem;
 
     
     }
     
     &__left-item-data {
         @include text (1.5rem, 400, #8A91AA);
-        margin-bottom: 0.5re;
+        margin-bottom: 1rem;
     
     }
     
@@ -2775,20 +2774,25 @@
     &__center {
         width: 62.9rem;
         position: relative;
-        background: #FFFFFF;
-        box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
-        border-radius: 1.8rem;
-        padding: 3.5rem 3.5rem 0 3.5rem;
-    
+        // box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
+        border-radius: 1.8rem 1.8rem 1.8rem 0;
     }
+
+    &__center-inner {
+        background: #FFFFFF;
+        padding: 3.5rem 3.5rem 0 3.5rem;
+        border-radius: inherit;
+        height: 46.2rem;
+    }
+    
     
     &__center-absolut-block {
         width: 37.6rem;
         height: 34.7rem;
         position: absolute;
         right: -14rem;
-        top: 14rem;
-        padding: 10rem 12rem 13rem 10rem;
+        top: 12rem;
+        padding: 10.5rem 12rem 13rem 10rem;
 
         svg {
             width: 100%;
@@ -2819,7 +2823,7 @@
     &__center-photo {
         width: 100%;
         height: 23.5rem;
-        margin-bottom: 2.9rem;
+        margin-bottom: 3.1rem;
         border-radius: 2.2rem;
 
         img {
@@ -2832,7 +2836,7 @@
     
     &__center-data {
         @include text (1.5rem, 400, #8A91AA);
-        margin-bottom: 1.9rem;
+        margin-bottom: 2.5rem;
     
     }
     
@@ -2846,7 +2850,9 @@
     &__center-subtitle {
         @include text (1.7rem, 400, #8A91AA);
         line-height: 1.588;
-        width: 80%;
+        width: 90%;
+        z-index: 2;
+        position: relative;
     }
     
     &__center-bottom {
@@ -2861,17 +2867,26 @@
         background: #ffffff;
         border-radius: 0 0 1.8rem 1.8rem;
         width: 87%;
+        height: 8.5rem;
+        box-shadow: -0.6rem 2.4rem 3rem rgb(76 70 203 / 10%);
+
     
     }
     .corner {
+
+        &::before {
+            background: #fafaff;
+        }
     }
     
     &__center-bottom-link {
         width: 6.5rem;
         height: 6.5rem;
         background: #0199E4;
-        box-shadow: 0.4rem 0.4rem 5rem rgba(76, 70, 203, 0.1);
+        // box-shadow: 0.4rem 0.4rem 5rem rgba(76, 70, 203, 0.1);
         border-radius: 1.6rem;
+        margin-top: 1.5rem;
+        position: relative;
 
         display: flex;
         align-items: center;
@@ -2920,7 +2935,7 @@
     &__right-heading {
         @include text (1.8rem, 600, #000000);
         line-height: 1.44;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     
     }
     
