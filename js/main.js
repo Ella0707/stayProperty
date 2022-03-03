@@ -131,6 +131,38 @@ function rewiewsNumbers() {
 }
 
 
+const liveSwiper = new Swiper('.live__slider', {
+    slidesPerView: 4,
+    spaceBetween: 38,
+    speed: 800,
+    navigation: {
+        prevEl: '.live__slider-prev',
+        nextEl: '.live__slider-next',
+    },
+
+    pagination: {
+        el: ".live__pagination",
+        bullets: true,
+        clickable: true,
+    },
+    on: {
+        init: liveNumbers,
+        slideChange: liveNumbers
+    },
+});
+
+
+function liveNumbers() {
+    let currentSlide = this.realIndex + 1;
+    if (currentSlide < 10) {
+        currentSlide = '0' + currentSlide
+    }
+
+    $('.live__numbers').text(currentSlide);
+}
+
+
+
 
     // pagination: {
     //     el: ".rewiews__pagination",
@@ -252,3 +284,8 @@ function sliderNumber() {
 
 
 
+// var truncate = document.querySelector(".truncate p");
+// $clamp(truncate, {
+//  clamp: 3, // Число строк
+//  useNativeClamp: false // НЕ используем -webkit-line-clamp
+// });
