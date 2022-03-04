@@ -2944,3 +2944,252 @@
     }
 }
 
+
+
+.representation {
+    position: relative;
+    height: 74.8rem;
+    margin-bottom: 17rem;
+
+    
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    
+    }
+   
+    &__inner {
+        padding-top: 10.8rem;
+
+    
+    }
+    
+    &__subtitle {
+        @include text (1.8rem, 400, #8A91AA);
+        margin-bottom: 1.5rem;
+    
+    }
+    
+    &__title {
+       margin-bottom: 6rem;
+    }
+   
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3.7rem;
+        row-gap: 3.5rem;
+    
+    }
+    
+    &__item {
+        width: 46.2rem;
+        background: #FFFFFF;
+        border-radius: 3rem;
+        padding: 1.7rem 2.9rem 2.1rem 2.9rem;
+    
+    }
+    
+    &__item-place {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2rem;
+    }
+    
+    &__place-img {
+        width: 3.8rem;
+        height: 3.8rem;
+        margin-right: 1.3rem;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    
+    }
+    
+    &__place-name {
+        @include text (2.2rem, 700, #2B2F36);
+
+    
+    }
+    
+    &__item-street {
+        @include text (1.5rem, 600, #2B2F36);
+        margin-bottom: 1.3rem;
+
+    
+    }
+    
+    &__item-contacts {
+        display: flex;
+    }
+    
+    &__contact {
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    
+    }
+    
+    &__contact-key {
+        @include text (1.5rem, 400, #8A91AA);
+        margin-bottom: 1rem;
+    }
+    
+    &__contact-value {
+        @include text (1.5rem, 600, #2B2F36);
+        display: block;
+    }
+}
+
+
+.faq {
+    margin-bottom: 17rem;
+
+
+    
+    &__inner {
+    
+    }
+    
+    &__title {
+        margin-bottom: 10rem;
+    
+    }
+    .title {
+    }
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    
+    &__spoller {
+        width: 76rem;
+    
+    }
+
+    &__spoller-title-text {
+        display: flex;
+    }
+    
+    &__spoller-title-wrap {
+        display: flex;
+        margin-bottom: 2rem;
+        position: relative;
+        cursor: pointer;
+
+    }
+    
+    &__spoller-title {
+        @include text (2.2rem, 600, #000000);
+        line-height: 1.45;
+        background:#FFFFFF;
+        padding: 3.8rem 0 3.9rem 3.5rem;
+        border-radius: 3rem 0 3rem 3rem;
+        box-shadow: -5rem 0.4rem 10rem rgb(76 70 203 / 10%);
+
+        // background: #FFFFFF;
+
+        // border-radius: 0 0 3rem 3rem;
+        // padding: 0rem 6.3rem 3.6rem 3.5rem;
+        // position: relative;
+        // margin-top: -4rem;
+     
+
+        // &::before {
+        //     content: "";
+        //     width: 76rem;
+        //     height: 8rem;
+        //     background: #FFFFFF;
+        //     border-radius: 3rem 3rem 3rem 0;
+        //     box-shadow: 1.1rem -2rem 10rem rgb(40 44 78 / 10%);
+
+        //     position: absolute;
+        //     left: 0;
+        //     top: -4rem;
+        //     z-index: -1;
+
+
+
+        // }
+    
+    }
+
+    &__spoller-scenery {
+       
+        
+
+        .slice {
+            height: 7rem;
+            background:#FFFFFF;
+            border-radius: 0 3rem 3rem 0;
+
+        }
+
+    }
+
+    // &__spoller-scenery-bottom {
+    //     display: flex;
+    //     height: 63%;
+
+
+    // }
+
+
+   
+    
+
+    &__btn {
+        width: 6.5rem;
+        height: 6.5rem;
+        background: #FFFFFF;
+        border-radius: 1.6rem;
+        // align-self: end;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 4px 4px 50px rgba(76, 70, 203, 0.1);
+        position: relative;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+
+
+        .corner {
+            position: absolute;
+            top: -1.5rem;
+            left: -1.5rem;
+            z-index: -1;
+
+            &::before {
+                background: #fafaff;
+            }
+        }
+        }
+    
+    &__spoller-content {
+        @include text (1.8rem, 400, #8A91AA);
+        line-height: 1.267;
+        background: #FFFFFF;
+        border-radius: 3rem;
+        padding: 3.6rem 6.3rem 3.6rem 3.5rem;
+
+        position: relative;
+        z-index: 1;
+
+    
+    }
+
+
+}
+

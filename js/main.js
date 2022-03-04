@@ -289,3 +289,12 @@ function sliderNumber() {
 //  clamp: 3, // Число строк
 //  useNativeClamp: false // НЕ используем -webkit-line-clamp
 // });
+
+
+
+// Споллер
+$(document).ready(function () {
+    $('.faq__spoller-title-wrap').click(function (event) {
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
