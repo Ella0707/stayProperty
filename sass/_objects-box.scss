@@ -9,6 +9,7 @@
         box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
         border-radius: 1.8rem 1.8rem 1.8rem 0;  
         padding-bottom: 2rem;  
+        height: 85%;
     }
     
     &__slider {
@@ -90,7 +91,7 @@
         @include text (2.1rem, 700, rgba(43, 47, 54, 1));
         margin-bottom: 2.3rem;
         line-height: 1.38;
-        width: 83%;
+        width: 96%;
     }
     
     &__area {
@@ -193,8 +194,17 @@
         padding-top: 2rem;
         padding-left: 2.5rem;
         padding-right: 2rem;
-        box-shadow: 1rem 3rem 7rem rgba(40, 44, 78, 0.1);
+        padding-bottom: 1.5rem;
+        box-shadow: -1rem 2rem 2rem rgba(40, 44, 78, 0.1);
         width: 87%;
+        display: flex;
+        
+        span {
+        @include text (1.4rem, 400, rgba(153, 162, 181, 1));
+        margin-right: 0.8rem;
+        align-self: center;
+
+        }
     }
     
     &__price-value {
@@ -224,6 +234,11 @@
         margin-top: 1.3rem;
 
         position: relative;
+        transition: 0.8s;
+
+        &.active {
+             background: linear-gradient(0deg, #E82E3D, #E82E3D), linear-gradient(329.72deg, #DE1117 6.36%, #F13E5E 115.33%), linear-gradient(321.12deg, #DE1117 -13.86%, #F13E5E 74.59%), linear-gradient(0deg, #D91F40, #D91F40), linear-gradient(119.1deg, #4341CC 42.46%, #FF9CB4 149.72%), #6C42E2;
+        }
     }
 }
 

@@ -30,6 +30,13 @@
         &.btn--blue {
             background: rgba(1, 153, 228, 1);
         }
+
+        &.btn--white {
+            background: linear-gradient(177.55deg, #FFFFFF 21.07%, rgba(255, 255, 255, 0.24) 181.18%);
+            svg {
+                stroke: rgba(222, 17, 23, 1);
+            }
+        }
     }
 }
 

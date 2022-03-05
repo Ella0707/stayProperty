@@ -40,6 +40,27 @@ let select = function () {
 select();
 
 
+$(".real-estate__button-top").click(function(e) {
+    e.preventDefault();
+    $(".real-estate__button-top").removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $(".real-estate__button-bottom").click(function(e) {
+    e.preventDefault();
+    $(".real-estate__button-bottom").removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $(".objects-box__like").click(function(e) {
+    e.preventDefault();
+    $(".objects-box__like").removeClass('active');
+    $(this).addClass('active');
+  })
+
+
+  
+
 // слайдеры
 const objectSwiper = new Swiper('.objects-box__slider', {
     slidesPerView: 1,
