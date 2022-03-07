@@ -1,0 +1,169 @@
+.partner.vacancies {
+    margin-bottom: 6rem;
+}
+
+
+
+.vacancies {
+    margin-bottom: 19rem;
+
+    &__inner {
+    
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 110.1rem;
+        margin: 0 auto 6.8rem auto;
+    }
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        @include text (2rem, 500, rgba(43, 47, 54, 1));
+
+        span {
+            @include text (1.7rem, 500, rgba(250, 250, 255, 1));
+
+            width: 2.9rem;
+            height: 2.9rem;
+            border-radius: 50%;
+            background: rgba(1, 153, 228, 1);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1rem;
+        }
+    
+    }
+    
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 4.5rem;
+        row-gap: 6.2rem;
+    
+    }
+    
+    &__box {
+        width: 49rem;
+        position: relative;
+        padding: 6rem 4.4rem 10.6rem 7rem;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;    
+        }
+    
+    }
+    
+    &__title {
+        @include text (3.3rem, 700, rgba(43, 47, 54, 1));
+        line-height: 1.25;
+        margin-bottom: 4.7rem;
+    }
+    
+    &__subtitle {
+        @include text (2.6rem, 400, rgba(43, 47, 54, 1));
+        line-height: 1.268;
+        margin-bottom: 9rem;
+    }
+    
+    &__salary {
+        @include text (2.7rem, 700, rgba(43, 47, 54, 1));
+        margin-bottom: 2rem;
+    }
+    
+    &__btn {
+        width: 27.7rem;
+        height: 6rem;
+        padding: 0 2.3rem 0 2.3rem;
+        background: linear-gradient(0deg, #0199E4, #0199E4), linear-gradient(272.89deg, #4341CC -9.64%, #0199E4 92.79%);
+        border-radius: 1.6rem;
+
+        span {
+            color: #ffffff;
+            font-size: 1.7rem;
+            font-weight: 500;
+            margin-right: 0.8rem;
+        }
+
+        svg {
+            width: 1.1rem;
+            height: 1.1rem;
+            stroke: rgba(1, 153, 228, 1);
+        }
+
+        .btn__arrow {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+}
+
+
+
+.blog.blog-slider {
+    margin-bottom: 4rem;
+    .blog {
+
+
+        &__inner {
+            position: relative;
+
+            .swiper__arrows {
+                position: absolute;
+                right: -1rem;
+                top: -2rem;
+            }
+        }
+
+        &__title {
+            margin-bottom: 6.5rem;
+            
+        }
+
+        &__photo {
+            height: auto;
+        }
+
+        &__content {
+            margin-bottom: 5.1rem;
+        }
+
+        &__btn {
+            width: 24.7rem;
+            height: 6rem;
+            padding: 0 1.5rem 0 2.3rem;
+            background: linear-gradient(0deg, #0199E4, #0199E4), linear-gradient(272.89deg, #4341CC -9.64%, #0199E4 92.79%);
+            border-radius: 1.6rem;
+            margin-left: auto;
+    
+            span {
+                color: #ffffff;
+                font-size: 1.7rem;
+                font-weight: 500;
+                // margin-right: 2rem;
+            }
+    
+            svg {
+                width: 1.1rem;
+                height: 1.1rem;
+                stroke: rgba(1, 153, 228, 1);
+            }
+    
+            .btn__arrow {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+
+        }
+    }
+}

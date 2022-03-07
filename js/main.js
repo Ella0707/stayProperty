@@ -54,8 +54,8 @@ $(".real-estate__button-top").click(function(e) {
 
   $(".objects-box__like").click(function(e) {
     e.preventDefault();
-    $(".objects-box__like").removeClass('active');
-    $(this).addClass('active');
+    $(this).toggleClass('active');
+    // $(this).addClass('active');
   })
 
 
@@ -292,6 +292,19 @@ function sliderNumber() {
     $('.slider__number').text(currentSlide);
 }
 
+
+const videoSwiper = new Swiper('.blog-slider', {
+    slidesPerView: 2,
+    spaceBetween: 39,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.blog__slider-prev',
+        nextEl: '.blog__slider-next',
+    },
+
+
+});
 
 // function show(anything) {
 //     document.querySelector(".textBox").value = anything;

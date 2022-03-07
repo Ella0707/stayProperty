@@ -1,3 +1,31 @@
+.logo {
+
+    display: flex;
+    width: 27.1rem;
+    height: 6.5rem;
+
+    img {
+        width: 6.96rem;
+        height: 6.09rem;
+    }
+
+
+    &__text-wrap {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        width: 19.1rem;
+
+        svg {
+            &:not(:last-child) {
+                margin-bottom: 0.7rem;
+            }
+        }
+    }
+}
+
+
+
 .btn {
     display: flex;
     align-items: center;
@@ -33,9 +61,6 @@
 
         &.btn--white {
             background: linear-gradient(177.55deg, #FFFFFF 21.07%, rgba(255, 255, 255, 0.24) 181.18%);
-            svg {
-                stroke: rgba(222, 17, 23, 1);
-            }
         }
     }
 }
