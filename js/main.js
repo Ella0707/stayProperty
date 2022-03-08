@@ -59,7 +59,12 @@ $(".real-estate__button-top").click(function(e) {
   })
 
 
-  
+//   переключение класса в вакансиях
+$(".vacancies__item-name").click(function(e) {
+    e.preventDefault();
+    $(".vacancies__item-name").removeClass('active');
+    $(this).addClass('active');
+  })
 
 // слайдеры
 const objectSwiper = new Swiper('.objects-box__slider', {
@@ -302,8 +307,17 @@ const videoSwiper = new Swiper('.blog-slider', {
         prevEl: '.blog__slider-prev',
         nextEl: '.blog__slider-next',
     },
+});
 
+const subscribeSwiper = new Swiper('.subscribe__slider', {
+    slidesPerView: 3.5,
+    spaceBetween: 18,
+    speed: 800,
 
+    navigation: {
+        prevEl: '.subscribe__slider-prev',
+        nextEl: '.subscribe__slider-next',
+    },
 });
 
 // function show(anything) {
