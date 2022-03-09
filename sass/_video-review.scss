@@ -49,12 +49,12 @@
         padding: 5.3rem 1.4rem 2rem 3rem;
         position: relative;
 
-        &:nth-child(1) {
+        &.all-bg {
             background: linear-gradient(179.65deg, #D6E1F1 1.84%, #E6EEFB 47.03%, #F0F7FF 99.28%);
             height: 67.2rem;
         }
 
-        &:nth-child(2) {
+        &.medium-bg {
             box-shadow: 0.5rem 1.1rem 15.2rem rgba(40, 44, 78, 0.1);
             height: 55.4rem;
 
@@ -66,6 +66,30 @@
             .articles__item-subtitle {
                 width: 90%;
             }
+        }
+
+        &.mini-bg {
+            background: linear-gradient(179.65deg, #D6E1F1 1.84%, #E6EEFB 47.03%, #F0F7FF 99.28%);
+            padding: 5.3rem 2rem 10rem 3rem;
+
+            .articles__item-subtitle {
+                margin-bottom: 4.3rem;
+            }
+
+            img {
+                height: 20rem;
+                width: 16.3rem;
+                right: auto;
+                left: 0;
+                object-fit: contain;
+            }
+
+            .btn {
+                width: 15rem;
+                margin-left: auto;
+            }
+
+
         }
 
         &:not(:last-child) {

@@ -1,5 +1,28 @@
 .articles.channel {
     margin-bottom: 6rem;
+
+        .articles__right-item.all-bg {
+
+            .articles__item-title {
+                color: #ffffff;
+                position: relative;
+            }
+
+            .articles__item-subtitle {
+                color: #9FAAB4;
+                position: relative;
+
+            }
+
+            .btn {
+                position: relative;
+
+                span {
+                    color: #ffffff;
+
+                }
+            }
+        }
 }
 
 .banner-support {
@@ -14,14 +37,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
     }
     
     &__content {
         display: flex;
         align-items: center;
         margin-right: 15.9rem;
-    
     }
     
     &__img {
@@ -33,19 +54,11 @@
             height: 100%;
             object-fit: contain;
         }
-    
-    }
-    
-    &__title-wrap {
-
-
-    
     }
     
     &__title {
         @include text (4rem, 600, rgba(43, 47, 54, 1));
         margin-bottom: 1.2rem;
-    
     }
     
     &__subtitle {
@@ -54,7 +67,6 @@
     
     &__links {
         display: flex;
-    
     }
     
     &__btn {
@@ -94,11 +106,7 @@
 
 .subscribe {
 
-    
-    &__inner {
-    
-    }
-    
+    margin-bottom: 18rem;
 
     &__title-wrap {
         display: flex;
@@ -106,32 +114,16 @@
         justify-content: space-between;
         margin-bottom: 6rem;
     }
-    
-
-    &__title {
-    
-    }
-    
-    &__slider-prev {
-    
-    }
-    
-    &__slider-next {
-    
-    }
 
     &__slider {
         margin-bottom: 7.5rem;
     }
-    
-    &__slider-wrapper {
-    
-    }
-    
+
     &__slide {
         position: relative;
         border-radius: 3rem;
         height: 28.4rem;
+        cursor: pointer;
 
         img {
             position: absolute;
@@ -143,9 +135,6 @@
         }
     }
     
-    .swiper-slide {
-    }
-    
     &__btn {
         margin-left: auto;
         width: 18rem;
@@ -153,14 +142,6 @@
         span {
             color: rgba(43, 47, 54, 1);
         }
-    
-    }
-    
-    .btn {
-    }
-    .btn__arrow {
-    }
-    .btn--red {
     }
 }
 

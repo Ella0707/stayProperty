@@ -320,6 +320,18 @@ const subscribeSwiper = new Swiper('.subscribe__slider', {
     },
 });
 
+
+const articleSwiper = new Swiper('.articles__slider', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.articles__slider-prev',
+        nextEl: '.articles__slider-next',
+    },
+});
+
 // function show(anything) {
 //     document.querySelector(".textBox").value = anything;
 // }
@@ -340,9 +352,17 @@ const subscribeSwiper = new Swiper('.subscribe__slider', {
 
 
 
-// Споллер
+// Споллер faq
 $(document).ready(function () {
     $('.faq__spoller-title-wrap').click(function (event) {
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
+
+
+// Споллер  страница новости
+$(document).ready(function () {
+    $('.other-news__spoller-wrap').click(function (event) {
         $(this).toggleClass('active').next().slideToggle(300);
     });
 });
