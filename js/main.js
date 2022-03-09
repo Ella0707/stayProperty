@@ -366,3 +366,60 @@ $(document).ready(function () {
         $(this).toggleClass('active').next().slideToggle(300);
     });
 });
+
+
+
+
+
+
+
+
+
+
+// var swiper = new Swiper('.swiper-container', {
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//       },
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     autoplay: {
+//         delay: 100000,
+//         disableOnInteraction: false,
+//     },
+//     pagination: {
+//         el: '.swiper-number',
+//         type: 'fraction',
+//     },
+//   });
+
+  // Generate pagination bullets inside div with #bullets ID
+//   for (var i = 1; i < swiper.slides.length - 1; i++){
+//         if ( i === 1){ 
+//           // add active class if it is the first bullet
+//           $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'swiper-pagination-bullet-active' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
+//         } else {
+//           $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
+//         }         
+//   }
+
+  
+  // ADD ACTIVE CLASS TO THE CURRENT BULLET
+
+  // get all bullet elements
+//   var bullets = $('.swiper-pagination-bullet');
+
+//   swiper.on('slideChange', function () {
+//     // Get current slide from fraction pagination number
+//     var slide = "slide"+($('.swiper-pagination-current').html());
+//     // Remove active class from all bullets
+//     bullets.removeClass("swiper-pagination-bullet-active");
+//     // Check each bullet element if it has slideNumber class
+//     $.each(bullets, function (index, value) {
+//       if($(this).hasClass(slide)) {
+//         $(this).addClass("swiper-pagination-bullet-active");
+//         return false;
+//       }
+//     });
+//   });

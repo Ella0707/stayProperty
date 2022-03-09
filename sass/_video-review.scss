@@ -70,10 +70,11 @@
 
         &.mini-bg {
             background: linear-gradient(179.65deg, #D6E1F1 1.84%, #E6EEFB 47.03%, #F0F7FF 99.28%);
-            padding: 5.3rem 2rem 10rem 3rem;
+            padding: 4.3rem 2rem 10rem 3rem;
 
             .articles__item-subtitle {
-                margin-bottom: 4.3rem;
+                margin-bottom: 3rem;
+                width: 95%;
             }
 
             img {
