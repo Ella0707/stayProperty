@@ -321,6 +321,7 @@ const subscribeSwiper = new Swiper('.subscribe__slider', {
 });
 
 
+
 const articleSwiper = new Swiper('.articles__slider', {
     slidesPerView: 1,
     spaceBetween: 10,
@@ -329,6 +330,26 @@ const articleSwiper = new Swiper('.articles__slider', {
     navigation: {
         prevEl: '.articles__slider-prev',
         nextEl: '.articles__slider-next',
+    },
+});
+
+
+
+
+const newsSwiper = new Swiper('.articles__box-photo', {
+    slidesPerView: 1,
+    spaceBetween: 50,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.articles__prev',
+        nextEl: '.articles__next',
+    },
+
+    pagination: {
+        el: ".articles__box-pagination",
+        bullets: true,
+        clickable: true,
     },
 });
 
@@ -368,6 +389,12 @@ $(document).ready(function () {
 });
 
 
+// переключение класса в новостях
+$(".other-news__spoller-pagination-num").click(function(e) {
+    e.preventDefault();
+    $(".other-news__spoller-pagination-num").removeClass('active');
+    $(this).addClass('active');
+  })
 
 
 

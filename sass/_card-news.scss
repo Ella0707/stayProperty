@@ -1,0 +1,336 @@
+.articles.card-news {
+    // margin-bottom: 6rem;
+
+    .articles {
+
+
+        
+        &__inner {
+        
+        }
+        
+        &__text-block {
+        
+        }
+        
+        &__title {
+            line-height: 1.3;
+            margin-bottom: 5.8rem;
+        
+        }
+        
+        &__video-wrap {
+            margin-bottom: 4rem;
+
+            span {
+                @include text (1.7rem, 400, #8A91AA);
+            }
+        }
+        
+        &__video {
+            border-radius: 2.26rem;
+            width: 100%;
+            height: 77.7rem;
+            margin-bottom: 1.2rem;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: inherit;
+            }
+        }
+        
+        &__par {
+        
+        }
+        
+        &__slider {
+            border-radius: 2.26rem;
+            width: 100%;
+            height: 77.7rem;
+            margin-bottom: 5rem;
+            position: relative;
+
+            .swiper__arrows {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 90%;
+                z-index: 2;
+                left: 7rem;
+                right: 7rem;
+            }
+        }
+
+        
+
+        
+        &__slider-prev {
+            width: 5rem;
+            height: 5rem;
+        
+        }
+    
+        
+        &__slider-next {
+            width: 6.5rem;
+            height: 6.5rem;
+        
+        }
+        
+        &__slider-wrapper {
+        
+        }
+      
+        
+        &__slide {
+            height: 100%;
+            width: 100%;
+            border-radius: inherit;
+
+        
+        }
+        
+        &__right-item:not(:last-child) {
+            margin-bottom: 8.5rem;
+        }
+    }
+}
+
+
+.other-news {
+    margin-bottom: 15rem;
+
+    &__inner {
+        padding-bottom: 4rem;
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 6.2rem;
+    }
+
+
+    &__spoller {
+        width: 100%;
+    }
+
+    &__spoller-subtitle-wrap {
+        display: flex;
+        justify-content: space-between;
+        @include text (1.8rem, 400, #8A91AA);
+
+
+        width: 90rem;
+        margin-bottom: 1rem;
+
+        &.bottom {
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    &__spoller-wrap {
+        display: flex;
+        width: 100%;
+        margin-bottom: 4rem;
+        position: relative;
+        cursor: pointer;
+
+        &.active {
+
+            margin-bottom: 4rem;
+
+            .other-news__btn {
+                background: rgba(1, 153, 228, 1);
+
+                svg {
+                    fill: #ffffff;
+                    transform: rotateX(180deg);
+                }
+            }
+
+            .other-news__spoller-title {
+                @include text (2rem, 700, #000000);
+            }
+
+            .other-news__spoller-scenery .slice {
+                height: 43%;
+            }
+
+            .other-news__spoller-text {
+                padding-bottom: 3rem;
+            }
+        }
+    }
+
+    &__spoller-title {
+        @include text (3.7rem, 700, #000000);
+        transition: 0.5s;
+        width: 80rem;
+        line-height: 1.3;
+    }
+
+    &__spoller-text {
+        @include text (2.2rem, 600, #000000);
+        line-height: 1.45;
+        background: #FFFFFF;
+        padding: 4.2rem 0 4rem 4rem;
+        border-radius: 3rem 0 3rem 3rem;
+        box-shadow: -5rem 0.4rem 10rem rgb(76 70 203 / 10%);
+        width: 100%;
+    }
+
+    &__spoller-scenery {
+
+        .slice {
+            height: 60%;
+            background: #FFFFFF;
+            border-radius: 0 3rem 3rem 0;
+            transition: 0.5s;
+        }
+    }
+
+    &__btn {
+        width: 6.5rem;
+        height: 6.5rem;
+        background: #ffffff;
+        border-radius: 1.6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 4px 4px 50px rgba(76, 70, 203, 0.1);
+        position: relative;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        transition: 0.8s;
+
+        svg {
+            fill: #2B2F36;
+            transition: 0.5s;
+        }
+
+        .corner {
+            position: absolute;
+            top: -1.5rem;
+            left: -1.5rem;
+            z-index: -1;
+
+            &::before {
+                background: #fafaff;
+            }
+        }
+    }
+
+    &__spoller-content {
+        background: #FFFFFF;
+        border-radius: 3rem;
+        padding: 3rem 3.3rem 3.6rem 4rem;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 6rem;
+        display: none;
+    }
+
+    &__spoller-content-title {
+        @include text (3.7rem, 700, #000000);
+        width: 80rem;
+        margin-bottom: 5.2rem;
+    }
+
+    &__spoller-btn {
+        width: 23rem;
+
+        position: absolute;
+        top: 4rem;
+        right: 12rem;
+
+        span {
+            color: #2B2F36;
+        }
+    }
+
+    &__spoller-img {
+        width: 100%;
+        height: 68.5rem;
+        border-radius: 3.8rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+
+    &__spoller-content-absolute {
+        width: 37.5rem;
+        height: 34.3rem;
+        padding: 4.3rem 1.5rem 20rem 23rem;
+        position: absolute;
+        right: -4rem;
+        top: 22.5rem;
+
+        svg {
+            width: 37.5rem;
+            height: 34.3rem;
+
+            position: absolute;
+            top: -6rem;
+            right: -13rem;
+        }
+    }
+
+    &__absolute-subtitle {
+        @include text (1.6rem, 400, rgba(138, 145, 170, 1));
+        position: relative;
+        text-align: right;
+        margin-bottom: 1rem;
+    }
+
+    &__absolute-title {
+        @include text (1.7rem, 600, rgba(43, 47, 54, 1));
+        margin-left: auto;
+        text-align: right;
+        position: relative;
+    }
+
+    &__spoller-pagination {
+        display: flex;
+        align-items: center;
+        @include text (2rem, 400, #BDC1CF);
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__spoller-pagination-num {
+        cursor: pointer;
+        margin-right: 1.5rem;
+        transition: 0.01s;
+
+        &.active {
+            @include text (4rem, 600, #2B2F36);
+        }
+
+        &:first-child {
+            margin-right: 11.6rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 6rem;
+                height: 0.2rem;
+                background-color: #D4DAEC;
+
+                position: absolute;
+
+                right: -9rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
