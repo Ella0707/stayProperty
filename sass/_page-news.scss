@@ -6,9 +6,7 @@
 
         &__title {
             margin-bottom: 6rem;
-
         }
-
 
         &__photo-block {
             width: 100%;
@@ -59,15 +57,12 @@
 
         &__text-wrap {
             width: 88rem;
-
         }
 
         &__text-title {
             @include text (3.7rem, 700, #FFFFFF);
             margin-bottom: 2.5rem;
             line-height: 1.268;
-
-
         }
 
         &__text {
@@ -75,21 +70,15 @@
             line-height: 1.268;
         }
 
-        &__inner {}
-
-        &__text-block {}
-
         &__box {
             display: flex;
             justify-content: flex-end;
             position: relative;
             width: 100%;
 
-
             &:not(:last-child) {
                 margin-bottom: 4rem;
             }
-
         }
 
         &__box-photo {
@@ -100,8 +89,6 @@
             top: 0;
             left: 0;
             bottom: 0;
-            // z-index: -1;
-
 
             .swiper__arrows {
                 position: absolute;
@@ -187,7 +174,6 @@
 
             position: relative;
             z-index: 3;
-
         }
 
         &__box-date-wrap {
@@ -198,26 +184,18 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-
         }
-
-        &__box-place {}
-
-        &__box-date {}
 
         &__box-title {
             @include text (2rem, 700, #2B2F36);
             width: 80%;
             margin-bottom: 4.5rem;
-
         }
 
         &__box-subtitle {
             @include text (1.8rem, 400, #2B2F36);
             margin-bottom: 2.6rem;
             line-height: 1.268;
-
-
         }
 
         &__box-btn {
@@ -227,9 +205,7 @@
             span {
                 color: #2B2F36;
             }
-
         }
-
 
         &__right-item:last-child {
             padding: 4.3rem 2rem 10rem 3rem; 
@@ -240,3 +216,73 @@
         }
     }
 }
+
+
+.other-news.page-news {
+    margin-bottom: 17rem;
+}
+
+
+.custom {
+    margin-bottom: 17rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 180rem;
+        background: linear-gradient(175.32deg, #E6EEFB 4.9%, #EBF4FF 96.86%), #ECECF5;
+        border-radius: 0 22rem 5rem 0;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        transform: skewX(154deg);
+        left: -15rem;
+        z-index: -1;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 20rem;
+        width: 43rem;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    &__inner {
+        padding: 3.7rem 41rem 8rem 0;
+    }
+    
+    &__title {
+        margin-bottom: 11.4rem;
+    }
+    
+    &__content {
+        margin-left: auto;
+        width: 50rem;
+    }
+    
+    &__text {
+        @include text (1.8rem, 400, rgba(138, 145, 170, 1));
+        margin-bottom: 3.5rem;
+    }
+    
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 87%;
+    }
+    
+    &__btn {
+
+        span {
+            color: rgba(43, 47, 54, 1);
+        }
+    }
+}
+
+.partner.page-news {
+    margin-bottom: 17rem;
+}
+
