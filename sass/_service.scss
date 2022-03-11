@@ -1,0 +1,253 @@
+.banner.no-img.service {
+    margin-bottom: 20rem;
+}
+
+
+.service {
+    margin-bottom: 18rem;
+
+   
+    &__inner {
+   
+    }
+   
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+   
+    }
+   
+    &__top-text {
+        width: 72.7rem;
+    }
+   
+    &__title {
+        margin-bottom: 4rem;
+    }
+
+   
+    &__par {
+        @include text (2.4rem, 300, #2B2F36);
+        line-height: 1.267;
+   
+    }
+   
+    &__top-img {
+        width: 75.7rem;
+        height: 35.8rem;
+        border-radius: 2.8rem;
+
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+   
+    }
+   
+    &__main-title {
+        @include text (3.5rem, 700, #2B2F36);
+        margin-bottom: 3.5rem;
+
+   
+    }
+   
+  
+
+    &__main {
+    }
+
+    &__main-item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+    }
+
+
+    &__spoller {
+        width: 100%;
+    }
+
+    &__spoller-title-text {
+        display: flex;
+        width: 65rem;
+    }
+    
+    &__spoller-title-wrap {
+        display: flex;
+        margin-bottom: 2rem;
+        position: relative;
+        cursor: pointer;
+
+        &.active {
+
+            .service__btn {
+                background: rgba(1, 153, 228, 1);
+
+                svg {
+                    fill: #ffffff;
+                    transform: rotateX(180deg);
+                }
+            }
+        }
+    }
+    
+    &__spoller-title {
+        @include text (2.2rem, 600, #000000);
+        line-height: 1.45;
+        background:#FFFFFF;
+        padding: 4.2rem 0 3.9rem 3.5rem;
+        border-radius: 3rem 0 3rem 3rem;
+        box-shadow: -5rem 0.4rem 10rem rgb(76 70 203 / 10%);
+        width: 100%;
+
+    }
+
+    &__spoller-scenery {
+
+        .slice {
+            height: 3.5rem;
+            background:#FFFFFF;
+            border-radius: 0 3rem 3rem 0;
+        }
+    }
+
+    &__btn {
+        width: 6.5rem;
+        height: 6.5rem;
+        background: #ffffff;
+        border-radius: 1.6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        box-shadow: 4px 4px 50px rgba(76, 70, 203, 0.1);
+        position: relative;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        transition: 0.8s;
+
+        svg {
+            fill: #2B2F36;
+            transition: 0.5s;
+        }
+
+        .corner {
+            position: absolute;
+            top: -1.5rem;
+            left: -1.5rem;
+            z-index: -1;
+
+            &::before {
+                background: #fafaff;
+            }
+        }
+    }
+    
+    &__spoller-content {
+        // padding: 3.6rem 6.3rem 3.6rem 3.5rem;
+
+        position: relative;
+        z-index: 1;
+        margin-bottom: 3rem;
+        display: none;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75.7rem;
+    }
+
+  
+   
+    &__spoller-content-wrap {
+        padding: 3.5rem 4.6rem 4.6rem 4.6rem;
+        background: #FFFFFF;
+        border-radius: 3rem;
+        @include text (1.8rem, 400, #8A91AA);
+        line-height: 1.267;
+        margin-bottom: 4rem;
+    }
+
+    &__spoller-content-top {
+        // display: flex;
+    }
+
+    &__spoller-content-img {
+        width: 26.5rem;
+        height: 29.6rem;
+        border-radius: 2rem;
+        margin: 0 3rem 0rem 0;
+        float: left;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+    }
+
+    &__spoller-content-text {
+        margin-bottom: 1.4rem;
+        padding-top: 1rem;
+    }
+
+    &__spoller-text {
+        
+        margin-bottom: 4rem;
+
+        &.substrate {
+            padding: 3rem;
+            background: #F0F0F9;
+            box-shadow: inset 0px 0px 0.7rem #CACAE1;
+            border-radius: 2rem;
+            margin-bottom: 2.2rem;
+        }
+
+        &:last-child {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__btn-text{
+        width: 17.7rem;
+        height: 6rem;
+        background: linear-gradient(0deg, #E82E3D, #E82E3D), linear-gradient(272.89deg, #4341CC -9.64%, #0199E4 92.79%);
+        border-radius: 1.6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    &__spoller-catalog {
+        width: 40.9rem;
+        background: #FFFFFF;
+        box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
+        border-radius: 3rem;
+        padding: 3.3rem 2.8rem;
+    }
+
+    &__spoller-catalog-title {
+        @include text (2rem, 600, #2B2F36);
+        margin-bottom: 2.3rem;
+    }
+
+    &__btn-catalog {
+
+        span {
+            color: #2B2F36;
+        }
+    }
+}
+
+
+.blog.blog-slider.service {
+    margin-bottom: 14rem;
+}

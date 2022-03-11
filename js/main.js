@@ -55,7 +55,6 @@ $(".real-estate__button-top").click(function(e) {
   $(".objects-box__like").click(function(e) {
     e.preventDefault();
     $(this).toggleClass('active');
-    // $(this).addClass('active');
   })
 
 
@@ -126,35 +125,35 @@ const realSwiper = new Swiper('.real-estate__slider', {
 });
 
 
-const rewiewsSwiper = new Swiper('.rewiews__slider', {
-    slidesPerView: 3,
-    spaceBetween: 109,
-    speed: 800,
-    navigation: {
-        prevEl: '.rewiews__slider-prev',
-        nextEl: '.rewiews__slider-next',
-    },
+// const rewiewsSwiper = new Swiper('.rewiews__slider', {
+//     slidesPerView: 3,
+//     spaceBetween: 109,
+//     speed: 800,
+//     navigation: {
+//         prevEl: '.rewiews__slider-prev',
+//         nextEl: '.rewiews__slider-next',
+//     },
 
-    pagination: {
-        el: ".rewiews__pagination",
-        bullets: true,
-        clickable: true,
-    },
-    on: {
-        init: rewiewsNumbers,
-        slideChange: rewiewsNumbers
-    },
-});
+//     pagination: {
+//         el: ".rewiews__pagination",
+//         bullets: true,
+//         clickable: true,
+//     },
+//     on: {
+//         init: rewiewsNumbers,
+//         slideChange: rewiewsNumbers
+//     },
+// });
 
 
-function rewiewsNumbers() {
-    let currentSlide = this.realIndex + 1;
-    if (currentSlide < 10) {
-        currentSlide = '0' + currentSlide
-    }
+// function rewiewsNumbers() {
+//     let currentSlide = this.realIndex + 1;
+//     if (currentSlide < 10) {
+//         currentSlide = '0' + currentSlide
+//     }
 
-    $('.rewiews__numbers').text(currentSlide);
-}
+//     $('.rewiews__numbers').text(currentSlide);
+// }
 
 
 const liveSwiper = new Swiper('.live__slider', {
@@ -380,6 +379,52 @@ $(document).ready(function () {
     });
 });
 
+// Споллер саппорт
+
+$('.free').on('click', function(e) {
+    e.preventDefault();
+
+    // Add the correct active class
+    if($(this).closest('.free').hasClass('active')) {
+        // Remove active classes
+        $('.free').removeClass('active');
+    } else {
+        // Remove active classes
+        $('.free').removeClass('active');
+
+        // Add the active class
+        $(this).closest('.free').addClass('active');
+    }
+
+    // Show the content
+    var $content = $(this).next();
+    $content.slideToggle(300);
+    $('.free-content').not($content).slideUp('fast');
+});
+
+
+
+$('.paid').on('click', function(e) {
+    e.preventDefault();
+
+    // Add the correct active class
+    if($(this).closest('.paid').hasClass('active')) {
+        // Remove active classes
+        $('.paid').removeClass('active');
+    } else {
+        // Remove active classes
+        $('.paid').removeClass('active');
+
+        // Add the active class
+        $(this).closest('.paid').addClass('active');
+    }
+
+    // Show the content
+    var $content = $(this).next();
+    $content.slideToggle(300);
+    $('.paid-content').not($content).slideUp('fast');
+});
+
 
 // Споллер  страница новости
 $(document).ready(function () {
@@ -390,63 +435,73 @@ $(document).ready(function () {
 
 
 // переключение класса в новостях
-$(".other-news__spoller-pagination-num").click(function(e) {
+$(".other-news__spoller-pagination-num").click(function (e) {
     e.preventDefault();
     $(".other-news__spoller-pagination-num").removeClass('active');
     $(this).addClass('active');
-  })
+})
 
 
 
 
+// Двойные буллеты в слайдере
+
+const rewiewsSwiper = new Swiper('.rewiews__slider', {
+    slidesPerView: 3,
+    spaceBetween: 109,
+    speed: 800,
+    navigation: {
+        prevEl: '.rewiews__slider-prev',
+        nextEl: '.rewiews__slider-next',
+    },
+
+    // pagination: {
+    //     el: '.swiper-number',
+    //     type: 'fraction',
+    // },
+
+    pagination: {
+        el: ".swiper-bullets",
+        bullets: true,
+        clickable: true,
+    },
+});
+
+function sliderNumber() {
+    let currentSlide = this.realIndex + 1;
+    if (currentSlide < 10) {
+        currentSlide = '0' + currentSlide
+    }
+
+    // $('.swiper-bullets-two').text(currentSlide);
+}
+
+ // Generate pagination bullets inside div with #bullets ID
+ for (var i = 1; i <rewiewsSwiper.slides.length - 1; i++){
+    if ( i === 1){ 
+      // add active class if it is the first bullet
+      $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'bullets-two-bullet-active' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
+    } else {
+      $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
+    }         
+}
 
 
+// // ADD ACTIVE CLASS TO THE CURRENT BULLET
 
+// // get all bullet elements
+// var bullet = $('.swiper-bullets-two');
 
-// var swiper = new Swiper('.swiper-container', {
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//       },
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     loop: true,
-//     autoplay: {
-//         delay: 100000,
-//         disableOnInteraction: false,
-//     },
-//     pagination: {
-//         el: '.swiper-number',
-//         type: 'fraction',
-//     },
-//   });
-
-  // Generate pagination bullets inside div with #bullets ID
-//   for (var i = 1; i < swiper.slides.length - 1; i++){
-//         if ( i === 1){ 
-//           // add active class if it is the first bullet
-//           $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'swiper-pagination-bullet-active' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
-//         } else {
-//           $('#bullets').append('<span class="swiper-pagination-bullet' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
-//         }         
+// rewiewsSwiper.on('slideChange', function () {
+// // Get current slide from fraction pagination number
+// var slide = "slide"+($('.swiper-pagination-current').html());
+// // Remove active class from all bullets
+// bullet.removeClass("swiper-pagination-bullet-active");
+// // Check each bullet element if it has slideNumber class
+// $.each(bullet, function () {
+//   if($(this).hasClass(slide)) {
+//     $(this).addClass("swiper-pagination-bullet-active");
+//     return false;
 //   }
-
-  
-  // ADD ACTIVE CLASS TO THE CURRENT BULLET
-
-  // get all bullet elements
-//   var bullets = $('.swiper-pagination-bullet');
-
-//   swiper.on('slideChange', function () {
-//     // Get current slide from fraction pagination number
-//     var slide = "slide"+($('.swiper-pagination-current').html());
-//     // Remove active class from all bullets
-//     bullets.removeClass("swiper-pagination-bullet-active");
-//     // Check each bullet element if it has slideNumber class
-//     $.each(bullets, function (index, value) {
-//       if($(this).hasClass(slide)) {
-//         $(this).addClass("swiper-pagination-bullet-active");
-//         return false;
-//       }
-//     });
-//   });
+// });
+// });

@@ -106,3 +106,29 @@
     justify-content: center;
     height: 6rem;
 }
+
+.swiper-bullets-two {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    .bullets-two-bullet {
+        @include text (2rem, 400, #BDC1CF);
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+
+        &:first-child {
+            margin-right: 4rem;
+
+            position: relative;
+        }
+    }
+
+    .bullets-two-bullet-active {
+        @include text (4rem, 600, #2B2F36);
+
+    }
+}
+
