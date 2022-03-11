@@ -379,20 +379,16 @@ $(document).ready(function () {
     });
 });
 
-// Споллер саппорт
 
+
+// Споллер саппорт
 $('.free').on('click', function(e) {
     e.preventDefault();
 
-    // Add the correct active class
     if($(this).closest('.free').hasClass('active')) {
-        // Remove active classes
         $('.free').removeClass('active');
     } else {
-        // Remove active classes
         $('.free').removeClass('active');
-
-        // Add the active class
         $(this).closest('.free').addClass('active');
     }
 
@@ -403,19 +399,13 @@ $('.free').on('click', function(e) {
 });
 
 
-
 $('.paid').on('click', function(e) {
     e.preventDefault();
 
-    // Add the correct active class
     if($(this).closest('.paid').hasClass('active')) {
-        // Remove active classes
         $('.paid').removeClass('active');
     } else {
-        // Remove active classes
         $('.paid').removeClass('active');
-
-        // Add the active class
         $(this).closest('.paid').addClass('active');
     }
 
@@ -423,6 +413,25 @@ $('.paid').on('click', function(e) {
     var $content = $(this).next();
     $content.slideToggle(300);
     $('.paid-content').not($content).slideUp('fast');
+});
+
+
+
+// Регулировка высоты контента в секции поддержки
+$('.service__spoller-title-wrap').on('click', function(e) {
+    e.preventDefault();
+
+    if($(this).closest('.free').hasClass('active')) {
+        $('.item-free').addClass('open');
+    } else {
+        $('.item-free').removeClass('open');
+    }
+
+    if($(this).closest('.paid').hasClass('active')) {
+        $('.item-paid').addClass('open-bottom');
+    } else {
+        $('.item-paid').removeClass('open-bottom');
+    }
 });
 
 

@@ -5085,12 +5085,16 @@ input[type=number] {
 }
 .service__main-item {
   position: relative;
-}
-.service__main-item:not(:last-child) {
   margin-bottom: 5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.service__spoller {
-  width: 100%;
+.service__main-item.open {
+  margin-bottom: 30rem;
+}
+.service__main-item.open-bottom {
+  margin-bottom: 40rem;
+  margin-top: 35rem;
 }
 .service__spoller-title-text {
   display: -webkit-box;

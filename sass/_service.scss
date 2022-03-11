@@ -61,15 +61,35 @@
 
     &__main-item {
         position: relative;
+        margin-bottom: 5rem;
+        transition: 0.5s;
 
-        &:not(:last-child) {
-            margin-bottom: 5rem;
-        }
+            &.open {
+                margin-bottom: 30rem;
+
+            }
+
+            &.open-bottom {
+                margin-bottom: 40rem;
+                margin-top: 35rem;
+            }
     }
 
 
+    // .item-free.open + .item-paid.open-bottom{
+    //     margin-top: 0;
+    // }
+
+    // .item-paid.open-bottom + .item-free.open{
+    //     margin-top: 0;
+    // }
+
     &__spoller {
-        width: 100%;
+        // width: 100%;
+
+        // &.open {
+        //         margin-bottom: 20rem;
+        // }
     }
 
     &__spoller-title-text {
