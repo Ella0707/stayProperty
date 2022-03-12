@@ -382,38 +382,38 @@ $(document).ready(function () {
 
 
 // Споллер саппорт
-$('.free').on('click', function(e) {
+$('.service__spoller-title-wrap').on('click', function(e) {
     e.preventDefault();
 
-    if($(this).closest('.free').hasClass('active')) {
-        $('.free').removeClass('active');
+    if($(this).closest('.service__spoller-title-wrap').hasClass('active')) {
+        $('.service__spoller-title-wrap').removeClass('active');
     } else {
-        $('.free').removeClass('active');
-        $(this).closest('.free').addClass('active');
+        $('.service__spoller-title-wrap').removeClass('active');
+        $(this).closest('.service__spoller-title-wrap').addClass('active');
     }
 
     // Show the content
     var $content = $(this).next();
     $content.slideToggle(300);
-    $('.free-content').not($content).slideUp('fast');
+    $('.service__spoller-content').not($content).slideUp('fast');
 });
 
 
-$('.paid').on('click', function(e) {
-    e.preventDefault();
+// $('.paid').on('click', function(e) {
+//     e.preventDefault();
 
-    if($(this).closest('.paid').hasClass('active')) {
-        $('.paid').removeClass('active');
-    } else {
-        $('.paid').removeClass('active');
-        $(this).closest('.paid').addClass('active');
-    }
+//     if($(this).closest('.paid').hasClass('active')) {
+//         $('.paid').removeClass('active');
+//     } else {
+//         $('.paid').removeClass('active');
+//         $(this).closest('.paid').addClass('active');
+//     }
 
     // Show the content
-    var $content = $(this).next();
-    $content.slideToggle(300);
-    $('.paid-content').not($content).slideUp('fast');
-});
+//     var $content = $(this).next();
+//     $content.slideToggle(300);
+//     $('.paid-content').not($content).slideUp('fast');
+// });
 
 
 
@@ -421,11 +421,11 @@ $('.paid').on('click', function(e) {
 $('.service__spoller-title-wrap').on('click', function(e) {
     e.preventDefault();
 
-    if($(this).closest('.free').hasClass('active')) {
-        $('.item-free').addClass('open');
-    } else {
-        $('.item-free').removeClass('open');
-    }
+    // if($(this).closest('.free').hasClass('active')) {
+    //     $('.item-free').addClass('open');
+    // } else {
+    //     $('.item-free').removeClass('open');
+    // }
 
     if($(this).closest('.paid').hasClass('active')) {
         $('.item-paid').addClass('open-bottom');

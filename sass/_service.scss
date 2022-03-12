@@ -50,11 +50,7 @@
     &__main-title {
         @include text (3.5rem, 700, #2B2F36);
         margin-bottom: 3.5rem;
-
-   
     }
-   
-  
 
     &__main {
     }
@@ -64,32 +60,18 @@
         margin-bottom: 5rem;
         transition: 0.5s;
 
-            &.open {
-                margin-bottom: 30rem;
+            // &.open {
 
-            }
+            // }
 
             &.open-bottom {
                 margin-bottom: 40rem;
-                margin-top: 35rem;
             }
     }
 
 
-    // .item-free.open + .item-paid.open-bottom{
-    //     margin-top: 0;
-    // }
-
-    // .item-paid.open-bottom + .item-free.open{
-    //     margin-top: 0;
-    // }
-
     &__spoller {
-        // width: 100%;
-
-        // &.open {
-        //         margin-bottom: 20rem;
-        // }
+     
     }
 
     &__spoller-title-text {
