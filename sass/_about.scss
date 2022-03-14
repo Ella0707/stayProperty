@@ -1,0 +1,133 @@
+.about {
+    margin-bottom: 17.4rem;
+
+    &__title {
+        margin-bottom: 6rem;
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__text-block {
+        width: 76rem;
+        @include text (2.4rem, 300, #2B2F36);
+        line-height: 1.267;
+        margin-right: 3.7rem;
+
+        mark {
+            background: rgba(255, 245, 0, 0.45);
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+
+            }
+
+            &:last-child {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    
+    &__text-block-link {
+        @include text (1.5rem, 400, #0199E4);
+        padding-bottom: 0.5rem;
+        border-bottom: 0.1rem solid #0199E4;
+    }
+    
+    &__photo-block {
+        position: relative;
+        height: 70rem;
+
+        img {
+            width: 71.8rem;
+            height: 64.4rem;
+            border-radius: 4.5rem;
+            object-fit: cover;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+    }
+   
+    .banner__btn-video.about {
+        position: absolute;
+        bottom: 0;
+        left: -2rem;
+        margin-bottom: 0;
+        box-shadow:1rem 2rem 5rem rgba(83, 205, 243, 0.25);
+        background: #0199E4; 
+    }
+    
+    &__photo-text {
+        width: 43.7rem;
+        height: 25.5rem;
+        background-color: #0199E4;
+        border-radius: 4.5rem 0 0 0; 
+        padding: 4.7rem 2rem 4.9rem 4.4rem;   
+        margin: auto 0 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+    
+    &__photo-text-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    &__photo-text-title {
+        @include text (1.7rem, 400, #FFFFFF);
+        width: 21.7rem;
+    }
+    
+    &__photo-text-value {
+        @include text (3.1rem, 400, #FFFFFF);
+    
+    }
+}
+
+
+.staff {
+    margin-bottom: 20.8rem;
+    
+    
+    &__title {
+        margin-bottom: 6rem;
+    }
+    
+    &__subtitle-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 7.2rem;
+        width: 100%;
+    }
+    
+    &__subtitle {
+        @include text (2.4rem, 300, #2B2F36);
+        width: 90rem;
+    }
+
+    
+    &__slider {
+        overflow: visible;
+    }
+
+    &__slide {
+        &.swiper-slide {
+            transform: none;
+        }
+    }
+}
+
+ 

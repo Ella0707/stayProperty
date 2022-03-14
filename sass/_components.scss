@@ -151,7 +151,7 @@
     
     &__item {
         width: 49.5rem;
-        padding: 0 2rem 2rem 2rem;
+        padding: 0 2rem 5rem 2rem;
 
         display: flex;
         flex-direction: column;
@@ -173,6 +173,12 @@
             left: 0;
             z-index: -1;
         }
+
+        &:hover {
+                .worker__quote {
+                    display: block;
+                }
+        }
     }
     
     &__img {
@@ -181,9 +187,8 @@
         border: 0.4rem solid #FFFFFF;
         filter: drop-shadow(2rem 2rem 10rem rgba(40, 44, 78, 0.15));
         border-radius: 50%;
-        margin-bottom: 5.6rem;
+        margin-bottom: 5rem;
         cursor: pointer;
-        position: relative;
 
         img {
             height: 100%;
@@ -192,24 +197,18 @@
         }
 
 
-        &:hover {
-            .worker__quote {
-                display: block;
-            }
-        }
+       
     
     }
 
 
     &__quote {
-        width: 36.9rem;
-
         position: absolute;
-        top: 1rem;
-        right: -35rem;
+        top: -1.5rem;
+        right: -16rem;
         z-index: 2;
 
-        // display: none;
+        display: none;
 
         &::before {
             content: "";
@@ -223,7 +222,6 @@
             left: -3rem;
             transform: rotate(135deg);
         }
-    
     }
     
     &__quote-text-wrap {
@@ -238,6 +236,8 @@
 
         &:last-child {
             margin-left: auto;
+            width: 3rem;
+            transform: rotate(180deg);
         }
     }
 
@@ -249,7 +249,7 @@
     
     &__name {
         @include text (3.57rem, 600, #2B2F36);
-        margin-bottom: 5rem;
+        margin-bottom: 5.5rem;
     
     }
     
@@ -262,14 +262,15 @@
     
     &__tel-wrap {
         display: flex;
+        align-items: center;
+        margin-bottom: 3.2rem;
     
     }
     
     &__tel-img {
         width: 2.4rem;
         height: 2.4rem;
-        margin-right: 0.8rem;
-        margin-bottom: 3.5rem;
+        margin-right: 1.2rem;
 
         img {
             height: 100%;
@@ -286,14 +287,14 @@
     
     &__language-wrap {
         display: flex;
-    
+        align-items: center;
+        margin-bottom: 2rem;
     }
     
     &__language-img {
         width: 2.4rem;
         height: 2.4rem;
         margin-right: 0.8rem;
-        margin-bottom: 3.5rem;
 
         img {
             height: 100%;
@@ -305,21 +306,21 @@
     
     &__language {
         @include text (1.8rem, 400, #8A91AA);
+        width: 25rem;
 
     
     }
     
     &__email-wrap {
         display: flex;
-    
-    
+        align-items: center;
+        margin-bottom: 5rem;
     }
     
     &__email-img {
         width: 2.4rem;
         height: 2.4rem;
         margin-right: 0.8rem;
-        margin-bottom: 3.5rem;
 
         img {
             height: 100%;

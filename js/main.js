@@ -352,6 +352,17 @@ const newsSwiper = new Swiper('.articles__box-photo', {
     },
 });
 
+const staffSwiper = new Swiper('.staff__slider', {
+    slidesPerView: 3,
+    spaceBetween: 37,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.staff__slider-prev',
+        nextEl: '.staff__slider-next',
+    },
+});
+
 // function show(anything) {
 //     document.querySelector(".textBox").value = anything;
 // }

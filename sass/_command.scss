@@ -1,7 +1,10 @@
 
-
+.partner.command {
+    margin-bottom: 17rem;
+}
 
 .command {
+    margin-bottom: 17rem;
 
     
     &__inner {
@@ -9,11 +12,7 @@
     }
     
     &__top {
-        // display: flex;
-        // align-items: center;
-        // justify-content: space-between;
-        // margin-bottom: 10rem;
-        margin: 0 auto 10rem auto ;
+        margin: 0 auto 9rem auto ;
     
     }
     
@@ -21,11 +20,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 96.3rem;
-        margin: 0 auto;
+        width: 96rem;
+        margin: 0 auto 7.5rem auto;
 
         @include text (2rem, 700, #2B2F36);
-        margin-bottom: 8rem;
         cursor: pointer;
 
     
@@ -38,6 +36,8 @@
     &__top-address {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+
 
         @include text (1.6rem, 400, #8A91AA);
 
@@ -55,16 +55,21 @@
     &__top-address-name {
         display: flex;
         align-items: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-right: 2.5rem;
     }
     
     &__top-tel {
         display: flex;
         align-items: center;
+        margin-right: 1.5rem;
     }
     
     &__address-value {
         display: flex;
         align-items: center;
+        margin-right: 4rem;
     }
     
     &__top-address-img {
@@ -80,8 +85,6 @@
         box-sizing: border-box;
         box-shadow: 0.4rem 0.4rem 5rem rgba(76, 70, 203, 0.1);
         border-radius: 1.6rem;
-
-        margin-left: 1rem;
 
         img {
             height: 1.5rem;
@@ -99,4 +102,80 @@
     }
 
 }
+
+
+
+
+.order-video.command {
+
+    background: linear-gradient(179.65deg, #D6E1F1 1.84%, #E6EEFB 47.03%, #F0F7FF 99.28%);
+
+    .order-video {
+
+
+        &__bg {
+            width: 25.4rem;
+            height: 35.7rem;
+            object-fit: contain;
+            left: 22.7rem;
+            top: auto;
+            bottom: 0;
+            right: auto;
+            z-index: 1;
+
+        }
+        
+        
+        &__inner {
+            padding-top: 5rem;
+            position: relative;
+        
+        }
+        
+        &__title {
+            margin-right: 14rem;
+        }
+        
+        &__comment {
+            height: 21.7rem;
+            border-radius: 4rem;
+            padding: 1.4rem 2rem 1.4rem 3.5rem;
+        }
+        
+      
+        &__loading-wrap {
+            display: flex;
+            align-items: center;
+        }
+        
+        &__loading-item {
+
+            &:not(:last-child) {
+                margin-right: 3.2rem;
+            }
+            
+            a {
+                display: inline-flex;
+                align-items: center;
+                padding-bottom: 0.7rem;
+                border-bottom: 0.1rem solid #8A91AA;
+                @include text (1.7rem, 500, #8A91AA);
+
+                img {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+        
+        &__loading-title {
+            @include text (2rem, 700, #2B2F36);
+            margin-bottom: 1.5rem;
+        }
+    }
+} 
+
+
+
 
