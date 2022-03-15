@@ -250,6 +250,8 @@
     &__name {
         @include text (3.57rem, 600, #2B2F36);
         margin-bottom: 5.5rem;
+        width: 78%;
+        text-align: center;
     
     }
     
