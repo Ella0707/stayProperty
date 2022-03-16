@@ -4474,6 +4474,7 @@ input[type=number] {
 
 .blog.blog-slider {
   margin-bottom: 4rem;
+  overflow: hidden;
 }
 .blog.blog-slider .blog__inner {
   position: relative;
@@ -5987,6 +5988,9 @@ input[type=number] {
   margin-bottom: 6rem;
 }
 
+.articles.page-buy {
+  margin-bottom: 10rem;
+}
 .articles.page-buy .articles__text-block-item {
   margin-bottom: 3rem;
 }
@@ -6051,8 +6055,24 @@ input[type=number] {
      object-fit: cover;
   border-radius: inherit;
 }
-.articles.page-buy .articles__right-item:nth-child(5) {
+.articles.page-buy .articles__right-item:nth-child(5) .articles__item-title {
   color: #ffffff;
+  position: relative;
+}
+.articles.page-buy .articles__right-item:nth-child(5) .articles__item-subtitle {
+  color: #9FAAB4;
+  position: relative;
+}
+.articles.page-buy .articles__right-item:nth-child(5) .btn {
+  position: relative;
+}
+.articles.page-buy .articles__right-item:nth-child(5) .btn span {
+  color: #ffffff;
+}
+
+.blog.page-buy {
+  padding-top: 7rem;
+  margin-bottom: 14rem;
 }
 
 .objects-box {

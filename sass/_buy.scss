@@ -3,39 +3,26 @@
 }
 
 .articles.page-buy {
-
+    margin-bottom: 10rem;
 
     .articles {
-        
-        &__inner {
-        
-        }
-        
-        &__text-block {
-        
-        }
-        
+
         &__text-block-item {
             margin-bottom: 3rem;
 
             &:nth-child(4) {
                 margin-bottom: 6rem;
             }
-        
         }
-        
+
         &__title {
             margin-bottom: 6.5rem;
-        
         }
-        .title {
-        }
-        
+
         &__par {
             width: 99.5%;
-        
         }
-        
+
         &__substrate {
             @include text (2.4rem, 400, rgba(138, 145, 170, 1));
             background: #F0F0F9;
@@ -48,14 +35,13 @@
                 margin-bottom: 0rem;
                 margin-top: 12rem;
             }
-        
         }
-        
+
         &__substrate-title {
             font-weight: 600;
             margin-bottom: 2.5rem;
         }
-        
+
         &__substrate-item {
             padding-left: 2rem;
             width: 88%;
@@ -76,9 +62,8 @@
                 top: 0.5rem;
                 left: -0.5rem;
             }
-        
         }
-        
+
         &__text-block-img {
             width: 100%;
             height: 77.4rem;
@@ -94,23 +79,36 @@
                 object-fit: cover;
                 border-radius: inherit;
             }
-        
         }
 
-        
-    &__right-item {
+        &__right-item {
 
-        &:nth-child(5) {
-            color: #ffffff;
+            &:nth-child(5) {
+
+                .articles__item-title {
+                    color: #ffffff;
+                    position: relative;
+                }
+
+                .articles__item-subtitle {
+                    color: #9FAAB4;
+                    position: relative;
+                }
+
+                .btn {
+                    position: relative;
+
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
         }
     }
-
-    }
-
-
-} 
+}
 
 
-
-
-
+.blog.page-buy {
+    padding-top: 7rem;
+    margin-bottom: 14rem;
+}
