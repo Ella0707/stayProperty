@@ -57,6 +57,23 @@ $(".real-estate__button-top").click(function(e) {
     $(this).toggleClass('active');
   })
 
+  $(".real-estate__top-sorting-item").click(function(e) {
+    e.preventDefault();
+    $(".real-estate__top-sorting-item").removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $(".real-estate__view-btn").click(function(e) {
+    e.preventDefault();
+    $(".real-estate__view-btn").removeClass('active');
+    $(this).addClass('active');
+  })
+
+  $(".real-estate__like").click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  })
+
 
 //   переключение класса в вакансиях
 $(".vacancies__item-name").click(function(e) {
@@ -472,6 +489,21 @@ $(".other-news__spoller-pagination-num").click(function (e) {
     $(".other-news__spoller-pagination-num").removeClass('active');
     $(this).addClass('active');
 })
+
+// пагинация на странице недвижимости 
+$(".real-estate__pagination-num").click(function (e) {
+    e.preventDefault();
+    $(".real-estate__pagination-num").removeClass('active');
+    $(this).addClass('active');
+})
+
+$(".real-estate__pagination-bullet").click(function (e) {
+    e.preventDefault();
+    $(".real-estate__pagination-bullet").removeClass('active');
+    $(this).addClass('active');
+})
+
+
 
 
 

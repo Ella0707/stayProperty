@@ -89,16 +89,14 @@
                 width: 15rem;
                 margin-left: auto;
             }
+        }
 
-
+        &.no-bg {
+            padding: 2.5rem 1.3rem 2rem 2.5rem;
         }
 
         &:not(:last-child) {
             margin-bottom: 9rem;
-        }
-
-        &:last-child {
-            padding: 2.5rem 1.3rem 2rem 2.5rem;
         }
 
         img {
