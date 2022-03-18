@@ -1,3 +1,30 @@
+// табы на странице недвижимости
+const tabsBtn = document.querySelectorAll(".tab-btn");
+const tabsItems = document.querySelectorAll(".tab-item");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+    item.addEventListener("click", function () {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if (!currentBtn.classList.contains('active')) {
+            tabsBtn.forEach(function (item) {
+                item.classList.remove('active');
+            });
+
+            tabsItems.forEach(function (item) {
+                item.classList.remove('active');
+            });
+
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active');
+        }
+    });
+}
+document.querySelector('.tab-btn').click();
 
 // появление дополнителньой информации в текстовом блоке карточек с недвижимостью на Главной странице
 $(document).ready(function () {
@@ -40,47 +67,48 @@ let select = function () {
 select();
 
 
-$(".real-estate__button-top").click(function(e) {
+$(".real-estate__button-top").click(function (e) {
     e.preventDefault();
     $(".real-estate__button-top").removeClass('active');
     $(this).addClass('active');
-  })
+})
 
-  $(".real-estate__button-bottom").click(function(e) {
+$(".real-estate__button-bottom").click(function (e) {
     e.preventDefault();
     $(".real-estate__button-bottom").removeClass('active');
     $(this).addClass('active');
-  })
+})
 
-  $(".objects-box__like").click(function(e) {
+$(".objects-box__like").click(function (e) {
     e.preventDefault();
     $(this).toggleClass('active');
-  })
+})
 
-  $(".real-estate__top-sorting-item").click(function(e) {
+$(".real-estate__top-sorting-item").click(function (e) {
     e.preventDefault();
     $(".real-estate__top-sorting-item").removeClass('active');
     $(this).addClass('active');
-  })
+})
 
-  $(".real-estate__view-btn").click(function(e) {
+$(".real-estate__view-btn").click(function (e) {
     e.preventDefault();
     $(".real-estate__view-btn").removeClass('active');
     $(this).addClass('active');
-  })
+})
 
-  $(".real-estate__like").click(function(e) {
+$(".real-estate__like").click(function (e) {
     e.preventDefault();
     $(this).toggleClass('active');
-  })
+})
 
 
 //   переключение класса в вакансиях
-$(".vacancies__item-name").click(function(e) {
+$(".vacancies__item-name").click(function (e) {
     e.preventDefault();
     $(".vacancies__item-name").removeClass('active');
     $(this).addClass('active');
-  })
+})
+
 
 // слайдеры
 const objectSwiper = new Swiper('.objects-box__slider', {
@@ -131,6 +159,23 @@ const realSwiper = new Swiper('.real-estate__slider', {
 
     pagination: {
         el: ".real-estate__pagination",
+        bullets: true,
+        clickable: true,
+    },
+
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true
+    },
+});
+
+const bigBoxSwiper = new Swiper('.real-estate__big-slider', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    speed: 800,
+
+    pagination: {
+        el: ".real-estate__pagination-big",
         bullets: true,
         clickable: true,
     },
@@ -206,36 +251,36 @@ function liveNumbers() {
 
 
 
-    // pagination: {
-    //     el: ".rewiews__pagination",
-    //     clickable: true,
-    //     bullets: true,
-    //     // // renderBullet: function (index, className) {
-    //     // //   return '<span class="' + className + '">' + (index + 1) + "</span>";
-    //     // // },
-    //     // renderFraction: function (currentClass, totalClass, index, total) {
-    //     //     return '<span class="' + currentClass + '">0 '+ index +' </span>' +
-    //     //         ' / ' +
-    //     //         '<span class="' + totalClass + '">0 '+ total +' </span>';
-    //     // },
-    // },
+// pagination: {
+//     el: ".rewiews__pagination",
+//     clickable: true,
+//     bullets: true,
+//     // // renderBullet: function (index, className) {
+//     // //   return '<span class="' + className + '">' + (index + 1) + "</span>";
+//     // // },
+//     // renderFraction: function (currentClass, totalClass, index, total) {
+//     //     return '<span class="' + currentClass + '">0 '+ index +' </span>' +
+//     //         ' / ' +
+//     //         '<span class="' + totalClass + '">0 '+ total +' </span>';
+//     // },
+// },
 
-   
-    // });
-    
 
-    // effect: "fade",
-    // fadeEffect: {
-    //     crossFade: true
-    // },
-
-    // on: {
-    //     init: number,
-    //     slideChange: number
-    // },
 // });
 
- 
+
+// effect: "fade",
+// fadeEffect: {
+//     crossFade: true
+// },
+
+// on: {
+//     init: number,
+//     slideChange: number
+// },
+// });
+
+
 
 // // ADD ACTIVE CLASS TO THE CURRENT BULLET
 
@@ -422,10 +467,10 @@ $(document).ready(function () {
 
 
 // Споллер саппорт
-$('.service__spoller-title-wrap').on('click', function(e) {
+$('.service__spoller-title-wrap').on('click', function (e) {
     e.preventDefault();
 
-    if($(this).closest('.service__spoller-title-wrap').hasClass('active')) {
+    if ($(this).closest('.service__spoller-title-wrap').hasClass('active')) {
         $('.service__spoller-title-wrap').removeClass('active');
     } else {
         $('.service__spoller-title-wrap').removeClass('active');
@@ -449,7 +494,7 @@ $('.service__spoller-title-wrap').on('click', function(e) {
 //         $(this).closest('.paid').addClass('active');
 //     }
 
-    // Show the content
+// Show the content
 //     var $content = $(this).next();
 //     $content.slideToggle(300);
 //     $('.paid-content').not($content).slideUp('fast');
@@ -458,7 +503,7 @@ $('.service__spoller-title-wrap').on('click', function(e) {
 
 
 // Регулировка высоты контента в секции поддержки
-$('.service__spoller-title-wrap').on('click', function(e) {
+$('.service__spoller-title-wrap').on('click', function (e) {
     e.preventDefault();
 
     // if($(this).closest('.free').hasClass('active')) {
@@ -467,7 +512,7 @@ $('.service__spoller-title-wrap').on('click', function(e) {
     //     $('.item-free').removeClass('open');
     // }
 
-    if($(this).closest('.paid').hasClass('active')) {
+    if ($(this).closest('.paid').hasClass('active')) {
         $('.item-paid').addClass('open-bottom');
     } else {
         $('.item-paid').removeClass('open-bottom');
@@ -507,7 +552,6 @@ $(".real-estate__pagination-bullet").click(function (e) {
 
 
 
-
 // Двойные буллеты в слайдере
 
 const rewiewsSwiper = new Swiper('.rewiews__slider', {
@@ -540,14 +584,14 @@ function sliderNumber() {
     // $('.swiper-bullets-two').text(currentSlide);
 }
 
- // Generate pagination bullets inside div with #bullets ID
- for (var i = 1; i <rewiewsSwiper.slides.length - 1; i++){
-    if ( i === 1){ 
-      // add active class if it is the first bullet
-      $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'bullets-two-bullet-active' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
+// Generate pagination bullets inside div with #bullets ID
+for (var i = 1; i < rewiewsSwiper.slides.length - 1; i++) {
+    if (i === 1) {
+        // add active class if it is the first bullet
+        $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'bullets-two-bullet-active' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
     } else {
-      $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'slide' + i + '"><p>'+ i +'</p></span>');
-    }         
+        $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
+    }
 }
 
 

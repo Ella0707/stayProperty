@@ -117,6 +117,11 @@
 
         &__left {
             height: 100%;
+            display: none;
+
+            &.active {
+                display: block;
+            }
         }
 
         &__boxes {
@@ -341,8 +346,9 @@
         &__pagination-bullets {
             display: flex;
             align-items: center;
-        
+
         }
+
         &__pagination-bullet {
             width: 1.2rem;
             height: 1.2rem;
@@ -356,12 +362,12 @@
             }
 
             &.active {
-            background: rgba(43, 47, 54, 1);
+                background: rgba(43, 47, 54, 1);
             }
-        
+
         }
-        .active {
-        }
+
+        .active {}
 
         &__right-block {
             width: 36.2rem;
@@ -389,24 +395,301 @@
                 }
             }
         }
+
+        &__boxes-big {
+            width: 116.2rem;
+            margin-bottom: 6rem;
+        }
+
+        &__box-big {
+            border-radius: 4rem;
+            position: relative;
+
+            &:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        &__box-big-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            .real-estate__like {
+                margin-top: 0;
+                z-index: 1;
+            }
+
+            .corner {
+                position: absolute;
+                left: -0.8rem;
+                bottom: -1.8rem;
+                transform: rotate(271deg);
+
+                &::before {
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                    background-color: #fafaff;
+                }
+            }
+        }
+
+        &__big-inner {
+            display: flex;
+        }
+
+        &__big-left {
+            border-radius: 2rem 0 0 2rem;
+            background: #ffffff;
+            padding: 2rem 0 2rem 2rem;
+            box-shadow: 0.7rem 1.5rem 7.4rem rgba(40, 44, 78, 0.1);
+        }
+
+        &__big-right {
+            position: relative;
+            width: 100%;
+        }
+
+        &__big-slider {
+            width: 33.2rem;
+            height: 32.8rem;
+            margin-right: 4.5rem;
+            background: #FFFFFF;
+            position: relative;
+        }
+
+        &__big-slide {
+            border-radius: 1.1rem;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                border-radius: inherit;
+            }
+        }
+
+        &__pagination-big {
+
+            span {
+                width: 0.7rem;
+                height: 0.7rem;
+                background: #ffffff;
+            }
+
+            &.swiper-pagination {
+                bottom: 1.5rem;
+            }
+        }
+
+        &__big-box-cart {
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 50%;
+            background: #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            bottom: 2.8rem;
+            right: 2.8rem;
+            z-index: 10;
+
+            img {
+                width: 1.6rem;
+                height: 1.6rem;
+                object-fit: contain;
+            }
+        }
+
+        &__big-box-info {
+            height: 31rem;
+            background: #ffffff;
+            padding-bottom: 2rem;
+            padding-right: 3rem;
+            margin-top: 6rem;
+            padding-top: 4.5rem;
+            border-radius: 0 2rem 2rem 0;
+            box-shadow: 1.7rem 2.5rem 3.4rem rgb(40 44 78 / 10%);
+        }
+
+        &__big-box-title {
+            padding-top: 2rem;
+            padding-right: 10rem;
+            padding-bottom: 4rem;
+            background: #ffffff;
+            border-radius: 0 2rem 0 0;
+            @include text (2.5rem, 700, rgba(43, 47, 54, 1));
+            line-height: 0.9;
+            width: 92%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &__big-main-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2.65rem;
+        }
+
+        &__big-description-block {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 1fr 1fr;
+            gap: 1.5rem;
+
+            width: 42rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 0.1rem solid rgba(221, 226, 244, 1);
+        }
+
+        &__big-description-item {
+            display: flex;
+            align-items: center;
+            @include text (1.6rem, 500, rgba(43, 47, 54, 1));
+
+            img {
+                width: 2rem;
+                height: 2rem;
+                object-fit: contain;
+                margin-right: 0.8rem;
+            }
+        }
+
+        &__big-price-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        &__big-id {
+            width: max-content;
+            height: 2.56rem;
+            background: rgba(20, 20, 78, 0.21);
+            border-radius: 1.2rem;
+            padding: 0.7rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include text (1.3rem, 500, rgba(255, 255, 255, 1));
+        }
+
+        &__big-price {
+            width: max-content;
+            height: 3.8rem;
+            background: #F9F9FE;
+            border-radius: 1.2rem;
+            padding: 1rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include text (2rem, 600, rgba(43, 47, 54, 1));
+
+            span {
+                @include text (1.4rem, 500, rgba(153, 162, 181, 1));
+            }
+
+            sup {
+                @include text (1.2rem, 400, rgba(43, 47, 54, 1));
+            }
+        }
+
+        &__big-additional-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        &__big-rooms {
+            display: flex;
+            flex-direction: column;
+            width: 42rem;
+        }
+
+        &__big-room-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__big-room {
+            display: flex;
+            align-items: center;
+            @include text (1.5rem, 500, rgba(43, 47, 54, 1));
+        }
+
+        &__big-room-key {
+            font-weight: 700;
+            margin-right: 3rem;
+        }
+
+        &__big-room-price {
+            @include text (1.6rem, 600, rgba(43, 47, 54, 1));
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        &__big-separately-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__big-separately-item {
+            height: 4.2rem;
+            width: max-content;
+            background: #EFF0F8;
+            box-shadow: inset 0px 0px 0.4rem rgba(0, 0, 0, 0.25);
+            border-radius: 2rem;
+            padding: 1rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include text (1.4rem, 500, rgba(43, 47, 54, 1));
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__big-date {
+            @include text (1.6rem, 400, rgba(138, 145, 170, 1));
+        }
     }
 }
 
-    .articles.page-real-estate {
-        margin-bottom: 28rem;
+.articles.page-real-estate {
+    margin-bottom: 28rem;
 
-        .articles {
+    .articles {
 
-            &__title {
-                margin-bottom: 6.5rem;
-            }
+        &__title {
+            margin-bottom: 6.5rem;
         }
     }
+}
 
-    .support.page-real-estate {
-        margin-bottom: 17rem;
-    }
+.support.page-real-estate {
+    margin-bottom: 17rem;
+}
 
-    .faq.page-real-estate {
-        margin-bottom: 4.5rem;
-    }
+.faq.page-real-estate {
+    margin-bottom: 4.5rem;
+}

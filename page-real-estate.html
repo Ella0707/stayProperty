@@ -313,7 +313,7 @@
                             </button>
                         </div>
                         <div class="real-estate__sorting-view">
-                            <button class="real-estate__view-btn">
+                            <button class="real-estate__view-btn tab-btn" data-tab="#tab-1">
                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="5" height="5" fill="" />
@@ -327,7 +327,7 @@
                                     <rect x="12" y="12" width="5" height="5" fill="" />
                                 </svg>
                             </button>
-                            <button class="real-estate__view-btn">
+                            <button class="real-estate__view-btn tab-btn" data-tab="#tab-2">
                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="5" height="5" fill="" />
@@ -401,7 +401,7 @@
                         <div class="real-estate__number">Обновлено 13.01.2022</div>
                     </div>
                     <div class="real-estate__content">
-                        <div class="real-estate__left">
+                        <div id="tab-1" class="real-estate__left tab-item">
                             <div class="real-estate__boxes">
                                 <div class="real-estate__box">
                                     <div class="real-estate__box-inner ">
@@ -2451,6 +2451,793 @@
                             </div>
                         </div>
 
+                        <div id="tab-2" class="real-estate__left tab-item">
+                            <div class="real-estate__boxes-big">
+                                <div class="real-estate__box-big">
+                                    <div class="real-estate__box-big-btn">
+                                        <button class="real-estate__like">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9677 19.4927C11.6123 19.6235 11.0271 19.6235 10.6718 19.4927C7.64112 18.4133 0.869141 13.9101 0.869141 6.27767C0.869141 2.90849 3.47133 0.182617 6.67966 0.182617C8.58167 0.182617 10.2642 1.14212 11.3197 2.625C12.3752 1.14212 14.0682 0.182617 15.9598 0.182617C19.1681 0.182617 21.7703 2.90849 21.7703 6.27767C21.7703 13.9101 14.9983 18.4133 11.9677 19.4927Z"
+                                                    fill="url(#paint0_linear_278_11384)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_278_11384" x1="9.32913"
+                                                        y1="4.11047" x2="10.6167" y2="36.4657"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0.24" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                        <div class="corner"></div>
+
+                                    </div>
+                                    <div class="real-estate__big-inner">
+                                        <div class="real-estate__big-left">
+                                            <div class="real-estate__big-slider swiper">
+                                                <div class="real-estate__big-slider-wrapper swiper-wrapper">
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate1.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate2.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__pagination-big swiper-pagination"></div>
+                                                <button class="real-estate__big-box-cart">
+                                                    <img src="./img/cart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="real-estate__big-right">
+                                            <div class="real-estate__big-box-title">The Voyage Residence Эко-локация с
+                                                видами на хвойные леса</div>
+                                            <div class="real-estate__big-box-info">
+                                                <div class="real-estate__big-main-info">
+                                                    <div class="real-estate__big-description-block">
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-price-block">
+                                                        <div class="real-estate__big-id">ID P00017</div>
+                                                        <div class="real-estate__big-price">
+                                                            <span>от </span> 95.000 <sup>€</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="real-estate__big-additional-info">
+                                                    <div class="real-estate__big-rooms">
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">1 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">120
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 105.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">2 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">150
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 120.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">3 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">190
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 195.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-separately-info">
+                                                        <div class="real-estate__big-separately-item">Расстояние до
+                                                            моря: 250 м</div>
+                                                        <div class="real-estate__big-separately-item">Особая категория:
+                                                            С мебелью</div>
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__big-date">Заселение до 31.03.2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="real-estate__box-big">
+                                    <div class="real-estate__box-big-btn">
+                                        <button class="real-estate__like">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9677 19.4927C11.6123 19.6235 11.0271 19.6235 10.6718 19.4927C7.64112 18.4133 0.869141 13.9101 0.869141 6.27767C0.869141 2.90849 3.47133 0.182617 6.67966 0.182617C8.58167 0.182617 10.2642 1.14212 11.3197 2.625C12.3752 1.14212 14.0682 0.182617 15.9598 0.182617C19.1681 0.182617 21.7703 2.90849 21.7703 6.27767C21.7703 13.9101 14.9983 18.4133 11.9677 19.4927Z"
+                                                    fill="url(#paint0_linear_278_11384)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_278_11384" x1="9.32913"
+                                                        y1="4.11047" x2="10.6167" y2="36.4657"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0.24" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                        <div class="corner"></div>
+
+                                    </div>
+                                    <div class="real-estate__big-inner">
+                                        <div class="real-estate__big-left">
+                                            <div class="real-estate__big-slider swiper">
+                                                <div class="real-estate__big-slider-wrapper swiper-wrapper">
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate1.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate2.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__pagination-big swiper-pagination"></div>
+                                                <button class="real-estate__big-box-cart">
+                                                    <img src="./img/cart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="real-estate__big-right">
+                                            <div class="real-estate__big-box-title">The Voyage Residence Эко-локация с
+                                                видами на хвойные леса</div>
+                                            <div class="real-estate__big-box-info">
+                                                <div class="real-estate__big-main-info">
+                                                    <div class="real-estate__big-description-block">
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-price-block">
+                                                        <div class="real-estate__big-id">ID P00017</div>
+                                                        <div class="real-estate__big-price">
+                                                            <span>от </span> 95.000 <sup>€</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="real-estate__big-additional-info">
+                                                    <div class="real-estate__big-rooms">
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">1 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">120
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 105.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">2 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">150
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 120.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">3 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">190
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 195.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-separately-info">
+                                                        <div class="real-estate__big-separately-item">Расстояние до
+                                                            моря: 250 м</div>
+                                                        <div class="real-estate__big-separately-item">Особая категория:
+                                                            С мебелью</div>
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__big-date">Заселение до 31.03.2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="real-estate__box-big">
+                                    <div class="real-estate__box-big-btn">
+                                        <button class="real-estate__like">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9677 19.4927C11.6123 19.6235 11.0271 19.6235 10.6718 19.4927C7.64112 18.4133 0.869141 13.9101 0.869141 6.27767C0.869141 2.90849 3.47133 0.182617 6.67966 0.182617C8.58167 0.182617 10.2642 1.14212 11.3197 2.625C12.3752 1.14212 14.0682 0.182617 15.9598 0.182617C19.1681 0.182617 21.7703 2.90849 21.7703 6.27767C21.7703 13.9101 14.9983 18.4133 11.9677 19.4927Z"
+                                                    fill="url(#paint0_linear_278_11384)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_278_11384" x1="9.32913"
+                                                        y1="4.11047" x2="10.6167" y2="36.4657"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0.24" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                        <div class="corner"></div>
+
+                                    </div>
+                                    <div class="real-estate__big-inner">
+                                        <div class="real-estate__big-left">
+                                            <div class="real-estate__big-slider swiper">
+                                                <div class="real-estate__big-slider-wrapper swiper-wrapper">
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate1.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate2.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__pagination-big swiper-pagination"></div>
+                                                <button class="real-estate__big-box-cart">
+                                                    <img src="./img/cart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="real-estate__big-right">
+                                            <div class="real-estate__big-box-title">The Voyage Residence Эко-локация с
+                                                видами на хвойные леса</div>
+                                            <div class="real-estate__big-box-info">
+                                                <div class="real-estate__big-main-info">
+                                                    <div class="real-estate__big-description-block">
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-price-block">
+                                                        <div class="real-estate__big-id">ID P00017</div>
+                                                        <div class="real-estate__big-price">
+                                                            <span>от </span> 95.000 <sup>€</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="real-estate__big-additional-info">
+                                                    <div class="real-estate__big-rooms">
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">1 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">120
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 105.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">2 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">150
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 120.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">3 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">190
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 195.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-separately-info">
+                                                        <div class="real-estate__big-separately-item">Расстояние до
+                                                            моря: 250 м</div>
+                                                        <div class="real-estate__big-separately-item">Особая категория:
+                                                            С мебелью</div>
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__big-date">Заселение до 31.03.2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="real-estate__box-big">
+                                    <div class="real-estate__box-big-btn">
+                                        <button class="real-estate__like">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9677 19.4927C11.6123 19.6235 11.0271 19.6235 10.6718 19.4927C7.64112 18.4133 0.869141 13.9101 0.869141 6.27767C0.869141 2.90849 3.47133 0.182617 6.67966 0.182617C8.58167 0.182617 10.2642 1.14212 11.3197 2.625C12.3752 1.14212 14.0682 0.182617 15.9598 0.182617C19.1681 0.182617 21.7703 2.90849 21.7703 6.27767C21.7703 13.9101 14.9983 18.4133 11.9677 19.4927Z"
+                                                    fill="url(#paint0_linear_278_11384)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_278_11384" x1="9.32913"
+                                                        y1="4.11047" x2="10.6167" y2="36.4657"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0.24" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                        <div class="corner"></div>
+
+                                    </div>
+                                    <div class="real-estate__big-inner">
+                                        <div class="real-estate__big-left">
+                                            <div class="real-estate__big-slider swiper">
+                                                <div class="real-estate__big-slider-wrapper swiper-wrapper">
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate1.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate2.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__pagination-big swiper-pagination"></div>
+                                                <button class="real-estate__big-box-cart">
+                                                    <img src="./img/cart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="real-estate__big-right">
+                                            <div class="real-estate__big-box-title">The Voyage Residence Эко-локация с
+                                                видами на хвойные леса</div>
+                                            <div class="real-estate__big-box-info">
+                                                <div class="real-estate__big-main-info">
+                                                    <div class="real-estate__big-description-block">
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-price-block">
+                                                        <div class="real-estate__big-id">ID P00017</div>
+                                                        <div class="real-estate__big-price">
+                                                            <span>от </span> 95.000 <sup>€</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="real-estate__big-additional-info">
+                                                    <div class="real-estate__big-rooms">
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">1 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">120
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 105.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">2 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">150
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 120.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">3 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">190
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 195.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-separately-info">
+                                                        <div class="real-estate__big-separately-item">Расстояние до
+                                                            моря: 250 м</div>
+                                                        <div class="real-estate__big-separately-item">Особая категория:
+                                                            С мебелью</div>
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__big-date">Заселение до 31.03.2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="real-estate__box-big">
+                                    <div class="real-estate__box-big-btn">
+                                        <button class="real-estate__like">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9677 19.4927C11.6123 19.6235 11.0271 19.6235 10.6718 19.4927C7.64112 18.4133 0.869141 13.9101 0.869141 6.27767C0.869141 2.90849 3.47133 0.182617 6.67966 0.182617C8.58167 0.182617 10.2642 1.14212 11.3197 2.625C12.3752 1.14212 14.0682 0.182617 15.9598 0.182617C19.1681 0.182617 21.7703 2.90849 21.7703 6.27767C21.7703 13.9101 14.9983 18.4133 11.9677 19.4927Z"
+                                                    fill="url(#paint0_linear_278_11384)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_278_11384" x1="9.32913"
+                                                        y1="4.11047" x2="10.6167" y2="36.4657"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0.24" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                        <div class="corner"></div>
+
+                                    </div>
+                                    <div class="real-estate__big-inner">
+                                        <div class="real-estate__big-left">
+                                            <div class="real-estate__big-slider swiper">
+                                                <div class="real-estate__big-slider-wrapper swiper-wrapper">
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate1.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate2.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__pagination-big swiper-pagination"></div>
+                                                <button class="real-estate__big-box-cart">
+                                                    <img src="./img/cart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="real-estate__big-right">
+                                            <div class="real-estate__big-box-title">The Voyage Residence Эко-локация с
+                                                видами на хвойные леса</div>
+                                            <div class="real-estate__big-box-info">
+                                                <div class="real-estate__big-main-info">
+                                                    <div class="real-estate__big-description-block">
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-price-block">
+                                                        <div class="real-estate__big-id">ID P00017</div>
+                                                        <div class="real-estate__big-price">
+                                                            <span>от </span> 95.000 <sup>€</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="real-estate__big-additional-info">
+                                                    <div class="real-estate__big-rooms">
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">1 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">120
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 105.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">2 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">150
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 120.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">3 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">190
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 195.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-separately-info">
+                                                        <div class="real-estate__big-separately-item">Расстояние до
+                                                            моря: 250 м</div>
+                                                        <div class="real-estate__big-separately-item">Особая категория:
+                                                            С мебелью</div>
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__big-date">Заселение до 31.03.2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="real-estate__box-big">
+                                    <div class="real-estate__box-big-btn">
+                                        <button class="real-estate__like">
+                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9677 19.4927C11.6123 19.6235 11.0271 19.6235 10.6718 19.4927C7.64112 18.4133 0.869141 13.9101 0.869141 6.27767C0.869141 2.90849 3.47133 0.182617 6.67966 0.182617C8.58167 0.182617 10.2642 1.14212 11.3197 2.625C12.3752 1.14212 14.0682 0.182617 15.9598 0.182617C19.1681 0.182617 21.7703 2.90849 21.7703 6.27767C21.7703 13.9101 14.9983 18.4133 11.9677 19.4927Z"
+                                                    fill="url(#paint0_linear_278_11384)" />
+                                                <defs>
+                                                    <linearGradient id="paint0_linear_278_11384" x1="9.32913"
+                                                        y1="4.11047" x2="10.6167" y2="36.4657"
+                                                        gradientUnits="userSpaceOnUse">
+                                                        <stop stop-color="white" />
+                                                        <stop offset="1" stop-color="white" stop-opacity="0.24" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </button>
+                                        <div class="corner"></div>
+
+                                    </div>
+                                    <div class="real-estate__big-inner">
+                                        <div class="real-estate__big-left">
+                                            <div class="real-estate__big-slider swiper">
+                                                <div class="real-estate__big-slider-wrapper swiper-wrapper">
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate1.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate2.png" alt="">
+                                                    </div>
+                                                    <div class="real-estate__big-slide swiper-slide">
+                                                        <img src="./img/real-estate3.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__pagination-big swiper-pagination"></div>
+                                                <button class="real-estate__big-box-cart">
+                                                    <img src="./img/cart.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="real-estate__big-right">
+                                            <div class="real-estate__big-box-title">The Voyage Residence Эко-локация с
+                                                видами на хвойные леса</div>
+                                            <div class="real-estate__big-box-info">
+                                                <div class="real-estate__big-main-info">
+                                                    <div class="real-estate__big-description-block">
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/lacation-transparent.svg" alt="">
+                                                            Махмутлар
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/swimming-pool.svg" alt="">
+                                                            Открытый бассейн
+                                                        </div>
+                                                        <div class="real-estate__big-description-item">
+                                                            <img src="./img/doctor.svg" alt="">
+                                                            Доктор
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-price-block">
+                                                        <div class="real-estate__big-id">ID P00017</div>
+                                                        <div class="real-estate__big-price">
+                                                            <span>от </span> 95.000 <sup>€</sup>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="real-estate__big-additional-info">
+                                                    <div class="real-estate__big-rooms">
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">1 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">120
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 105.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">2 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">150
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 120.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                        <div class="real-estate__big-room-item">
+                                                            <div class="real-estate__big-room">
+                                                                <div class="real-estate__big-room-key">3 + 1 комнат
+                                                                </div>
+                                                                <div class="real-estate__big-room-value">190
+                                                                    m<sup>2</sup></div>
+                                                            </div>
+                                                            <div class="real-estate__big-room-price">
+                                                                <span>от</span> 195.000<sup>€</sup>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="real-estate__big-separately-info">
+                                                        <div class="real-estate__big-separately-item">Расстояние до
+                                                            моря: 250 м</div>
+                                                        <div class="real-estate__big-separately-item">Особая категория:
+                                                            С мебелью</div>
+                                                    </div>
+                                                </div>
+                                                <div class="real-estate__big-date">Заселение до 31.03.2023</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="real-estate__pagination-wrap">
+                                <div class="real-estate__pagination-numbers">
+                                    <div class="real-estate__pagination-num active">01</div>
+                                    <div class="real-estate__pagination-num">02</div>
+                                    <div class="real-estate__pagination-num">03</div>
+                                    <div class="real-estate__pagination-num">04</div>
+                                </div>
+                                <div class="real-estate__pagination-bullets">
+                                    <div class="real-estate__pagination-bullet active"></div>
+                                    <div class="real-estate__pagination-bullet"></div>
+                                    <div class="real-estate__pagination-bullet"></div>
+                                    <div class="real-estate__pagination-bullet"></div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="real-estate__right-block">
                             <div class="articles__right-item all-bg">
                                 <img src="./img/channel2.png" alt="">
@@ -2588,7 +3375,8 @@
             </div>
         </section>
 
-        <section class="blog blog-slider page-buy swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+        <section
+            class="blog blog-slider page-buy swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
             <div class="container">
                 <div class="blog__inner">
                     <div class="swiper__arrows">
@@ -3031,7 +3819,8 @@
                                 <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
                                     role="button" aria-label="Go to slide 1" aria-current="true"></span><span
                                     class="swiper-pagination-bullet" tabindex="0" role="button"
-                                    aria-label="Go to slide 2"></span></div>
+                                    aria-label="Go to slide 2"></span>
+                            </div>
                             <div class="swiper__arrows">
                                 <div class="support__slider-prev swiper__arrow swiper-button-disabled" tabindex="-1"
                                     role="button" aria-label="Previous slide"
