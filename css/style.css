@@ -6855,6 +6855,16 @@ input[type=number] {
           justify-content: space-between;
   margin-bottom: 6rem;
 }
+.review-video__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
 .review-video__slide-title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -6865,6 +6875,7 @@ input[type=number] {
   height: 41.3rem;
   width: 100%;
   border-radius: 3rem;
+  margin-top: auto;
   margin-bottom: 3rem;
   position: relative;
 }
@@ -6904,6 +6915,60 @@ input[type=number] {
      object-fit: cover;
   -webkit-filter: drop-shadow(7.25664px 7.25664px 36.2832px rgba(40, 44, 78, 0.15));
           filter: drop-shadow(7.25664px 7.25664px 36.2832px rgba(40, 44, 78, 0.15));
+}
+
+.photo-review__title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.photo-review__number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+}
+.photo-review__slide {
+  border-radius: 4rem;
+  position: relative;
+}
+.photo-review__slide img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.photo-review .swiper-grid > .swiper-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.photo-review .swiper-grid-column > .swiper-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.photo-review__hover-text {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2b2f36;
+  padding: 3rem 2rem 2rem 2rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
+          box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
+  border-radius: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .objects-box {

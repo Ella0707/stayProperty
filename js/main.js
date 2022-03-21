@@ -425,6 +425,26 @@ const videoReviewSwiper = new Swiper('.review-video__slider', {
         nextEl: '.review-video__slider-next',
     },
 });
+
+const photoReviewSwiper = new Swiper('.photo-review__slider', {
+    slidesPerView: 3,
+    grid: {
+    rows: 2,
+    },
+    // slidesPerColumn: 2,
+    // slidesPerColumnFill: 'row',
+    // grid: true,
+    // rows: 2,
+        spaceBetween: 30,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.photo-review__slider-prev',
+        nextEl: '.photo-review__slider-next',
+    },
+});
+
+
 // function show(anything) {
 //     document.querySelector(".textBox").value = anything;
 // }
