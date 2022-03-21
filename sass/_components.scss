@@ -72,6 +72,36 @@
 }
 
 
+
+.btn-video {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(0deg, #E72535, #E72535), #DE1117;
+    box-shadow: 1rem 2rem 5rem rgb(243 83 83 / 25%);
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 1.3rem 1.3rem 1.3rem 1.5rem;
+        border-color: transparent transparent transparent #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, -50%);
+    }
+}
+
+
 .title {
     @include text (5.5rem, 700, rgba(43, 47, 54, 1));
 }
@@ -143,12 +173,6 @@
 
 
 .worker {
-
-
-
-    
-   
-    
     &__item {
         width: 49.5rem;
         padding: 0 2rem 5rem 2rem;

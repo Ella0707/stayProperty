@@ -299,6 +299,42 @@ input[type=number] {
   background: linear-gradient(177.55deg, #FFFFFF 21.07%, rgba(255, 255, 255, 0.24) 181.18%);
 }
 
+.btn-video {
+  width: 8rem;
+  height: 8rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#E72535), to(#E72535)), #DE1117;
+  background: linear-gradient(0deg, #E72535, #E72535), #DE1117;
+  -webkit-box-shadow: 1rem 2rem 5rem rgba(243, 83, 83, 0.25);
+          box-shadow: 1rem 2rem 5rem rgba(243, 83, 83, 0.25);
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.btn-video::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1.3rem 1.3rem 1.3rem 1.5rem;
+  border-color: transparent transparent transparent #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-20%, -50%);
+          transform: translate(-20%, -50%);
+}
+
 .title {
   font-size: 5.5rem;
   font-weight: 700;
@@ -6802,6 +6838,72 @@ input[type=number] {
 
 .faq.page-real-estate {
   margin-bottom: 4.5rem;
+}
+
+.review-video {
+  margin-bottom: 18rem;
+}
+.review-video__title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.review-video__slide-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2B2F36;
+  margin-bottom: 2.5rem;
+}
+.review-video__slide-img {
+  height: 41.3rem;
+  width: 100%;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.review-video__slide-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.review-video__btn-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.review-video__slide-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.review-video__author-name {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #000000;
+  margin-right: 2rem;
+}
+.review-video__author-photo {
+  width: 4.1rem;
+  height: 4.1rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: drop-shadow(7.25664px 7.25664px 36.2832px rgba(40, 44, 78, 0.15));
+          filter: drop-shadow(7.25664px 7.25664px 36.2832px rgba(40, 44, 78, 0.15));
 }
 
 .objects-box {

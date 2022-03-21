@@ -1,42 +1,3 @@
-// табы на странице недвижимости
-const tabsBtn = document.querySelectorAll(".tab-btn");
-const tabsItems = document.querySelectorAll(".tab-item");
-
-tabsBtn.forEach(onTabClick);
-
-function onTabClick(item) {
-    item.addEventListener("click", function () {
-        let currentBtn = item;
-        let tabId = currentBtn.getAttribute("data-tab");
-        let currentTab = document.querySelector(tabId);
-
-        if (!currentBtn.classList.contains('active')) {
-            tabsBtn.forEach(function (item) {
-                item.classList.remove('active');
-            });
-
-            tabsItems.forEach(function (item) {
-                item.classList.remove('active');
-            });
-
-            currentBtn.classList.add('active');
-            currentTab.classList.add('active');
-        }
-    });
-}
-document.querySelector('.tab-btn').click();
-
-// появление дополнителньой информации в текстовом блоке карточек с недвижимостью на Главной странице
-$(document).ready(function () {
-    $('.real-estate__text-block').on('mouseenter', function () {
-        $(this).parent().toggleClass('active');
-    });
-    $('.real-estate__text-block').on('mouseleave', function () {
-        $(this).parent().toggleClass('active');
-    });
-});
-
-
 
 // функция для кастомных селектов
 let select = function () {
@@ -65,6 +26,18 @@ let select = function () {
 };
 
 select();
+
+
+
+// появление дополнителньой информации в текстовом блоке карточек с недвижимостью на Главной странице
+$(document).ready(function () {
+    $('.real-estate__text-block').on('mouseenter', function () {
+        $(this).parent().toggleClass('active');
+    });
+    $('.real-estate__text-block').on('mouseleave', function () {
+        $(this).parent().toggleClass('active');
+    });
+});
 
 
 $(".real-estate__button-top").click(function (e) {
@@ -311,6 +284,10 @@ function liveNumbers() {
 // }
 
 
+
+
+
+
 const bannerSwiper = new Swiper('.banner__slider', {
     slidesPerView: 1,
     spaceBetween: 35,
@@ -437,6 +414,17 @@ const catalogSwiper = new Swiper('.catalog__content', {
     },
 });
 
+
+const videoReviewSwiper = new Swiper('.review-video__slider', {
+    slidesPerView: 3,
+    spaceBetween: 37,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.review-video__slider-prev',
+        nextEl: '.review-video__slider-next',
+    },
+});
 // function show(anything) {
 //     document.querySelector(".textBox").value = anything;
 // }
@@ -550,8 +538,6 @@ $(".real-estate__pagination-bullet").click(function (e) {
 
 
 
-
-
 // Двойные буллеты в слайдере
 
 const rewiewsSwiper = new Swiper('.rewiews__slider', {
@@ -593,6 +579,10 @@ for (var i = 1; i < rewiewsSwiper.slides.length - 1; i++) {
         $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
     }
 }
+
+
+
+
 
 
 // // ADD ACTIVE CLASS TO THE CURRENT BULLET
