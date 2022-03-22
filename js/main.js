@@ -308,17 +308,6 @@ const bannerSwiper = new Swiper('.banner__slider', {
         crossFade: true
     },
 
-    // effect: "creative",
-    // creativeEffect: {
-    //     prev: {
-    //         // shadow: true,
-    //         translate: ["-20%", 0, -1],
-    //       },
-    //       next: {
-    //         translate: ["100%", 0, 0],
-    //       },
-    // },
-
     on: {
         init: sliderNumber,
         slideChange: sliderNumber
@@ -426,23 +415,61 @@ const videoReviewSwiper = new Swiper('.review-video__slider', {
     },
 });
 
+
+
+var totalSlides = 4;
+const slidesPerView = 6
+const $counter = document.querySelector(".counter")
 const photoReviewSwiper = new Swiper('.photo-review__slider', {
     slidesPerView: 3,
     grid: {
-    rows: 2,
+        rows: 2,
     },
-    // slidesPerColumn: 2,
-    // slidesPerColumnFill: 'row',
-    // grid: true,
-    // rows: 2,
-        spaceBetween: 30,
+    spaceBetween: 25,
     speed: 800,
-
     navigation: {
         prevEl: '.photo-review__slider-prev',
         nextEl: '.photo-review__slider-next',
     },
+    on: {
+        init: function(){
+          $counter.innerHTML = 'Показано ' + (this.activeIndex +  1)  + ' из ' + (totalSlides); 
+        },
+        slideChange: function(){
+          $counter.innerHTML = 'Показано ' + (this.activeIndex +  1) + ' из '+ (totalSlides);
+        }
+    }
 });
+
+
+
+const cardSwiper = new Swiper('.card__slider', {
+    slidesPerView: 1,
+    spaceBetween: 37,
+    speed: 800,
+
+    navigation: {
+        prevEl: '.card__slider-prev',
+        nextEl: '.card__slider-next',
+    },
+});
+
+
+// function updateFraction(slider) {
+//     const { params, activeIndex } = slider;
+
+//     slider.$el
+//         .find(`.${params.pagination.currentClass}`)
+//         .text(`${activeIndex + 1} - ${activeIndex + params.slidesPerView}`);
+
+//     slider.$el
+//         .find(`.${params.pagination.totalClass}`)
+//         .text(slider.slides.length)
+// }
+
+
+
+
 
 
 // function show(anything) {
@@ -535,6 +562,12 @@ $(document).ready(function () {
     });
 });
 
+// Споллер текстовые отзывы
+$(document).ready(function () {
+    $('.text-review__spoller-wrap').click(function (event) {
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
 
 // переключение класса в новостях
 $(".other-news__spoller-pagination-num").click(function (e) {
