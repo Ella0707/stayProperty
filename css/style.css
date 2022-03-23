@@ -7197,6 +7197,9 @@ input[type=number] {
   color: #FFFFFF;
 }
 
+.card {
+  margin-bottom: 7.7rem;
+}
 .card__title {
   text-align: center;
   width: 100%;
@@ -7237,13 +7240,14 @@ input[type=number] {
   font-weight: 600;
   margin-right: 1.5rem;
 }
-.card__content {
+.card__content-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 6.2rem;
 }
 .card__photo-block {
   width: 116.6rem;
@@ -7427,6 +7431,200 @@ input[type=number] {
   left: -2.5rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.card__info-price-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4.5rem;
+}
+.card__info-price-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.card__info-price-rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2B2F36;
+}
+.card__info-price-room {
+  margin-right: 3rem;
+}
+.card__info-price-area {
+  font-weight: 500;
+}
+.card__info-price-value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2B2F36;
+}
+.card__info-price-value span {
+  font-weight: 500;
+}
+.card__info-price-value sup {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.card__price {
+  padding: 1.6rem 2.7rem;
+  border: 0.1rem solid #0199E4;
+  border-radius: 2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card__price-value {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #8A91AA;
+  margin-bottom: 0.3rem;
+}
+.card__price-description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #8A91AA;
+}
+.card__infrastructure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card__infrastructure-list-box {
+  width: 116rem;
+}
+.card__infrastructure-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2B2F36;
+  margin-bottom: 3.6rem;
+}
+.card__infrastructure-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #2B2F36;
+}
+.card__infrastructure-column {
+  width: 37rem;
+  border-left: 0.1rem solid #DDE2F4;
+  padding-left: 4.3rem;
+}
+.card__infrastructure-item {
+  position: relative;
+}
+.card__infrastructure-item:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+.card__infrastructure-item::before {
+  content: "";
+  height: 0.1rem;
+  width: 1rem;
+  background: #DDE2F4;
+  position: absolute;
+  top: 50%;
+  left: -2.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.card__infrastructure-btns {
+  width: 37.3rem;
+}
+.card__button {
+  width: 24.7rem;
+  height: 6rem;
+  background: linear-gradient(0deg, #0199E4, #0199E4), linear-gradient(272.89deg, #4341CC -9.64%, #0199E4 92.79%);
+  border-radius: 1.6rem;
+  padding: 0 1.3rem 0 2.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.card__button-name {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.card__buttom-arrow {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: linear-gradient(177.55deg, #FFFFFF 21.07%, rgba(255, 255, 255, 0.24) 181.18%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card__buttom-arrow img {
+  height: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card__btn-item {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2B2F36;
+  background: #FFFFFF;
+  border-radius: 3rem;
+  padding: 2.5rem 1rem 2.5rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: drop-shadow(10px 20px 100px rgba(40, 44, 78, 0.09));
+          filter: drop-shadow(10px 20px 100px rgba(40, 44, 78, 0.09));
+}
+.card__btn-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.card__btn-item-title {
+  margin-bottom: 3.3rem;
 }
 
 .objects-box {

@@ -1,17 +1,11 @@
 .card {
-
-    
-    &__inner {
-    
-    }
+    margin-bottom: 7.7rem;
     
     &__title {
         text-align: center;
         width: 100%;
         margin-bottom: 5.2rem;
-    
     }
-  
     
     &__nav {
         display: flex;
@@ -42,13 +36,12 @@
             font-weight: 600;
             margin-right: 1.5rem;
         }
-    
     }
-  
-    &__content {
+
+    &__content-top{
         display: flex;
         justify-content: space-between;
-    
+        margin-bottom: 6.2rem;
     }
     
     &__photo-block {
@@ -68,7 +61,6 @@
             right: -0.1rem;
             z-index: 2;
         }
-    
     }
 
     .swiper__arrows {
@@ -81,7 +73,6 @@
     }
     
     &__slide {
-        // position: relative;
         height: 77.4rem;
         width: 100%;
         border-radius: 4rem;
@@ -227,7 +218,170 @@
             left: -2.5rem;
             transform: translateY(-50%);
         }
+    }
     
+    &__info-price-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    &__info-price-rooms {
+        display: flex;
+        align-items: center;
+        @include text (1.6rem, 600, #2B2F36);
+    }
+    
+    &__info-price-room {
+        margin-right: 3rem;
+    }
+    
+    &__info-price-area {
+        font-weight: 500;
+    }
+    
+    &__info-price-value {
+        @include text (1.6rem, 600, #2B2F36);
+
+        span {
+            font-weight: 500;
+        }
+
+        sup {
+            font-weight: 700;
+            font-size: 1.3rem;
+        }
+    }
+
+    
+    &__price {
+        padding: 1.6rem 2.7rem;
+        border: 0.1rem solid #0199E4;
+        border-radius: 2rem;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    
+    &__price-value {
+        @include text (1.7rem, 700, #8A91AA);
+        margin-bottom: 0.3rem;
+    }
+    
+    &__price-description {
+        @include text (1.8rem, 400, #8A91AA);
+    }
+
+    
+    &__infrastructure {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__infrastructure-list-box {
+        width: 116rem;
+    }
+    
+    &__infrastructure-title {
+        @include text (2rem, 700, #2B2F36);
+        margin-bottom: 3.6rem;
+    }
+    
+    &__infrastructure-list {
+        display: flex;
+        justify-content: space-between;
+        @include text (1.8rem, 400, #2B2F36);
+    }
+    
+    &__infrastructure-column {
+        width: 37rem;
+        border-left: 0.1rem solid #DDE2F4;
+        padding-left: 4.3rem;
+    }
+    
+    &__infrastructure-item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
+
+        &::before {
+            content: "";
+            height: 0.1rem;
+            width: 1rem;
+            background: #DDE2F4;
+
+            position: absolute;
+            top: 50%;
+            left: -2.5rem;
+            transform: translateY(-50%);
+        }
+    }
+    
+    &__infrastructure-btns {
+        width: 37.3rem;
+    }
+    
+    &__button {
+        width: 24.7rem;
+        height: 6rem;
+        background: linear-gradient(0deg, #0199E4, #0199E4), linear-gradient(272.89deg, #4341CC -9.64%, #0199E4 92.79%);
+        border-radius: 1.6rem;
+        padding: 0 1.3rem 0 2.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    
+    &__button-name {
+        @include text (1.7rem, 400, #FFFFFF);
+    }
+    
+    &__buttom-arrow {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background: linear-gradient(177.55deg, #FFFFFF 21.07%, rgba(255, 255, 255, 0.24) 181.18%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height:2rem;
+
+            object-fit: contain;
+        }
+    }
+    
+    &__btn-item {
+        @include text (2rem, 600, #2B2F36);
+
+        background: #FFFFFF;
+        border-radius: 3rem;
+        padding: 2.5rem 1rem 2.5rem 4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        filter: drop-shadow(10px 20px 100px rgba(40, 44, 78, 0.09));
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+    
+    &__btn-item-title {
+        margin-bottom: 3.3rem;
     }
 }
 
