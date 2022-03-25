@@ -385,3 +385,324 @@
     }
 }
 
+
+
+.description {
+
+
+
+    
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    &__text-block {
+        width: 117.1rem;
+    }
+    
+    &__title {
+        margin-bottom: 6rem;
+    
+    }
+   
+    
+    &__text {
+        @include text (2.4rem, 400, #2B2F36);
+        margin-bottom: 4rem;
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    
+    &__info {
+
+       
+    
+    }
+    
+    &__spoller {
+        width: 100%;
+    }
+    
+    &__spoller-title-wrap {
+        display: flex;
+        margin-bottom: 4rem;
+        position: relative;
+        cursor: pointer;
+
+        &.active {
+
+            .description__btn {
+                background: #0199e4;
+
+                svg {
+                    fill: #ffffff;
+                    transform: rotateX(180deg);
+                }
+            } 
+        }
+    }
+    
+    &__spoller-title-text {
+        display: flex;
+        width: 93%;
+    }
+    
+    &__spoller-title-box {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #000000;
+        line-height: 1.45;
+        background: #FFFFFF;
+        padding: 1.8rem 0 1.8rem 3.5rem;
+        border-radius: 3rem 0 3rem 3rem;
+        box-shadow: -5rem 0.4rem 10rem rgb(76 70 203 / 10%);
+        width: 100%;
+    }
+
+    &__spoller-subtitle {
+        @include text (2rem, 400, #8A91AA);
+    }
+
+    &__spoller-scenery {
+    
+    }
+
+    .slice {
+        height: 3rem;
+        background: #FFFFFF;
+        border-radius: 0 3rem 3rem 0;
+    }
+    
+    
+    &__btn {
+        width: 6.5rem;
+        height: 6.5rem;
+        background: #ffffff;
+        border-radius: 1.6rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        box-shadow: 4px 4px 50px rgb(76 70 203 / 10%);
+        position: relative;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        transition: 0.8s;
+
+        .corner {
+            position: absolute;
+            top: -1.5rem;
+            left: -1.5rem;
+            z-index: -1;
+
+            &::before {
+                background-color: #fafaff;
+            }
+        }
+
+        svg {
+            fill: #2B2F36;
+            transition: 0.5s;
+        }
+    }
+    
+    
+    &__spoller-content {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #8A91AA;
+        line-height: 1.267;
+        background: #FFFFFF;
+        border-radius: 3rem;
+        padding: 3.6rem 3.5rem 3.6rem 3.5rem;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 3rem;
+    }
+
+    &__spoller-panorama {
+        width: 100%;
+        height: 50rem;
+        border-radius: 3rem;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+        }
+    }
+
+    &__spoller-map {
+        width: 100%;
+        height: 50rem;
+        border-radius: 3rem;
+    }
+    
+    &__article-item {
+        width: 36.2rem;
+    }
+
+
+
+}
+
+
+.object-video {
+
+
+    
+    &__inner {
+       
+    
+    }
+    
+    &__title {
+        margin-bottom: 6rem;
+    
+    }
+    .title {
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        .blog__box {
+            width: 116.1rem;
+        }
+    
+    }
+    
+    // &__box {
+    //     width: 116.1rem;
+
+    //     .object-video__box {
+    //         width: 100%;
+    //     }
+
+        
+    
+    // }
+    
+    .blog__photo {
+    }
+    .banner__btn-video {
+    }
+    .btn-video {
+    }
+    .blog__box-content {
+    }
+    .blog__box-top {
+    }
+    .blog__box-top-item {
+    }
+    .blog__box-top-img {
+    }
+    .blog__box-top-number {
+    }
+    .blog__box-title {
+    }
+    .blog__box-bottom {
+    }
+    .blog__box__bottom-clock {
+    }
+    .blog__box-botom-icon {
+    }
+    .blog__box-clock-text {
+    }
+    .blog__box-bottom-data {
+    }
+    .object-video__payment {
+    }
+    .mortgage__calculation {
+        width: 36.2rem;
+    }
+    .mortgage__title {
+        font-size: 2.5rem;
+    }
+    .mortgage__subtitle {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .mortgage__ranger {
+    }
+    .mortgage__ranger-title {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+    .mortgage__ranger-value {
+    }
+
+}
+
+.irs {
+}
+.irs--round {
+}
+.js-irs-0 {
+}
+.irs-line {
+}
+.irs-min {
+}
+.irs-max {
+}
+.irs-from {
+}
+.irs-to {
+}
+.irs-single {
+}
+.irs-grid {
+}
+.irs-bar {
+}
+.irs-bar--single {
+}
+.irs-shadow {
+}
+.shadow-single {
+}
+.irs-handle {
+}
+.single {
+}
+.room-cost {
+}
+.irs-hidden-input {
+}
+.mortgage__rangers-wrap {
+}
+.mortgage__ranger-payment {
+}
+.mortgage__ranger-sale {
+}
+.js-irs-1 {
+}
+.payment {
+}
+.mortgage__ranger-term {
+}
+.js-irs-2 {
+}
+.term {
+}
+.mortgage__bottom {
+}
+.mortgage__price {
+}
+.mortgage__button {
+}
+.mortgage__button-name {
+}
+.mortgage__buttom-arrow {
+}

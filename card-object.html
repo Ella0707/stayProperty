@@ -593,6 +593,272 @@
             </div>
         </section>
 
+        <section class="description">
+            <div class="container">
+                <div class="description__inner">
+                    <div class="description__text-block">
+                        <div class="description__title title">Описание объекта</div>
+                        <div class="description__text">
+                            <p>
+                                Расположенная в Махмутларе, 
+                                Аланья, наша квартира спроектирована 
+                                как 1+1 и имеет площадь 62 м2. Он расположен 
+                                на 3-м этаже 12-этажного дома и выходит окнами на 
+                                восток. Расстояние до моря составляет 600 метров.
+                            <p>
+                                На территоии комплекса: сад, тренажерный зал, 
+                                детский бассейн, открытый бассейн, крытый бассейн, 
+                                конференц-зал для гостей, камелия, детская площадка, 
+                                салон красоты, сауна-джакузи, spa-vip spa, турецкая баня, 
+                                комната для хобби, женский спа, кинотеатр, библиотека, прачечная, 
+                                рынок, массажный кабинет, ресторан, игровая комната, кабинет врач.
+                            </p>
+                            <p>
+                                Есть лифт, парковка, интернет (wifi), генератор, домофон, 
+                                круглосуточная охрана и видеонаблюдение. Эта квартира, 
+                                подходящая для кредита, была предложена для продажи нашим 
+                                уважаемым клиентам.Пожалуйста, свяжитесь для получения 
+                                подробной информации.</p>
+                            </p>
+                        </div>
+                        <div class="description__info">
+                            <div class="description__spoller">
+                                <div class="description__spoller-title-wrap">
+                                    <div class="description__spoller-title-text">
+                                        <div class="description__spoller-title-box">
+                                            <div class="description__spoller-title">
+                                                Расположение на карте
+                                            </div>
+                                            <div class="description__spoller-subtitle">Территориальное местонахождение объекта
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description__spoller-scenery">
+                                        <div class="slice"></div>
+                                            <button class="description__btn">
+                                            <div class="corner"></div>
+                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
+                                                </svg>
+                                            </button>
+                                    </div>
+                                </div>
+                                <div class="description__spoller-content">
+                                    <div class="description__spoller-map" id="map"></div>
+                                    <!-- AIzaSyA1-_BfcFzA372k4_e_oKIsNxAjpD1hdOU -->
+                                    <script async defer
+                                    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+                                </script>
+                                    <script>
+                                        function initMap() {
+                                            var element = document.getElementById('map');
+                                            var options = {
+                                                zoom: 5,
+                                                center: {lat: 38.721174589964086, lng: 35.48185084869683},
+                                            };
+                                    
+                                            var myMap = new google.maps.Map(element, options);
+                                    
+                                            var markers = [
+                                                {
+                                                    coordinates: {lat: 38.721174589964086, lng: 35.48185084869683},
+                                                    info: '<h3>Турция</h3>'
+                                                },
+                                                // {
+                                                //     coordinates: {lat: 59.940208, lng: 30.328092},
+                                                //     info: '<h3>Санкт-Петербург</h3>'
+                                                // },
+                                                // {
+                                                //     coordinates: {lat: 50.449973, lng: 30.524911},
+                                                //     info: '<h3>Киев</h3>'
+                                                // }
+                                            ];
+                                    
+                                            for(var i = 0; i < markers.length; i++) {
+                                                addMarker(markers[i]);
+                                            }
+                                    
+                                            function addMarker(properties) {
+                                                var marker = new google.maps.Marker({
+                                                    position: properties.coordinates,
+                                                    map: myMap
+                                                });
+                                    
+                                                if(properties.image) {
+                                                    marker.setIcon(properties.image);
+                                                }
+                                    
+                                                if(properties.info) {
+                                                    var InfoWindow = new google.maps.InfoWindow({
+                                                        content: properties.info
+                                                    });
+                                    
+                                                    marker.addListener('click', function(){
+                                                        InfoWindow.open(myMap, marker);
+                                                    });
+                                                }
+                                            }
+                                        }
+                                    </script>
+
+                                    
+                                    <!-- Компания STAY PROPERTY предоставляет услуги гида-переводчика,
+                                    который поможет купить все необходимое, а также получить в местных магазинах дополнительные сервисы:
+                                    скидки, расширенную гарантию и многое другое. -->
+                                
+                                </div>
+                            </div>
+                            <div class="description__spoller">
+                                <div class="description__spoller-title-wrap">
+                                    <div class="description__spoller-title-text">
+                                        <div class="description__spoller-title-box">
+                                            <div class="description__spoller-title">
+                                                Виртуальная экскурсия на место объекта
+                                            </div>
+                                            <div class="description__spoller-subtitle">Посмотреть расположение через Google - карты
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="description__spoller-scenery">
+                                        <div class="slice"></div>
+                                            <button class="description__btn">
+                                            <div class="corner"></div>
+                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
+                                                </svg>
+                                            </button>
+                                    </div>
+                                </div>
+                                <div class="description__spoller-content">
+                                    <div class="description__spoller-panorama">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!4v1648198126778!6m8!1m7!1sCAoSLEFGMVFpcE9nMnhLVFhmRGh0RS1qUDFEd0tvdWN2Z3pmR0M1ek4wRUNnMVJF!2m2!1d41.06092783311614!2d36.66601224011163!3f178.74399482204362!4f10.847124779603178!5f0.7820865974627469"
+                                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__article-item">
+                        <div class="articles__right-item mini-bg">
+                            <img src="./img/articles-item2.png" alt="">
+                            <div class="articles__item-title">Коммерческая невижимость</div>
+                            <div class="articles__item-subtitle">Больщим спросом в Турции пользуется коммерческая недвижимость, посмотреть “горячие” предложения.
+                            </div>
+                            <a href="" class="articles__item-btn btn">
+                                <span>Смотреть</span>
+                                <div class="btn__arrow btn--red">
+                                    <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.09668 1.51562L7.09668 7.02441L2.09668 12.5332" stroke="url(#paint0_linear_296_9452)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_296_9452" x1="2.29668" y1="1.07487" x2="0.697986" y2="27.945" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white"></stop>
+                                                <stop offset="1" stop-color="white" stop-opacity="0.24"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="object-video">
+            <div class="container">
+                <div class="object-video__inner">
+                    <div class="object-video__title title">Видео-обзор данного объекта</div>
+                    <div class="object-video__content">
+                        <!-- <div class="object-video__box"> -->
+                            <div class="blog__box">
+                                <div class="blog__photo">
+                                    <img src="./img/real-estate4.png" alt="">
+                                    <a href="" class="banner__btn-video btn-video"></a>
+                                </div>
+                                <div class="blog__box-content">
+                                    <div class="blog__box-top">
+                                        <div class="blog__box-top-item">
+                                            <div class="blog__box-top-img">
+                                                <img src="./img/heart-red.svg" alt="">
+                                            </div>
+                                            <div class="blog__box-top-number">433</div>
+                                        </div>
+                                        <div class="blog__box-top-item">
+                                            <div class="blog__box-top-img">
+                                                <img src="./img/comment.svg" alt="">
+                                            </div>
+                                            <div class="blog__box-top-number">332</div>
+                                        </div>
+                                        <div class="blog__box-top-item">
+                                            <div class="blog__box-top-img">
+                                                <img src="./img/eye.svg" alt="">
+                                            </div>
+                                            <div class="blog__box-top-number">3 546</div>
+                                        </div>
+                                    </div>
+                                    <div class="blog__box-title">Авсаллар - рай на земле
+                                    </div>
+                                    <div class="blog__box-bottom">
+                                        <div class="blog__box__bottom-clock">
+                                            <div class="blog__box-botom-icon">
+                                                <img src="./img/timer.svg" alt="">
+                                            </div>
+                                            <div class="blog__box-clock-text">6:44</div>
+                                        </div>
+                                        <div class="blog__box-bottom-data">30 май 2021</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <div class="object-video__payment">
+                            <div class="mortgage__calculation">
+                                <div class="mortgage__title">Ипотека онлайн</div>
+                                <div class="mortgage__subtitle">Отправьте заявку онлайн и сократите время оформления ипотеки
+                                </div>
+        
+                                <div class="mortgage__ranger">
+                                    <div class="mortgage__ranger-title">Стоимость квартиры</div>
+                                    <div class="mortgage__ranger-value"></div>
+                                    <input type="text" class="room-cost" name="" value="" />
+                                </div>
+        
+                                <div class="mortgage__rangers-wrap">
+                                    <div class="mortgage__ranger-payment">
+                                        <div class="mortgage__ranger-title">Первоначальный взнос</div>
+                                        <div class="mortgage__ranger-sale">30%</div>
+                                        <input type="text" class="payment" name="" value="" />
+                                    </div>
+        
+                                    <div class="mortgage__ranger-term">
+                                        <div class="mortgage__ranger-title">Стоимость квартиры</div>
+                                        <div class="mortgage__ranger-value"></div>
+                                        <input type="text" class="term" name="e" value="" />
+                                    </div>
+                                </div>
+        
+                                <div class="mortgage__bottom">
+                                    <div class="mortgage__price">
+                                        <span>от</span> 29.000<sup>€</sup>
+                                    </div>
+                                    <button class="mortgage__button">
+                                        <div class="mortgage__button-name">Подать заявку</div>
+                                        <div class="mortgage__buttom-arrow">
+                                            <img src="./img/arrow-blue.svg" alt="">
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
 
     </main>
 
@@ -862,7 +1128,7 @@
             <div class="footer__bottom-info">Oba Mah., Mesut Cd., No: 54/A – 07400 Alanya / Antalya / Turkey</div>
         </div>
     </footer>
-
+    <!-- <scrip type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/ion-range-slider.js"></script>

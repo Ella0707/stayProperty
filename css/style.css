@@ -7627,6 +7627,173 @@ input[type=number] {
   margin-bottom: 3.3rem;
 }
 
+.description__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.description__text-block {
+  width: 117.1rem;
+}
+.description__title {
+  margin-bottom: 6rem;
+}
+.description__text {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #2B2F36;
+  margin-bottom: 4rem;
+}
+.description__text p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.description__spoller {
+  width: 100%;
+}
+.description__spoller-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4rem;
+  position: relative;
+  cursor: pointer;
+}
+.description__spoller-title-wrap.active .description__btn {
+  background: #0199e4;
+}
+.description__spoller-title-wrap.active .description__btn svg {
+  fill: #ffffff;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+.description__spoller-title-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 93%;
+}
+.description__spoller-title-box {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.45;
+  background: #FFFFFF;
+  padding: 1.8rem 0 1.8rem 3.5rem;
+  border-radius: 3rem 0 3rem 3rem;
+  -webkit-box-shadow: -5rem 0.4rem 10rem rgba(76, 70, 203, 0.1);
+          box-shadow: -5rem 0.4rem 10rem rgba(76, 70, 203, 0.1);
+  width: 100%;
+}
+.description__spoller-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #8A91AA;
+}
+.description .slice {
+  height: 3rem;
+  background: #FFFFFF;
+  border-radius: 0 3rem 3rem 0;
+}
+.description__btn {
+  width: 6.5rem;
+  height: 6.5rem;
+  background: #ffffff;
+  border-radius: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-shadow: 4px 4px 50px rgba(76, 70, 203, 0.1);
+          box-shadow: 4px 4px 50px rgba(76, 70, 203, 0.1);
+  position: relative;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.description__btn .corner {
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  z-index: -1;
+}
+.description__btn .corner::before {
+  background-color: #fafaff;
+}
+.description__btn svg {
+  fill: #2B2F36;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.description__spoller-content {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #8A91AA;
+  line-height: 1.267;
+  background: #FFFFFF;
+  border-radius: 3rem;
+  padding: 3.6rem 3.5rem 3.6rem 3.5rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+.description__spoller-panorama {
+  width: 100%;
+  height: 50rem;
+  border-radius: 3rem;
+}
+.description__spoller-panorama iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.description__spoller-map {
+  width: 100%;
+  height: 50rem;
+  border-radius: 3rem;
+}
+.description__article-item {
+  width: 36.2rem;
+}
+
+.object-video__title {
+  margin-bottom: 6rem;
+}
+.object-video__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.object-video__content .blog__box {
+  width: 116.1rem;
+}
+.object-video .mortgage__calculation {
+  width: 36.2rem;
+}
+.object-video .mortgage__title {
+  font-size: 2.5rem;
+}
+.object-video .mortgage__subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.object-video .mortgage__ranger-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
 .objects-box {
   width: 36.2rem;
 }

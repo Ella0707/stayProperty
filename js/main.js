@@ -499,6 +499,13 @@ $(document).ready(function () {
     });
 });
 
+// споллер на странице карточка товара с картами
+$(document).ready(function () {
+    $('.description__spoller-title-wrap').click(function (event) {
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
+});
+
 
 
 // Споллер саппорт
@@ -632,6 +639,7 @@ for (var i = 1; i < rewiewsSwiper.slides.length - 1; i++) {
         $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
     }
 }
+
 
 
 
