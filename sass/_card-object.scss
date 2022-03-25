@@ -5,12 +5,13 @@
         text-align: center;
         width: 100%;
         margin-bottom: 5.2rem;
+        line-height: 1.3;
     }
     
     &__nav {
         display: flex;
         align-items: center;
-        margin-bottom: 4.7rem;
+        margin-bottom: 4rem;
     }
     
     &__nav-item {
@@ -19,7 +20,7 @@
         border-bottom: 0.1rem solid #000;
 
         &:not(:last-child) {
-            margin-right: 6rem;
+            margin-right: 6.2rem;
         }
 
         &:last-child {
@@ -41,7 +42,7 @@
     &__content-top{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 6.2rem;
+        margin-bottom: 8rem;
     }
     
     &__photo-block {
@@ -73,7 +74,7 @@
     }
     
     &__slide {
-        height: 77.4rem;
+        height: 75.4rem;
         width: 100%;
         border-radius: 4rem;
 
@@ -118,7 +119,7 @@
 
         position: absolute;
         right: 8.9rem;
-        bottom: 10rem;
+        bottom: 9rem;
         z-index: 10;
 
         img {
@@ -130,7 +131,7 @@
     
     &__social {
         position: absolute;
-        bottom: 6rem;
+        bottom: 5rem;
         left: 4rem;
         z-index: 10;
     }
@@ -161,6 +162,7 @@
     
     &__info-block {
         width: 36.5rem;
+        padding-top: 2.3rem;
     }
 
     &__info-main {
@@ -169,7 +171,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         column-gap: 1.7rem;
         row-gap: 2.4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
     
     &__info-main-item {
@@ -196,14 +198,14 @@
     &__info-list {
         @include text (1.7rem, 400, #2B2F36);
         padding-left: 3rem;
-        margin-bottom: 4rem;
+        margin-bottom: 4.2rem;
     }
     
     &__info-list-item {
         position: relative;
 
         &:not(:last-child) {
-            margin-bottom: 2rem;
+            margin-bottom: 2.3rem;
         }
 
         &::before {
@@ -227,7 +229,7 @@
         margin-bottom: 4.5rem;
 
         &:not(:last-child) {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
     }
     
@@ -340,6 +342,7 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2rem;
+        margin-left: auto;
     }
     
     &__button-name {
@@ -385,17 +388,16 @@
     }
 }
 
-
+.banner-support.page-card {
+    margin-bottom: 16.5rem;
+}
 
 .description {
-
-
-
+    margin-bottom: 11rem;
     
     &__inner {
         display: flex;
         justify-content: space-between;
-    
     }
     
     &__text-block {
@@ -404,9 +406,7 @@
     
     &__title {
         margin-bottom: 6rem;
-    
     }
-   
     
     &__text {
         @include text (2.4rem, 400, #2B2F36);
@@ -414,15 +414,9 @@
 
         p {
             &:not(:last-child) {
-                margin-bottom: 2rem;
+                margin-bottom: 3.5rem;
             }
         }
-    }
-    
-    &__info {
-
-       
-    
     }
     
     &__spoller {
@@ -469,10 +463,6 @@
         @include text (2rem, 400, #8A91AA);
     }
 
-    &__spoller-scenery {
-    
-    }
-
     .slice {
         height: 3rem;
         background: #FFFFFF;
@@ -515,7 +505,6 @@
         }
     }
     
-    
     &__spoller-content {
         font-size: 1.8rem;
         font-weight: 400;
@@ -527,6 +516,7 @@
         position: relative;
         z-index: 1;
         margin-bottom: 3rem;
+        display: none;
     }
 
     &__spoller-panorama {
@@ -550,26 +540,15 @@
     &__article-item {
         width: 36.2rem;
     }
-
-
-
 }
 
 
 .object-video {
+    padding-bottom: 7rem;
+    margin-bottom: 10rem;
 
-
-    
-    &__inner {
-       
-    
-    }
-    
     &__title {
         margin-bottom: 6rem;
-    
-    }
-    .title {
     }
     
     &__content {
@@ -578,131 +557,367 @@
 
         .blog__box {
             width: 116.1rem;
+            height: 56.5rem;
+            padding: 4.5rem 7.5rem 3.9rem 4.5rem;
         }
-    
     }
-    
-    // &__box {
-    //     width: 116.1rem;
-
-    //     .object-video__box {
-    //         width: 100%;
-    //     }
-
-        
-    
-    // }
     
     .blog__photo {
+        width: 56.2rem;
+        margin-right: 5rem;
+        position: relative;
+
+        .btn-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 13.4rem;
+            height: 13.4rem;
+
+            &:before {
+                border-width: 2rem 2rem 2rem 2.3rem;
+                // border-color: transparent transparent transparent #ffffff;
+            }
+        }
     }
-    .banner__btn-video {
-    }
-    .btn-video {
-    }
+
     .blog__box-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
+
     .blog__box-top {
+        margin-bottom: 4.6rem;
     }
-    .blog__box-top-item {
-    }
+
     .blog__box-top-img {
+        width: 3.6rem;
+        height: 3.6rem;
     }
+
     .blog__box-top-number {
+        font-size: 2.3rem;
     }
+
     .blog__box-title {
+        font-size: 4rem;
+        border: none;
     }
+
     .blog__box-bottom {
+        margin-top: auto;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        border-top: 1px solid #DDE2F4;
     }
-    .blog__box__bottom-clock {
-    }
+
     .blog__box-botom-icon {
+        width: 3.7rem;
+        height: 3.7rem;
     }
+
     .blog__box-clock-text {
+        font-size: 2.4rem;
     }
+
     .blog__box-bottom-data {
+        font-size: 2rem;
     }
+
     .object-video__payment {
     }
+
     .mortgage__calculation {
         width: 36.2rem;
+        padding: 2.5rem 3.1rem 2.5rem 3.1rem;
+        box-shadow: 0.5rem 1.1rem 15.2rem rgba(40, 44, 78, 0.1)
     }
+
     .mortgage__title {
         font-size: 2.5rem;
     }
+
     .mortgage__subtitle {
         font-size: 1.6rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.7rem;
     }
+
     .mortgage__ranger {
+        position: relative;
     }
+
+    .mortgage__rangers-wrap {
+        display: flex;
+        margin-bottom: 2.3rem;
+    }
+
     .mortgage__ranger-title {
         font-size: 1.4rem;
-        margin-bottom: 0.8rem;
-    }
-    .mortgage__ranger-value {
+        margin-bottom: 2.3rem;
     }
 
+    .mortgage__ranger-payment {
+        position: relative;
+        width: 78%;
+    }
+
+    .mortgage__ranger-sale {
+        top: 6rem;
+    }
+
+    .irs--round .irs-handle {
+        top: 30px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .irs-single {
+        position: static;
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #2b2f36;
+        padding: 0;
+        padding-left: 0.5rem;
+        background: transparent;
+    }
+
+    .irs--round .irs-single:before {
+        display: none;
+    }
+
+    .mortgage__bottom {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .mortgage__price {
+        margin-bottom: 2.6rem;
+    }
+
+    .mortgage__button {
+        width: 100%;
+    }
 }
 
-.irs {
-}
-.irs--round {
-}
-.js-irs-0 {
-}
-.irs-line {
-}
-.irs-min {
-}
-.irs-max {
-}
-.irs-from {
-}
-.irs-to {
-}
-.irs-single {
-}
-.irs-grid {
-}
-.irs-bar {
-}
-.irs-bar--single {
-}
-.irs-shadow {
-}
-.shadow-single {
-}
-.irs-handle {
-}
-.single {
-}
-.room-cost {
-}
-.irs-hidden-input {
-}
-.mortgage__rangers-wrap {
-}
-.mortgage__ranger-payment {
-}
-.mortgage__ranger-sale {
-}
-.js-irs-1 {
-}
-.payment {
-}
-.mortgage__ranger-term {
-}
-.js-irs-2 {
-}
-.term {
-}
-.mortgage__bottom {
-}
-.mortgage__price {
-}
-.mortgage__button {
-}
-.mortgage__button-name {
-}
-.mortgage__buttom-arrow {
+
+.similar-objects {
+    padding-bottom: 7rem;
+    margin-bottom: 10rem;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 4.7rem;
+    }
+    
+    &__sort {
+        display: flex;
+        align-items: center;
+        background: #F7F7FD;
+        border-radius: 1rem;
+        margin-bottom: 2.3rem;
+
+        width: 30.4rem;
+        height: 6rem;
+        padding: 0 2rem;
+
+        margin-left: auto;
+        margin-right: 15rem;
+    }
+    
+    &__sort-item {
+        @include text (1.7rem, 400, #8A91AA);
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                width: 0.1rem;
+                height: 6rem;
+                background: #DFDFE7;
+
+                position: absolute;
+                top: -2rem;
+                right: -2rem;
+            }
+        }
+    }
+    
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .real-estate {
+
+        &__box {
+            width: 36.8rem;
+            height: 47.6rem;
+
+            &:not(:nth-child(4n+4)) {
+                margin-right: 2.8rem;
+            }
+        }
+
+        &__box-inner {
+            height: 41.7rem;
+
+            &.active {
+                .real-estate__slider {
+                    height: 16rem;
+                }
+
+                .real-estate__box-cart {
+                    display: none;
+                }
+            }
+        }
+
+        &__box-top {
+            padding: 1.3rem 1.3rem 2.5rem 1.3rem;
+        }
+
+        &__slider {
+            height: 32.8rem;
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        &__pagination {
+
+            span {
+                width: 0.7rem;
+                height: 0.7rem;
+            }
+
+            &.swiper-pagination {
+                bottom: 1.5rem;
+            }
+        }
+
+        &__box-id {
+            @include text (1rem, 500, rgba(255, 255, 255, 1));
+            width: 7.7rem;
+            height: 2.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+
+            background: rgba(20, 20, 78, 0.21);
+            border-radius: 1.2rem;
+
+            position: absolute;
+            top: 1.2rem;
+            right: 1.3rem;
+            z-index: 10;
+        }
+
+        &__box-cart {
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 50%;
+
+            box-shadow: 0.4rem 0.4rem 5rem rgba(76, 70, 203, 0.1);
+            background: #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 2.3rem;
+                height: 1.6rem;
+                object-fit: contain;
+            }
+
+            position: absolute;
+            bottom: 2.5rem;
+            right: 2.5rem;
+            z-index: 10;
+        }
+
+        &__box-title {
+            font-size: 1.5rem;
+        }
+
+        &__bottom-box-info {
+            width: 83.5%;
+
+            &.hover {
+                padding-bottom: 1.8rem;
+                margin-bottom: 1.8rem;
+                width: 100%;
+            }
+        }
+
+        &__sity-img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        &__sity-name {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: rgba(43, 47, 54, 1);
+        }
+
+        &__box-price {
+            font-size: 1.6rem;
+
+            span {
+                font-size: 1.2rem;
+            }
+
+            sup {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__box-item {
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__box-item-left {
+            width: 50%;
+        }
+
+        &__corner {
+            position: absolute;
+            top: 0;
+            right: 4.2rem;
+        }
+
+        &__like {
+            width: 4.8rem;
+            height: 4.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #0199E4;
+            box-shadow: 0.3rem 0.3rem 3.7rem rgba(76, 70, 203, 0.1);
+            border-radius: 1.2rem;
+            margin-top: 1rem;
+
+            position: relative;
+
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            &.active {
+                background: linear-gradient(0deg, #E82E3D, #E82E3D), linear-gradient(329.72deg, #DE1117 6.36%, #F13E5E 115.33%), linear-gradient(321.12deg, #DE1117 -13.86%, #F13E5E 74.59%), linear-gradient(0deg, #D91F40, #D91F40), linear-gradient(119.1deg, #4341CC 42.46%, #FF9CB4 149.72%), #6C42E2;
+            }
+        }
+    }
 }
