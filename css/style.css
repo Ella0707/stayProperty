@@ -8263,6 +8263,335 @@ input[type=number] {
   margin-top: auto;
 }
 
+.stages {
+  padding-bottom: 7rem;
+  margin-bottom: 10rem;
+}
+.stages__title {
+  margin-bottom: 6rem;
+}
+.stages__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.stages__items {
+  width: 116.6rem;
+  margin-bottom: 16.7rem;
+}
+.stages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.stages__item:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.stages__item:not(:last-child)::before {
+  content: "";
+  width: 0.3rem;
+  height: 100%;
+  border-left: 0.4rem dashed #0199e4;
+  position: absolute;
+  top: 4.7rem;
+  left: 4.3rem;
+}
+.stages__item.done .stages__mark-circle {
+  background: #0199E4;
+}
+.stages__item.done .stages__mark-circle img {
+  height: 3rem;
+  width: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.stages__item.done .stages__mark-circle span {
+  display: none;
+}
+.stages__item.not-done::before {
+  content: "";
+  width: 0.3rem;
+  height: 100%;
+  border-left: 0.4rem dashed #bcc3db;
+}
+.stages__item.not-done .stages__mark-circle {
+  background: white;
+}
+.stages__item.not-done .stages__mark-circle span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #bdc4dc;
+}
+.stages__item.in-progress::before {
+  content: "";
+  width: 0.3rem;
+  height: 100%;
+  border-left: 0.4rem dashed #bcc3db;
+}
+.stages__item.in-progress .stages__mark-circle {
+  position: relative;
+  background-image: linear-gradient(150deg, transparent 50%, #0199E4 50%), linear-gradient(90deg, white 50%, #0199E4 50%);
+}
+.stages__item.in-progress .stages__mark-circle span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0199e4;
+  position: relative;
+  z-index: 4;
+}
+.stages__item.in-progress .stages__mark-circle::before {
+  content: "";
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.stages__mark {
+  width: 9rem;
+  height: 9rem;
+  background: #fafaff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  z-index: 2;
+}
+.stages__mark-circle {
+  width: 6.1rem;
+  height: 6.1rem;
+  border-radius: 50%;
+  background: #0199E4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.stages__mark-circle img {
+  height: 3rem;
+  width: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: none;
+}
+.stages .description__spoller .slice {
+  height: 3rem;
+  background: #FFFFFF;
+  border-radius: 0 3rem 3rem 0;
+}
+.stages .description__spoller.stage .description__spoller-title-wrap {
+  margin-bottom: 0;
+}
+.stages .description__spoller.stage .description__spoller-content {
+  padding: 4.6rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.stages .description__spoller.stage .description__spoller-content-img {
+  width: 26.6rem;
+  height: 19.1rem;
+  border-radius: 2rem;
+  margin-right: 4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.stages .description__spoller.stage .description__spoller-content-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.stages .description__spoller.stage .description__spoller-title-box {
+  position: relative;
+  z-index: 3;
+}
+.stages__info {
+  width: 36.2rem;
+}
+.stages__info-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2b2f36;
+  margin-bottom: 6rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+.stages__info-progress-day {
+  width: 35.6rem;
+  height: 35.6rem;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: 0 auto 6rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.stages__progress-day-circle {
+  width: 30.2rem;
+  height: 30.2rem;
+  border-radius: 50%;
+  background-image: linear-gradient(187deg, transparent 50%, #0199E4 50%), linear-gradient(90deg, #fafaff 50%, #0199E4 50%);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.stages__progress-day-circle::after {
+  content: "";
+  width: 27rem;
+  height: 27rem;
+  border-radius: 50%;
+  background: #fafaff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.stages__progress-day-circle::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #0199E4;
+  position: absolute;
+  top: 11rem;
+  left: -0.5rem;
+  z-index: 3;
+}
+.stages__info-progress-text {
+  padding: 1rem;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.stages__day-value {
+  font-size: 5.5rem;
+  font-weight: 600;
+  color: #0199e4;
+  width: 95%;
+  margin-bottom: 0.4rem;
+}
+.stages__day-key {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #9faab4;
+}
+.stages__info-progressbar-wrap {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+.stages__progressbar-inner {
+  width: 100%;
+  height: 2rem;
+  background: #F5F5FA;
+  opacity: 0.9;
+  -webkit-box-shadow: inset 0px 0px 0.4rem rgba(67, 72, 82, 0.25);
+          box-shadow: inset 0px 0px 0.4rem rgba(67, 72, 82, 0.25);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+}
+.stages__progressbar {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #ffffff;
+  border-radius: 10rem;
+  position: relative;
+}
+.stages__progressbar::before {
+  content: "";
+  width: 43%;
+  height: 0.5rem;
+  background: linear-gradient(90.09deg, rgba(1, 153, 228, 0.3) 0%, rgba(1, 153, 228, 0.5) 45.17%, rgba(1, 153, 228, 0.812047) 85.39%, #0199E4 108.05%);
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.stages__progressbar-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #0199e4;
+  text-align: center;
+}
+.stages .articles__right-item.medium-bg {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .objects-box {
   width: 36.2rem;
 }
