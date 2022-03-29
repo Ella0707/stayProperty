@@ -291,13 +291,17 @@
     &__social-wrap {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        // justify-content: space-between;
         width: 30rem;
     }
 
     &__social-item {
         width: 3rem;
         height: 3rem;
+
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+        }
 
         img {
             height: 100%;
@@ -477,7 +481,7 @@
 .banner {
     position: relative;
     height: 100rem;
-    padding-top: 55rem;
+    padding-top: 65rem;
     margin-bottom: 9rem;
 
     &__slider {
@@ -578,6 +582,26 @@
     &__btn-arrow {
         width: 6rem;
         height: 2rem;
+    }
+
+    &__inner {
+        position: relative;
+    }
+
+    .swiper__pagination-wrap {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0rem;
+        top: -9.4rem;
+        z-index: 10;
+    }
+
+    .swiper__arrows {
+        position: absolute;
+        right: 0;
+        top: -9.4rem;
+        z-index: 10;
     }
 }
 
