@@ -201,7 +201,7 @@ const liveSwiper = new Swiper('.live__slider', {
     },
 
     pagination: {
-        el: ".live__pagination",
+        el: ".swiper-bullets-live",
         bullets: true,
         clickable: true,
     },
@@ -309,13 +309,13 @@ const bannerSwiper = new Swiper('.banner__slider', {
     },
 
     on: {
-        init: sliderNumber,
-        slideChange: sliderNumber
+        init: sliderCounter,
+        slideChange: sliderCounter
     },
 });
 
 
-function sliderNumber() {
+function sliderCounter() {
     let currentSlide = this.realIndex + 1;
     if (currentSlide < 10) {
         currentSlide = '0' + currentSlide
@@ -506,7 +506,16 @@ $(document).ready(function () {
     });
 });
 
-
+// раскрытие фильтра в баннере в мобильной версии
+if ($('#spoller-filter').length) {
+    if ($(window).width() <= 769) {
+        $(document).ready(function () {
+            $('.filter__header').click(function (event) {
+                $(this).toggleClass('active').next().slideToggle(300);
+            });
+        });
+    }
+}
 
 // Споллер саппорт
 $('.service__spoller-title-wrap').on('click', function (e) {
@@ -548,12 +557,6 @@ $('.service__spoller-title-wrap').on('click', function (e) {
 $('.service__spoller-title-wrap').on('click', function (e) {
     e.preventDefault();
 
-    // if($(this).closest('.free').hasClass('active')) {
-    //     $('.item-free').addClass('open');
-    // } else {
-    //     $('.item-free').removeClass('open');
-    // }
-
     if ($(this).closest('.paid').hasClass('active')) {
         $('.item-paid').addClass('open-bottom');
     } else {
@@ -582,6 +585,15 @@ $(".other-news__spoller-pagination-num").click(function (e) {
     $(".other-news__spoller-pagination-num").removeClass('active');
     $(this).addClass('active');
 })
+
+
+// кастомная пагинация слайдера
+$(".spoller-pagination-num").click(function (e) {
+    e.preventDefault();
+    $(".spoller-pagination-num").removeClass('active');
+    $(this).addClass('active');
+})
+
 
 // пагинация на странице недвижимости 
 $(".real-estate__pagination-num").click(function (e) {
@@ -631,14 +643,14 @@ function sliderNumber() {
 }
 
 // Generate pagination bullets inside div with #bullets ID
-for (var i = 1; i < rewiewsSwiper.slides.length - 1; i++) {
-    if (i === 1) {
-        // add active class if it is the first bullet
-        $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'bullets-two-bullet-active' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
-    } else {
-        $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
-    }
-}
+// for (var i = 1; i < rewiewsSwiper.slides.length - 1; i++) {
+//     if (i === 1) {
+//         // add active class if it is the first bullet
+//         $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'bullets-two-bullet-active' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
+//     } else {
+//         $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
+//     }
+// }
 
 
 

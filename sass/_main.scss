@@ -91,7 +91,7 @@
 
     &__location-body {
         width: 27.5rem;
-        height: 18.1rem;
+        height: auto;
         padding: 1.8rem 2.8rem 2.1rem 1.5rem;
         z-index: 10;
         background: #FFFFFF;
@@ -932,13 +932,25 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 38.2%), linear-gradient(180deg, rgba(0, 0, 0, 0) 64.9%, rgba(0, 0, 0, 0.4) 100%), url(./../img/photo1.png), #C4C4C4;
-        background-position-x: center;
-        background-position-y: center;
-        background-size: cover;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 38.2%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 64.9%, rgba(0, 0, 0, 0.4) 100%);
+
         border-radius: 3rem;
         width: 36.2rem;
         height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+
+            object-fit: cover;
+            border-radius: inherit;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
     }
 
     &__blocks-wrap {
@@ -963,10 +975,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 38.2%), linear-gradient(180deg, rgba(0, 0, 0, 0) 64.9%, rgba(0, 0, 0, 0.4) 100%), url(./../img/photo1.png), #C4C4C4;
-        background-position-x: center;
-        background-position-y: center;
-        background-size: cover;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 38.2%), linear-gradient(180deg, rgba(0, 0, 0, 0) 64.9%, rgba(0, 0, 0, 0.4) 100%);
         border-radius: 3rem;
         width: 36.2rem;
         height: 25rem;
@@ -978,14 +987,15 @@
             right: 0;
             bottom: 0;
             z-index: -1;
+
+            height: 100%;
+            width: 100%;
             border-radius: inherit;
         }
 
         &:nth-child(2n) {
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 38.2%), linear-gradient(180deg, rgba(0, 0, 0, 0) 64.9%, rgba(0, 0, 0, 0.4) 100%), url(./../img/photo2.png), #C4C4C4;
-            background-position-x: center;
-            background-position-y: center;
-            background-size: cover;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 38.2%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0) 64.9%, rgba(0, 0, 0, 0.4) 100%);
             height: 20rem;
         }
     }
@@ -1002,12 +1012,22 @@
     &__inner {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        row-gap: 3.7rem;
+        // justify-content: space-between;
+        // row-gap: 3.7rem;
     }
 
     &__title {
         margin-bottom: 6.5rem;
+    }
+
+    .objects-box {
+        &:not(:nth-child(4n + 4)) {
+            margin-right: 3.7rem;
+        }
+
+        &:not(:nth-child(n + 5)) {
+            margin-bottom: 3.7rem;
+        }
     }
 }
 
@@ -1147,10 +1167,21 @@
             height: 1.2rem;
             background: rgba(43, 47, 54, 1);
         }
+    }
 
-        &.swiper-pagination-bullets {
-            width: 20rem;
-        }
+    .swiper-pagination-bullets {
+        width: 20rem;
+
+        position: absolute;
+        left: 0;
+        bottom: 1.5rem;
+    }
+
+    .swiper__arrows {
+        position: absolute;
+        width: 20rem;
+        right: 0;
+        bottom: -1.5rem;
     }
 }
 
@@ -1164,18 +1195,28 @@
     
     &__content {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
     }
     
     &__box-column {
         display: flex;
         flex-direction: column;
-        row-gap: 1.8rem;
-        height: 100%;
 
         &:nth-child(2n) {
             flex-direction: column-reverse;
+
+            .catalog__box {
+                &:nth-child(1) {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(2) {
+                    margin-bottom: 1.8rem;
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 3rem;
         }
     }
     
@@ -1184,6 +1225,10 @@
         height: 25.3rem;
         filter: drop-shadow(1rem 2rem 10rem rgba(40, 44, 78, 0.15));
         border-radius: 3rem;
+
+        &:nth-child(1) {
+            margin-bottom: 1.8rem;
+        }
 
         &.photo-box,
         &.map {
@@ -1566,10 +1611,10 @@
         text-align: center;
         margin-bottom: 5.5rem;
     }
-   
     
     &__select {
         position: relative;
+        margin-right: 2rem;
         
         &.active {
 
@@ -1583,16 +1628,13 @@
                 display: block;
             }
         }
-    
     }
     
     &__select-top {
         display: flex;
         justify-content: space-between;
         margin-bottom: 3.8rem;
-    
     }
-   
     
     &__wrapper {
         width: 49.4rem;
@@ -1603,7 +1645,6 @@
         align-items: center;
         justify-content: space-between;
         padding: 2rem 2rem 2rem 2rem;
-        margin-right: 2rem;
         cursor: pointer;
 
         svg {
@@ -1611,8 +1652,6 @@
             height: 0.8rem;
             transition: 0.5s;
         }
-
-       
     }
     
     
@@ -1806,13 +1845,21 @@
     &__content {
         display: flex;
         flex-wrap: wrap;
-        gap: 3.8rem;
+        // gap: 3.8rem;
     }
     
     &__box {
         width: 49.4rem;
         height: 63.8rem;
         position: relative;
+
+        &:not(:nth-child(3n+3)) {
+            margin-right: 3.8rem;
+        }
+
+        &:nth-child(-n+3) {
+            margin-bottom: 3.8rem;
+        }
     }
 
     
@@ -1866,6 +1913,8 @@
 
         &.swiper-pagination  {
             bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
     
@@ -2138,11 +2187,12 @@
     }
     
     &__command {
-        width: 40rem;
+        width: 26.4rem;
+        margin-right: 13.6rem;
+
     }
     
     &__command-img {
-        width: 26.4rem;
         height: 30.6rem;
         border-radius: 0 3rem 0 3rem;
         margin-bottom: 4.2rem;
@@ -2259,9 +2309,9 @@
     &__slide-name-wrap {
         width: 38.2rem;
         height: 35.6rem;
-        padding-left: 22rem;
-        padding-right: 2rem;
-        padding-top: 13.7rem;
+        // padding-left: 22rem;
+        // padding-right: 2rem;
+        // padding-top: 13.7rem;
         position: absolute;
         top: 0;
         right: -4rem;
@@ -2272,20 +2322,37 @@
             position: absolute;
             top: 3rem;
             right: -10rem;
+            // box-shadow: 20px 20px 100px rgba(40, 44, 78, 0.15);
+
         }
+
+        
+        // img {
+        //     width: 38.2rem;
+        //     height: 35.6rem;
+        //     position: absolute;
+        //     top: 3rem;
+        //     right: -10rem;
+        //     box-shadow: 20px 20px 100px rgba(40, 44, 78, 0.15);
+        // }
+    }
+
+    &__slide-mini-text {
+        position: absolute;
+        right: 3rem;
+        top: 14rem;
+        width: 14rem;
     }
     
     &__slide-name {
         @include text(1.7rem, 600, rgba(43, 47, 54, 1));
         margin-bottom: 1.5rem;
-        position: relative;
         width: 12rem;
         text-align: end;
     }
     
     &__slide-data {
         @include text (1.5rem, 400, rgba(138, 145, 170, 1));
-        position: relative;
         text-align: end;
         width: 12rem;
     }
@@ -2425,7 +2492,7 @@
         }
     }
 
-    .banner__btn-video {
+    .btn-video {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -2442,6 +2509,9 @@
     
     &__box-content {
         padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     &__box-top {
@@ -2476,8 +2546,6 @@
     &__box-title {
         @include text (2.6rem, 700, #2B2F36);
         line-height: 1.46;
-        padding-bottom: 2.6rem;
-        border-bottom: 1px solid #DDE2F4;
         margin-bottom: 1.6rem;
     }
     
@@ -2485,6 +2553,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        padding-top: 2.6rem;
+        border-top: 1px solid #DDE2F4;
     }
     
     &__box__bottom-clock {
@@ -2513,18 +2584,16 @@
 }
 
 
-
-
-    
 .live {
-    padding: 8.5rem 0 10rem 0;
+    padding: 0rem 0 10rem 0;
     margin-bottom: 18rem;
     background: linear-gradient(175.32deg, #E6EEFB 4.9%, #EBF4FF 96.86%), #ECECF5;
+    overflow: hidden;
 
     
     &__inner {
-        overflow: hidden;
-    
+        // overflow: hidden;
+        padding-top: 8.5rem;
     }
     
     &__title-wrap {
@@ -2539,36 +2608,10 @@
         span {
             color: #0199E4;
         }
-    
-    }
-   
-    .swiper__arrows {
-    }
-    
-    &__slider-prev {
-    
-    }
-    .swiper__arrow {
-    }
-    .swiper-button-disabled {
-    }
-    
-    &__slider-next {
-    
     }
     
     &__slider {
         margin-bottom: 6.1rem;
-    
-    }
-    .swiper-slider {
-    }
-    
-    &__slider-wrapper {
-
-    
-    }
-    .swiper-wrapper {
     }
     
     &__slide {
@@ -2576,17 +2619,12 @@
         background: #FFFFFF;
         box-shadow: 1rem 2rem 10rem rgba(85, 105, 129, 0.13);
         border-radius: 4rem;
-    
-    }
-    .swiper-slide {
     }
     
     &__slide-top {
         display: flex;
         align-items: center;
         margin-bottom: 2rem;
-
-    
     }
     
     &__slide-ava {
@@ -2600,16 +2638,10 @@
             object-fit: cover;
             border-radius: inherit;
         }
-    
-    }
-    
-    &__top-personal {
-        padding-top: 1.2rem;
     }
     
     &__personal-name {
         @include text (1.8rem, 700, #2B2F36);
-        margin-bottom: 0.4rem;
     }
     
     &__personal-location {
@@ -2683,13 +2715,11 @@
     &__pagination-wrap {
         display: flex;
         align-items: center;
-    
+        justify-content: space-between;
     }
     
     &__numbers {
         @include text (4rem, 600, #2B2F36);
-
-    
     }
     
     &__pagination {
@@ -3243,7 +3273,7 @@
         height: 67.2rem;
         border-radius: 3rem;
         position: relative;
-        padding: 5.3rem 1.4rem 2rem 3rem;
+        padding: 5.3rem 4.4rem 2rem 3rem;
         flex-shrink: 0;
         margin-right: 7.8rem;
 
@@ -3269,7 +3299,6 @@
         @include text (1.7rem, 400, rgba(159, 170, 180, 1));
         line-height: 1.4;
         margin-bottom: 3.8rem;
-        width: 90%;
     }
 
     &__btn {
@@ -3298,7 +3327,7 @@
             width: 92%;
         }
     }
- 
+
     &__article-title {
         @include text (2.5rem, 700, rgba(43, 47, 54, 1));
         margin-bottom: 2.5rem;
@@ -3364,7 +3393,8 @@
         width: 24.5rem;
         height: 6rem;
         padding: 0 1.3rem 0 2rem;
-        background: linear-gradient(0deg, #E82E3D, #E82E3D), linear-gradient(272.89deg, #4341CC -9.64%, #0199E4 92.79%);
+        background: linear-gradient(0deg, #E82E3D, #E82E3D),
+        linear-gradient(272.89deg, #4341CC -9.64%, #0199E4 92.79%);
         border-radius: 1.6rem;
     }
     

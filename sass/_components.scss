@@ -169,6 +169,49 @@
 }
 
 
+.spoller-pagination {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #BDC1CF;
+
+    
+
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: auto;
+}
+
+.spoller-pagination-num {
+    cursor: pointer;
+    margin-right: 1.5rem;
+    transition: 0.01s;
+
+    &.active {
+        @include text (4rem, 600, #2B2F36);
+    }
+
+    &:first-child {
+        margin-right: 11.6rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 6rem;
+            height: 0.2rem;
+            background-color: #D4DAEC;
+
+            position: absolute;
+
+            right: -9rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+}
 
 
 
