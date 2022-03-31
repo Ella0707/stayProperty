@@ -28,7 +28,6 @@ let select = function () {
 select();
 
 
-
 // появление дополнителньой информации в текстовом блоке карточек с недвижимостью на Главной странице
 $(document).ready(function () {
     $('.real-estate__text-block').on('mouseenter', function () {

@@ -190,12 +190,11 @@
         box-shadow: -1rem 2rem 2rem rgba(40, 44, 78, 0.1);
         width: 87%;
         display: flex;
+        align-items: flex-start;
         
         span {
         @include text (1.4rem, 400, rgba(153, 162, 181, 1));
         margin-right: 0.8rem;
-        align-self: center;
-
         }
     }
     
@@ -227,7 +226,171 @@
         &.active {
             background: linear-gradient(0deg, #E82E3D, #E82E3D), linear-gradient(329.72deg, #DE1117 6.36%, #F13E5E 115.33%), linear-gradient(321.12deg, #DE1117 -13.86%, #F13E5E 74.59%), linear-gradient(0deg, #D91F40, #D91F40), linear-gradient(119.1deg, #4341CC 42.46%, #FF9CB4 149.72%), #6C42E2;
         }
+
+        svg {
+            width: 3rem;
+            height: 3rem;
+        }
     }
 }
 
 
+
+
+
+@media (max-width: 48em) {
+
+    .objects-box {
+        width: 100%;
+        height: 10%;
+        
+        &__inner {
+            padding: 4rem 4rem 0 4rem;
+            border-radius: 4rem 4rem 4rem 0;  
+            padding-bottom: 3rem;  
+            height: 82rem;
+        }
+        
+        &__slider {
+            height: 33rem;
+            margin-bottom: 4.6rem; 
+        }
+    
+        &__pagination {
+
+            span {
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+    
+            &.swiper-pagination  {
+                bottom: 3rem;
+            }
+        }
+    
+        &__slider-wrapper {
+            border-radius: 3rem;
+        }
+    
+        &__location {
+            padding-bottom: 2rem;
+            margin-bottom: 2.4rem;
+        }
+        
+        &__location-img {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 0.3rem;
+        }
+        
+        &__place-name {
+            font-size: 3.2rem;
+        }
+        
+        &__id {
+            font-size: 2.6rem;
+    
+            span {
+                margin-right: 0.5rem;
+            }
+        }
+        
+        &__title {
+            font-size: 3.6rem;
+            margin-bottom: 2.2rem;
+            line-height: 1.3;
+        }
+        
+        &__area-key-wrap {
+            margin-bottom: 3rem;
+            margin-right: 0.8rem;
+        }
+        
+        &__area-key-img {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1.6rem;
+        }
+        
+        &__area-key-name {
+            font-size: 3rem;
+            margin-right: 0.8rem;
+        }
+        
+        &__area-value {
+            font-size: 3.2rem;
+        }
+        
+        &__rooms-key-wrap {
+            margin-right: 1.6rem;
+        }
+        
+        &__rooms-key-img {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1.6rem;
+        }
+        
+        &__rooms-key-name {
+            font-size: 3rem;
+        }
+        
+        &__rooms-value {
+            width: 8rem;
+            height: 6rem;
+            border-radius: 2rem;
+            padding: 1rem;
+    
+            font-size: 3rem;
+
+            &:not(:last-child) {
+                margin-right: 1.8rem;
+            }
+        }
+        
+        &__price {
+            background: #FFFFFF;
+            border-radius: 0 0 4rem 4rem;
+            padding-top: 1.5rem;
+            padding-left: 2.5rem;
+            padding-right: 2rem;
+            padding-bottom: 1.5rem;
+            width: 87%;
+
+            span {
+                font-size: 3rem;
+                margin-right: 1.6rem;
+                padding-top: 1rem;
+            }
+        }
+        
+        &__price-value {
+            font-size: 3.6rem;
+    
+            sup {
+                font-size: 2.6rem;
+            }
+        }
+        
+        &__like {
+            width: 9.6rem;
+            height: 9.6rem;
+    
+            border-radius: 2.2rem;
+    
+            margin-top: 1.3rem;
+    
+    
+          
+            svg {
+                width: 4.4rem;
+                height: 4.4rem;
+            }
+        }
+    }
+    
+
+
+
+
+}
