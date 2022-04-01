@@ -1301,9 +1301,6 @@
         </section>
 
         <section class="support">
-            <div class="support__img mobile">
-                <img src="./img/city-mob.png" alt="">
-            </div>
             <div class="container">
                 <div class="support__inner">
                     <div class="support__text-block">
@@ -1351,6 +1348,9 @@
                         </div>
                         <div class="support__img desctop">
                             <img src="./img/support-img.png" alt="">
+                        </div>
+                        <div class="support__img mobile">
+                            <img src="./img/city-mob.png" alt="">
                         </div>
                     </div>
                     <div class="support__slider-block">
@@ -1472,147 +1472,564 @@
 
         <section class="catalog">
             <div class="container">
-                <div class="catalog__title title">Каталог недвижимости</div>
-                <div class="catalog__content">
-                    <div class="catalog__box-column">
-                        <div class="catalog__box photo-box">
-                            <img src="./img/catalog1.png" alt="">
+                <div class="catalog__title-wrap">
+                    <div class="catalog__title title">Каталог недвижимости</div>
+                    <div class="swiper__arrows">
+                        <div class="catalog__slider-prev swiper__arrow">
+                            <img src="./img/slider-arrow-next.svg" alt="">
                         </div>
-                        <div class="catalog__box to-buy">
-                            <div class="catalog__box-title">Купить квартиру</div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">1 + 1 комнат</div>
-                                <div class="catalog__item-value">1 229</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">2 + 1 комнат</div>
-                                <div class="catalog__item-value">899</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">3 + 1 комнат</div>
-                                <div class="catalog__item-value">1 695</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">4 + 1 комнат</div>
-                                <div class="catalog__item-value">393</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">5 + 1 комнат</div>
-                                <div class="catalog__item-value">493</div>
-                            </div>
-
-                            <a class="catalog__item-link" href="">В каталог
-                                <img src="./img/arrow-black.svg" alt="">
-                            </a>
+                        <div class="catalog__slider-next swiper__arrow">
+                            <img src="./img/slider-arrow-prew.svg" alt="">
                         </div>
                     </div>
-                    <div class="catalog__box-column">
-                        <div class="catalog__box photo-box">
-                            <img src="./img/photo1.png" alt="">
+                </div>
+                <div class="catalog__content swiper-slider desctop">
+                    <!-- <div class="catalog__content-wrap swiper-wrapper"> -->
+                        <div class="catalog__content-wrapper swiper-wrapper">
+                            <div class="catalog__box-column swiper-slide">
+                                <div class="catalog__box photo-box">
+                                    <img src="./img/catalog1.png" alt="">
+                                </div>
+                                <div class="catalog__box to-buy">
+                                    <div class="catalog__box-title">Купить квартиру</div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">1 + 1 комнат</div>
+                                        <div class="catalog__item-value">1 229</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">2 + 1 комнат</div>
+                                        <div class="catalog__item-value">899</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">3 + 1 комнат</div>
+                                        <div class="catalog__item-value">1 695</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">4 + 1 комнат</div>
+                                        <div class="catalog__item-value">393</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">5 + 1 комнат</div>
+                                        <div class="catalog__item-value">493</div>
+                                    </div>
+        
+                                    <a class="catalog__item-link" href="">В каталог
+                                        <img src="./img/arrow-black.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__box-column swiper-slide">
+                                <div class="catalog__box photo-box">
+                                    <img src="./img/photo1.png" alt="">
+                                </div>
+                                <div class="catalog__box to-buy">
+                                    <div class="catalog__box-title">Апартаменты</div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">105 m2</div>
+                                        <div class="catalog__item-value">1 229</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">115 m2</div>
+                                        <div class="catalog__item-value">899</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">125 m2</div>
+                                        <div class="catalog__item-value">1 695</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">135 m2</div>
+                                        <div class="catalog__item-value">393</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">> 145 m2</div>
+                                        <div class="catalog__item-value">493</div>
+                                    </div>
+        
+                                    <a class="catalog__item-link" href="">В каталог
+                                        <img src="./img/arrow-black.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__box-column swiper-slide">
+                                <div class="catalog__box photo-box">
+                                    <img src="./img/photo2.png" alt="">
+                                </div>
+                                <div class="catalog__box to-buy">
+                                    <div class="catalog__box-title">По районам</div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Авсаллар</div>
+                                        <div class="catalog__item-value">1 229</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Турклер</div>
+                                        <div class="catalog__item-value">899</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Конаклы</div>
+                                        <div class="catalog__item-value">1 695</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Алания (центр)</div>
+                                        <div class="catalog__item-value">393</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key"> Клеопатра</div>
+                                        <div class="catalog__item-value">493</div>
+                                    </div>
+        
+                                    <a class="catalog__item-link" href="">В каталог
+                                        <img src="./img/arrow-black.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__box-column swiper-slide">
+                                <div class="catalog__box map">
+                                    <a href="" class="catalog__box-map-link">Смотреть
+                                        на&nbsp;карте</a>
+                                    <img src="./img/catalog2.png" alt="">
+                                </div>
+                                <div class="catalog__box to-buy">
+                                    <div class="catalog__box-title">Тип недвижимости</div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Апартаменты</div>
+                                        <div class="catalog__item-value">1 229</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Виллы</div>
+                                        <div class="catalog__item-value">899</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Новостройки</div>
+                                        <div class="catalog__item-value">1 695</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Дуплекс</div>
+                                        <div class="catalog__item-value">393</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Земельный участок</div>
+                                        <div class="catalog__item-value">493</div>
+                                    </div>
+        
+                                    <a class="catalog__item-link" href="">В каталог
+                                        <img src="./img/arrow-black.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__box-column swiper-slide">
+                                <div class="catalog__box photo-box">
+                                    <img src="./img/catalog1.png" alt="">
+                                </div>
+                                <div class="catalog__box to-buy">
+                                    <div class="catalog__box-title">Купить квартиру</div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">1 + 1 комнат</div>
+                                        <div class="catalog__item-value">1 229</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">2 + 1 комнат</div>
+                                        <div class="catalog__item-value">899</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">3 + 1 комнат</div>
+                                        <div class="catalog__item-value">1 695</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">4 + 1 комнат</div>
+                                        <div class="catalog__item-value">393</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">5 + 1 комнат</div>
+                                        <div class="catalog__item-value">493</div>
+                                    </div>
+        
+                                    <a class="catalog__item-link" href="">В каталог
+                                        <img src="./img/arrow-black.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__box-column swiper-slide">
+                                <div class="catalog__box photo-box">
+                                    <img src="./img/photo1.png" alt="">
+                                </div>
+                                <div class="catalog__box to-buy">
+                                    <div class="catalog__box-title">Апартаменты</div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">105 m2</div>
+                                        <div class="catalog__item-value">1 229</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">115 m2</div>
+                                        <div class="catalog__item-value">899</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">125 m2</div>
+                                        <div class="catalog__item-value">1 695</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">135 m2</div>
+                                        <div class="catalog__item-value">393</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">> 145 m2</div>
+                                        <div class="catalog__item-value">493</div>
+                                    </div>
+        
+                                    <a class="catalog__item-link" href="">В каталог
+                                        <img src="./img/arrow-black.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__box-column swiper-slide">
+                                <div class="catalog__box photo-box">
+                                    <img src="./img/photo2.png" alt="">
+                                </div>
+                                <div class="catalog__box to-buy">
+                                    <div class="catalog__box-title">По районам</div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Авсаллар</div>
+                                        <div class="catalog__item-value">1 229</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Турклер</div>
+                                        <div class="catalog__item-value">899</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Конаклы</div>
+                                        <div class="catalog__item-value">1 695</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Алания (центр)</div>
+                                        <div class="catalog__item-value">393</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key"> Клеопатра</div>
+                                        <div class="catalog__item-value">493</div>
+                                    </div>
+        
+                                    <a class="catalog__item-link" href="">В каталог
+                                        <img src="./img/arrow-black.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="catalog__box-column swiper-slide">
+                                <div class="catalog__box map">
+                                    <a href="" class="catalog__box-map-link">Смотреть
+                                        на&nbsp;карте</a>
+                                    <img src="./img/catalog2.png" alt="">
+                                </div>
+                                <div class="catalog__box to-buy">
+                                    <div class="catalog__box-title">Тип недвижимости</div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Апартаменты</div>
+                                        <div class="catalog__item-value">1 229</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Виллы</div>
+                                        <div class="catalog__item-value">899</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Новостройки</div>
+                                        <div class="catalog__item-value">1 695</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Дуплекс</div>
+                                        <div class="catalog__item-value">393</div>
+                                    </div>
+                                    <div class="catalog__item">
+                                        <div class="catalog__item-key">Земельный участок</div>
+                                        <div class="catalog__item-value">493</div>
+                                    </div>
+        
+                                    <a class="catalog__item-link" href="">В каталог
+                                        <img src="./img/arrow-black.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="catalog__box to-buy">
-                            <div class="catalog__box-title">Апартаменты</div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">105 m2</div>
-                                <div class="catalog__item-value">1 229</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">115 m2</div>
-                                <div class="catalog__item-value">899</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">125 m2</div>
-                                <div class="catalog__item-value">1 695</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">135 m2</div>
-                                <div class="catalog__item-value">393</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">> 145 m2</div>
-                                <div class="catalog__item-value">493</div>
-                            </div>
+                    <!-- </div> -->
+                </div>
 
-                            <a class="catalog__item-link" href="">В каталог
-                                <img src="./img/arrow-black.svg" alt="">
-                            </a>
+                <div class="catalog__content swiper-slider mobile">
+                    <!-- <div class="catalog__content-wrap swiper-wrapper"> -->
+                        <div class="catalog__content-wrapper swiper-wrapper">
+                            <div class="catalog__box swiper-slide">
+                                <div class="catalog__box-column">
+                                    <div class="catalog__box photo-box">
+                                        <img src="./img/catalog1.png" alt="">
+                                    </div>
+                                    <div class="catalog__box to-buy">
+                                        <div class="catalog__box-title">Купить квартиру</div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">1 + 1 комнат</div>
+                                            <div class="catalog__item-value">1 229</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">2 + 1 комнат</div>
+                                            <div class="catalog__item-value">899</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">3 + 1 комнат</div>
+                                            <div class="catalog__item-value">1 695</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">4 + 1 комнат</div>
+                                            <div class="catalog__item-value">393</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">5 + 1 комнат</div>
+                                            <div class="catalog__item-value">493</div>
+                                        </div>
+            
+                                        <a class="catalog__item-link" href="">В каталог
+                                            <img src="./img/arrow-black.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__box-column">
+                                    <div class="catalog__box photo-box">
+                                        <img src="./img/photo1.png" alt="">
+                                    </div>
+                                    <div class="catalog__box to-buy">
+                                        <div class="catalog__box-title">Апартаменты</div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">105 m2</div>
+                                            <div class="catalog__item-value">1 229</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">115 m2</div>
+                                            <div class="catalog__item-value">899</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">125 m2</div>
+                                            <div class="catalog__item-value">1 695</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">135 m2</div>
+                                            <div class="catalog__item-value">393</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">> 145 m2</div>
+                                            <div class="catalog__item-value">493</div>
+                                        </div>
+            
+                                        <a class="catalog__item-link" href="">В каталог
+                                            <img src="./img/arrow-black.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__box-column">
+                                    <div class="catalog__box photo-box">
+                                        <img src="./img/photo2.png" alt="">
+                                    </div>
+                                    <div class="catalog__box to-buy">
+                                        <div class="catalog__box-title">По районам</div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Авсаллар</div>
+                                            <div class="catalog__item-value">1 229</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Турклер</div>
+                                            <div class="catalog__item-value">899</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Конаклы</div>
+                                            <div class="catalog__item-value">1 695</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Алания (центр)</div>
+                                            <div class="catalog__item-value">393</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key"> Клеопатра</div>
+                                            <div class="catalog__item-value">493</div>
+                                        </div>
+            
+                                        <a class="catalog__item-link" href="">В каталог
+                                            <img src="./img/arrow-black.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__box-column">
+                                    <div class="catalog__box map">
+                                        <a href="" class="catalog__box-map-link">Смотреть
+                                            на&nbsp;карте</a>
+                                        <img src="./img/catalog2.png" alt="">
+                                    </div>
+                                    <div class="catalog__box to-buy">
+                                        <div class="catalog__box-title">Тип недвижимости</div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Апартаменты</div>
+                                            <div class="catalog__item-value">1 229</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Виллы</div>
+                                            <div class="catalog__item-value">899</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Новостройки</div>
+                                            <div class="catalog__item-value">1 695</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Дуплекс</div>
+                                            <div class="catalog__item-value">393</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Земельный участок</div>
+                                            <div class="catalog__item-value">493</div>
+                                        </div>
+            
+                                        <a class="catalog__item-link" href="">В каталог
+                                            <img src="./img/arrow-black.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog__box swiper-slide">
+                                <div class="catalog__box-column">
+                                    <div class="catalog__box photo-box">
+                                        <img src="./img/catalog1.png" alt="">
+                                    </div>
+                                    <div class="catalog__box to-buy">
+                                        <div class="catalog__box-title">Купить квартиру</div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">1 + 1 комнат</div>
+                                            <div class="catalog__item-value">1 229</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">2 + 1 комнат</div>
+                                            <div class="catalog__item-value">899</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">3 + 1 комнат</div>
+                                            <div class="catalog__item-value">1 695</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">4 + 1 комнат</div>
+                                            <div class="catalog__item-value">393</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">5 + 1 комнат</div>
+                                            <div class="catalog__item-value">493</div>
+                                        </div>
+            
+                                        <a class="catalog__item-link" href="">В каталог
+                                            <img src="./img/arrow-black.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__box-column">
+                                    <div class="catalog__box photo-box">
+                                        <img src="./img/photo1.png" alt="">
+                                    </div>
+                                    <div class="catalog__box to-buy">
+                                        <div class="catalog__box-title">Апартаменты</div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">105 m2</div>
+                                            <div class="catalog__item-value">1 229</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">115 m2</div>
+                                            <div class="catalog__item-value">899</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">125 m2</div>
+                                            <div class="catalog__item-value">1 695</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">135 m2</div>
+                                            <div class="catalog__item-value">393</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">> 145 m2</div>
+                                            <div class="catalog__item-value">493</div>
+                                        </div>
+            
+                                        <a class="catalog__item-link" href="">В каталог
+                                            <img src="./img/arrow-black.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__box-column">
+                                    <div class="catalog__box photo-box">
+                                        <img src="./img/photo2.png" alt="">
+                                    </div>
+                                    <div class="catalog__box to-buy">
+                                        <div class="catalog__box-title">По районам</div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Авсаллар</div>
+                                            <div class="catalog__item-value">1 229</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Турклер</div>
+                                            <div class="catalog__item-value">899</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Конаклы</div>
+                                            <div class="catalog__item-value">1 695</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Алания (центр)</div>
+                                            <div class="catalog__item-value">393</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key"> Клеопатра</div>
+                                            <div class="catalog__item-value">493</div>
+                                        </div>
+            
+                                        <a class="catalog__item-link" href="">В каталог
+                                            <img src="./img/arrow-black.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="catalog__box-column">
+                                    <div class="catalog__box map">
+                                        <a href="" class="catalog__box-map-link">Смотреть
+                                            на&nbsp;карте</a>
+                                        <img src="./img/catalog2.png" alt="">
+                                    </div>
+                                    <div class="catalog__box to-buy">
+                                        <div class="catalog__box-title">Тип недвижимости</div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Апартаменты</div>
+                                            <div class="catalog__item-value">1 229</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Виллы</div>
+                                            <div class="catalog__item-value">899</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Новостройки</div>
+                                            <div class="catalog__item-value">1 695</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Дуплекс</div>
+                                            <div class="catalog__item-value">393</div>
+                                        </div>
+                                        <div class="catalog__item">
+                                            <div class="catalog__item-key">Земельный участок</div>
+                                            <div class="catalog__item-value">493</div>
+                                        </div>
+                                        <a class="catalog__item-link" href="">В каталог
+                                            <img src="./img/arrow-black.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="catalog__box-column">
-                        <div class="catalog__box photo-box">
-                            <img src="./img/photo2.png" alt="">
-                        </div>
-                        <div class="catalog__box to-buy">
-                            <div class="catalog__box-title">По районам</div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Авсаллар</div>
-                                <div class="catalog__item-value">1 229</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Турклер</div>
-                                <div class="catalog__item-value">899</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Конаклы</div>
-                                <div class="catalog__item-value">1 695</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Алания (центр)</div>
-                                <div class="catalog__item-value">393</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key"> Клеопатра</div>
-                                <div class="catalog__item-value">493</div>
-                            </div>
-
-                            <a class="catalog__item-link" href="">В каталог
-                                <img src="./img/arrow-black.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="catalog__box-column">
-                        <div class="catalog__box map">
-                            <a href="" class="catalog__box-map-link">Смотреть
-                                на&nbsp;карте</a>
-                            <img src="./img/catalog2.png" alt="">
-                        </div>
-                        <div class="catalog__box to-buy">
-                            <div class="catalog__box-title">Тип недвижимости</div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Апартаменты</div>
-                                <div class="catalog__item-value">1 229</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Виллы</div>
-                                <div class="catalog__item-value">899</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Новостройки</div>
-                                <div class="catalog__item-value">1 695</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Дуплекс</div>
-                                <div class="catalog__item-value">393</div>
-                            </div>
-                            <div class="catalog__item">
-                                <div class="catalog__item-key">Земельный участок</div>
-                                <div class="catalog__item-value">493</div>
-                            </div>
-
-                            <a class="catalog__item-link" href="">В каталог
-                                <img src="./img/arrow-black.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </section>
 
         <section class="mortgage">
+            <div class="mortgage__img mobile">
+                <img src="./img/mortgage-photo.png" alt="">
+            </div>
             <div class="container">
                 <div class="mortgage__inner">
 
-                    <div class="mortgage__img">
+                    <div class="mortgage__img desctop">
                         <img src="./img/mortgage-photo.png" alt="">
                     </div>
 
@@ -1635,7 +2052,7 @@
                             </div>
 
                             <div class="mortgage__ranger-term">
-                                <div class="mortgage__ranger-title">Стоимость квартиры</div>
+                                <div class="mortgage__ranger-title">Срок кредита</div>
                                 <div class="mortgage__ranger-value"></div>
                                 <input type="text" class="term" name="e" value="" />
                             </div>

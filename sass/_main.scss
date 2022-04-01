@@ -1188,12 +1188,24 @@
 
 .catalog {
     margin-bottom: 17rem;
+    overflow: hidden;
+
+    &__title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5.7rem;
+        position: relative;
+    }
 
     &__title {
-        margin-bottom: 5.7rem;
     }
     
     &__content {
+        // display: flex;
+    }
+
+    &__content-slide {
         display: flex;
     }
     

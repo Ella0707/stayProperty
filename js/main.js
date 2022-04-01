@@ -392,14 +392,21 @@ const staffSwiper = new Swiper('.staff__slider', {
 
 
 const catalogSwiper = new Swiper('.catalog__content', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 37,
-    speed: 800,
 
     navigation: {
         prevEl: '.catalog__slider-prev',
         nextEl: '.catalog__slider-next',
     },
+
+    breakpoints: {
+
+        769: {
+            slidesPerView: 4,
+            spaceBetween: 37,
+        }
+    }
 });
 
 
