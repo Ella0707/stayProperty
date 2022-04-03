@@ -1033,7 +1033,7 @@
 
 
 .support {
-    margin-bottom: 17.5rem;
+    margin-bottom: 10rem;
     position: relative;
 
     &::before {
@@ -1187,7 +1187,8 @@
 
 
 .catalog {
-    margin-bottom: 17rem;
+    padding-top: 7.5rem;
+    padding-bottom: 17rem;
     overflow: hidden;
 
     &__title-wrap {
@@ -2170,9 +2171,18 @@
         line-height: 1.562;
     }
 
-    .banner__btn-video {
+    &__btn-video {
         background: #0199E4;
+        width: 18rem;
+        height: 18rem;
         box-shadow: 1rem 2rem 5rem rgba(83, 205, 243, 0.25);
+    }
+
+    .btn-video::before {
+        border-width: 2rem 2rem 2rem 2.3rem;
+        top: 40%;
+        left: 50%;
+        transform: translate(-20%, -50%);
     }
     
     &__title-block {
