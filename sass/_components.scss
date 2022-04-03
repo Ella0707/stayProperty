@@ -489,4 +489,32 @@
         border-radius: 2.6rem;
         height: 10rem;
     }
+
+    .spoller-pagination {
+      
+        font-size: 3.2rem;
+    }
+
+    .spoller-pagination-num {
+        margin-right: 1.5rem;
+    
+        &.active {
+            font-size: 7rem;
+        }
+    
+        &:first-child {
+            margin-right: 20rem;
+    
+            &::before {
+                content: "";
+                width: 12.4rem;
+    
+    
+                right: -16rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    
+    }
 }

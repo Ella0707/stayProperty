@@ -619,8 +619,8 @@ $(".real-estate__pagination-bullet").click(function (e) {
 // Двойные буллеты в слайдере
 
 const rewiewsSwiper = new Swiper('.rewiews__slider', {
-    slidesPerView: 3,
-    spaceBetween: 109,
+    slidesPerView: 1,
+    spaceBetween: 46,
     speed: 800,
     navigation: {
         prevEl: '.rewiews__slider-prev',
@@ -637,6 +637,14 @@ const rewiewsSwiper = new Swiper('.rewiews__slider', {
         bullets: true,
         clickable: true,
     },
+
+    breakpoints: {
+
+        769: {
+            slidesPerView: 3,
+            spaceBetween: 109,
+        }
+    }
 });
 
 function sliderNumber() {
@@ -645,18 +653,9 @@ function sliderNumber() {
         currentSlide = '0' + currentSlide
     }
 
-    // $('.swiper-bullets-two').text(currentSlide);
 }
 
-// Generate pagination bullets inside div with #bullets ID
-// for (var i = 1; i < rewiewsSwiper.slides.length - 1; i++) {
-//     if (i === 1) {
-//         // add active class if it is the first bullet
-//         $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'bullets-two-bullet-active' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
-//     } else {
-//         $('#bullets').append('<span class="bullets-two-bullet' + ' ' + 'slide' + i + '"><p>' + i + '</p></span>');
-//     }
-// }
+
 
 
 
