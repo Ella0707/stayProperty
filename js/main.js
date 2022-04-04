@@ -191,7 +191,7 @@ const bigBoxSwiper = new Swiper('.real-estate__big-slider', {
 
 
 const liveSwiper = new Swiper('.live__slider', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 38,
     speed: 800,
     navigation: {
@@ -208,6 +208,14 @@ const liveSwiper = new Swiper('.live__slider', {
         init: liveNumbers,
         slideChange: liveNumbers
     },
+
+    breakpoints: {
+
+        769: {
+            slidesPerView: 4,
+            spaceBetween: 38,
+        }
+    }
 });
 
 
