@@ -2173,8 +2173,9 @@
 
     &__btn-video {
         background: #0199E4;
-        width: 18rem;
-        height: 18rem;
+        width: 13.9rem;
+        height: 13.9rem;
+        padding-bottom: 3rem;
         box-shadow: 1rem 2rem 5rem rgba(83, 205, 243, 0.25);
     }
 
@@ -3487,9 +3488,21 @@
                 margin-bottom: 1.78rem;
             }
 
-            &:nth-child(15) {
-                color: rgba(1, 153, 228, 1);
-                font-weight: 600;
+         
+
+            // &:nth-child(15) {
+            //     color: rgba(1, 153, 228, 1);
+            //     font-weight: 600;
+            // }
+        }
+
+        &:first-child {
+            li {
+                &:last-child {
+                    color: rgba(1, 153, 228, 1);
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
             }
         }
     }

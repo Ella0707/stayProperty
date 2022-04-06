@@ -27,6 +27,13 @@ let select = function () {
 
 select();
 
+// мобильное меню
+$('.header__burger-btn').on('click', function (e) {
+    e.preventDefault();
+    document.body.classList.toggle('lock');
+    $('.header__burger-btn').toggleClass("active");
+    $('.header__menu-mobile').toggleClass("active");
+});
 
 // появление дополнителньой информации в текстовом блоке карточек с недвижимостью на Главной странице
 $(document).ready(function () {
@@ -525,6 +532,17 @@ if ($('#spoller-filter').length) {
     if ($(window).width() <= 769) {
         $(document).ready(function () {
             $('.filter__header').click(function (event) {
+                $(this).toggleClass('active').next().slideToggle(300);
+            });
+        });
+    }
+}
+
+// раскрытие доп информации в футере в мобильной версии
+if ($('#footer-spoller').length) {
+    if ($(window).width() <= 769) {
+        $(document).ready(function () {
+            $('.footer__nav-title').click(function (event) {
                 $(this).toggleClass('active').next().slideToggle(300);
             });
         });

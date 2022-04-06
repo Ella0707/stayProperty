@@ -42,6 +42,44 @@
 
     &__slide {
         border-radius: inherit;
+        position: relative;
+
+        button {
+            width: 4.8rem;
+            height: 4.8rem;
+            border-radius: 50%;
+            background: #ffffff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            bottom: 2.5rem;
+            right: 2.5rem;
+
+            img {
+                width: 2.5rem;
+                height: 2.5rem;
+                object-fit: contain;
+            }
+
+            &:empty {
+               visibility: hidden;
+               display: none;
+               width: 0;
+               height: 0;
+
+                img {
+                    display: none;
+                    visibility: hidden;
+                    display: none;
+                    width: 0;
+                    height: 0;
+
+                }
+            }
+        }
     }
 
     &__img {
