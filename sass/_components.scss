@@ -444,6 +444,50 @@
 }
 
 
+.slider__number {
+    @include text (6rem, 600, rgba(255, 255, 255, 1));
+    margin-right: 4.8rem;
+}
+
+
+.swiper__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.swiper__arrow {
+    width: 9.9rem;
+    height: 9.9rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 1rem 2rem 10rem rgba(40, 44, 78, 0.1);
+    margin-right: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+    cursor: pointer;
+
+    img {
+        width: 1rem;
+        height: 2rem;
+        transition: 0.8s;
+    }
+
+    &.swiper-button-disabled {
+        width: 7.6rem;
+        height: 7.6rem;
+
+        img {
+            width: 0.5rem;
+            height: 1.5rem;
+        }
+
+    }
+}
 
 
 

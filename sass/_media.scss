@@ -1705,6 +1705,7 @@
     
     .real-estate {
         margin-bottom: 14.5rem;
+        overflow: hidden;
 
         &__title {
             text-align: left;
@@ -1913,6 +1914,15 @@
         &__slider-wrapper {
             border-radius: 3rem;
         }
+
+        &__slide-id {
+            font-size: 2rem;
+            height: 5rem;
+            padding: 1rem 3rem;
+            border-radius: 3rem;
+            top: 2.8rem;
+            right: 2.8rem;
+        }
         
         &__pagination {
     
@@ -1995,7 +2005,7 @@
         }
         
         &__box-price {
-            font-size: 4.4rem;
+            font-size: 3.4rem;
     
             span {
                 font-size: 3rem;
@@ -2091,7 +2101,9 @@
         &__btn-video {
             margin-left: auto;
             font-size: 3.2rem;
-            padding-bottom: 4rem;
+            padding-bottom: 3rem;
+            width: 18rem;
+            height: 18rem;
         }
         
         &__title-block {
@@ -2105,6 +2117,7 @@
             font-size: 7rem;
             margin-bottom: 5rem;
             width: 100%;
+            line-height: 1.25;
         }
         
         &__btn {
@@ -2148,9 +2161,13 @@
     
     
     .rewiews {
-        margin-bottom: 17rem;
+        margin-bottom: 19rem;
         padding-top: 0rem;
-        overflow: hidden;
+        // overflow: hidden;
+
+        .container {
+            padding: 0;
+        }
 
         &__title {
             margin-bottom: 5rem;
@@ -2161,36 +2178,82 @@
             align-items: flex-start;
 
             margin-bottom: 5rem;
+            padding: 0 3rem;
         }
 
         .swiper__arrows {
             align-self: flex-end;
         }
+
+        &__content {
+            overflow: hidden;
+            padding: 0 3rem;
+            margin-bottom: 5rem;
+        }
       
         &__slider {
-            margin-bottom: 9.5rem;    
+            margin-bottom: 3rem;    
+            height: 320rem;
+            width: 100%;
         }
 
-        &__slide-big-wrap {
-            padding: 0 5rem 0 5rem;
-        }
-       
-        
         &__slider-wrapper {
-            
-        
+            display: flex;
+            flex-direction: column;
+            height: 300rem;
         }
-       
         
         &__slide {
             border-radius: 8rem;
             padding: 7.6rem 3rem 13.1rem 3rem;
+            height: 102.6rem;
+            width: 59rem;
+            margin: 0 auto;
+            box-shadow: none;
+
 
             &:not(:last-child) {
                 margin-bottom: 9rem;
             }
         }
         
+        .swiper-pagination {
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+            height: 7rem;
+    
+            position: static;
+        
+            &::after {
+                content: "";
+                width: 11rem;
+                height: 0.1rem;
+                background: #CAD7E7;
+        
+                position: absolute;
+                top: 50%;
+                left: 11rem;
+                transform: translateY(-50%);
+            }
+        
+            .swiper-pagination-bullet {
+                height: 7rem;
+                width: 3rem;
+                font-size: 3.2rem;
+                margin-right: 3rem;
+        
+                &:first-child {
+                    margin-right: 20rem;
+                }
+            }
+        
+            .swiper-pagination-bullet-active {
+                font-size: 7rem;
+                margin-right: 4rem;
+                margin-left: 2rem;
+            }
+        }
         
         &__slide-inner {
             border-radius: 8rem;
@@ -2318,7 +2381,7 @@
     
     
     .blog {
-        margin-bottom: 17rem;
+        margin-bottom: 21rem;
     
         
         &__inner {
@@ -2327,6 +2390,9 @@
         
         &__title {
             margin-bottom: 7.3rem;
+            margin-bottom: 4.3rem;
+            width: 93%;
+            line-height: 1.3;
         }
         
         &__content {
@@ -2336,12 +2402,12 @@
         &__box {
             width: 100%;
             border-radius: 8rem;
-            padding: 4rem 4rem 8.5rem 4rem;
+            padding: 4rem 4rem 6.5rem 4rem;
     
             flex-direction: column;
 
             &:not(:last-child) {
-                margin-bottom: 6rem;
+                margin-bottom: 6.5rem;
             }
         }
         
@@ -2368,7 +2434,7 @@
         
         &__box-top {
             padding-bottom: 5.5rem;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
         
         &__box-top-img {
@@ -2387,7 +2453,7 @@
         }
         
         &__box-bottom {
-            padding-top: 4.5rem;
+            padding-top: 3rem;
         }
         
         &__box-botom-icon {
@@ -2407,8 +2473,9 @@
     
     
     .live {
-        padding: 0rem 0 10rem 0;
+        padding: 4rem 0 10rem 0;
         margin-bottom: 18rem;
+        overflow: hidden;
         
         &__inner {
             padding-top: 8.5rem;
@@ -2430,17 +2497,62 @@
         .swiper__arrows {
             margin-left: auto;
         }
+
+        .pagination-custom {
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+            height: 7rem;
+    
+            position: static;
+        
+            &::after {
+                content: "";
+                width: 11rem;
+                height: 0.1rem;
+                background: #CAD7E7;
+        
+                position: absolute;
+                top: 50%;
+                left: 11rem;
+                transform: translateY(-50%);
+            }
+        
+            .swiper-pagination-bullet {
+                height: 7rem;
+                width: 3rem;
+                font-size: 3.2rem;
+                margin-right: 3rem;
+        
+                &:first-child {
+                    margin-right: 20rem;
+                }
+            }
+        
+            .swiper-pagination-bullet-active {
+                font-size: 7rem;
+                margin-right: 4rem;
+                margin-left: 2rem;
+            }
+        }
+
+        &__content {
+            overflow: hidden;
+        }
         
         &__slider {
             margin-bottom: 6.1rem;
+            overflow: visible;
+            height: 390rem;
         }
         
         &__slide {
             padding: 5rem 4rem 5.7rem 4rem;
+            box-shadow: none;
 
 
             &:not(:last-child) {
-                margin-bottom: 6rem;
+                margin-bottom: 5.5rem;
             }
         }
         
@@ -2520,7 +2632,9 @@
     
     
     .news {
-        margin-bottom: 17rem;
+        margin-bottom: 20rem;
+        padding-top: 3rem;
+        overflow: hidden;
     
         
         &__title-wrap {
@@ -2529,7 +2643,7 @@
         }
         
         &__title {
-            margin-bottom: 5.4rem;
+            margin-bottom: 8rem;
         }
       
         
@@ -2581,7 +2695,7 @@
             }
 
             &:last-child {
-                margin-bottom: 6rem;
+                margin-bottom: 7rem;
             }
     
             span {
@@ -2590,8 +2704,8 @@
                 border-radius: 6rem 0 6rem 0;
     
                 font-size: 3.2rem;
-                top: -1.7rem;
-                right: 1rem;
+                top: -2.7rem;
+                right: 3rem;
             }
         }
         
@@ -2608,7 +2722,7 @@
         
         &__left-item-data {
             font-size: 3rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
         
         &__left-item-heading {
@@ -2619,7 +2733,7 @@
             width: 100%;
             position: relative;
             border-radius: 4rem 4rem 4rem 4rem;
-            margin-bottom: 6rem;
+            margin-bottom: 6.5rem;
         }
     
         &__center-inner {
@@ -2629,23 +2743,25 @@
         
         
         &__center-absolut-block {
-            width: 41rem;
-            height:28rem;
+            width: 37rem;
+            height: 25rem;
             position: absolute;
-            right: -4rem;
-            top: 20rem;
-            padding: 4.5rem 6rem 3rem 8rem;
-    
+            right: -6rem;
+            top: 27rem;
+            padding: 4.5rem 7rem 3rem 8rem;
+
         }
     
         &__center-absolut-span {
             font-size: 3rem;
             width: 100%;
+            margin-bottom: 2.5rem;
         }
         
         &__center-absolut-text {
             font-size: 3rem;
             width: 100%;
+            line-height: 1.4;
         }
         
         &__center-photo {
@@ -2664,6 +2780,7 @@
         &__center-heading {
             font-size: 3.6rem;
             margin-bottom: 1.6rem;
+            line-height: 1.3;
         }
         
         &__center-subtitle {
@@ -2744,7 +2861,7 @@
         height: 100%;
         padding-bottom: 87.4rem;
         background: linear-gradient(179.65deg, #D6E1F1 1.84%, #E6EEFB 47.03%, #F0F7FF 99.28%);
-        margin-bottom: 17rem;
+        margin-bottom: 20.5rem;
     
         
         &__bg {
@@ -2759,7 +2876,7 @@
         }
        
         &__inner {
-            padding-top: 10.8rem;
+            padding-top: 13rem;
         }
         
         &__subtitle {
@@ -2769,16 +2886,23 @@
         
         &__title {
             margin-bottom: 5rem;
+            font-size: 6.5rem;
         }
         
         &__content {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-column: 1fr;
+            grid-row: auto;
+            row-gap: 5rem;
         }
         
         &__item {
             width: 100%;
-            padding: 5rem 4rem 4rem 4rem;
+            height: 45rem;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            padding: 4rem 4rem 4rem 4rem;
 
             
         &:not(:nth-child(3n)) {
@@ -2790,13 +2914,17 @@
         }
 
         &:not(:last-child) {
-            margin-bottom: 6rem;
+            // margin-bottom: 6rem;
+        }
+
+        &:nth-child(4) {
+            grid-row: 2/3;
         }
         
         }
         
         &__item-place {
-            margin-bottom: 1.2rem;
+            margin-bottom: 2.2rem;
         }
         
         &__place-img {
@@ -2811,7 +2939,7 @@
         
         &__item-street {
             font-size: 3rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
         &__item-contacts {
@@ -2823,13 +2951,13 @@
     
             &:not(:last-child) {
                 margin-right: 0rem;
-                margin-bottom: 3rem;
+                margin-bottom: 1.5rem;
             }
         }
         
         &__contact-key {
             font-size: 3rem;
-            margin-bottom: 0rem;
+            margin-bottom: 1.5rem;
         }
         
         &__contact-value {
@@ -2839,7 +2967,7 @@
     
     
     .faq {
-        margin-bottom: 12rem;
+        margin-bottom: 15rem;
     
         &__title {
             margin-bottom: 5rem;
@@ -2858,7 +2986,7 @@
         
         &__spoller {
             width: 100%;
-            margin-bottom: 6rem;
+            margin-bottom: 5rem;
         }
     
         &__spoller-title-wrap {
@@ -2873,6 +3001,7 @@
             font-size: 3.6rem;
             padding: 4rem 2rem 4rem 4rem;
             border-radius: 4rem 0 4rem 4rem;
+            line-height: 1.2;
         }
     
         &__spoller-scenery {
@@ -2880,7 +3009,7 @@
             flex-direction: column;
     
             .slice {
-                height: 18rem;
+                height: 14rem;
                 background:#FFFFFF;
                 border-radius: 0 3rem 3rem 0;
                 margin-bottom: auto;
@@ -2928,18 +3057,20 @@
             width: 100%;
             height: 115.6rem;
             border-radius: 6rem;
-            padding: 10rem 4rem 4rem 5rem;
+            padding: 11rem 4rem 4rem 5rem;
             margin-right: 0rem;
         }
         
         &__left-title {
             font-size: 5rem;
             margin-bottom: 3rem;
+            line-height: 1.3;
         }
         
         &__left-subtitle {
             font-size: 3.2rem;
             margin-bottom: 7.2rem;
+            line-height: 1.6;
         }
 
         &__right {
@@ -2947,22 +3078,25 @@
         }
     
         &__title {
-            margin-bottom: 4.5rem;
+            margin-bottom: 5rem;
+            line-height: 1.25;
         }
     
         &__right-text-wrap {
-            margin-bottom: 5rem;
+            margin-bottom: 7.2rem;
+            text-align: justify;
         }
         
         &__subtitle-par {
             font-size: 3.2rem;
+            line-height: 1.27;
     
             &:not(:last-child) {
-                margin-bottom: 3rem;
+                margin-bottom: 3.8rem;
             }
     
             &:nth-child(2) {
-                width: 92%;
+                width: 100%;
             }
         }
     
@@ -2973,15 +3107,17 @@
         
         &__article-par {
             font-size: 3.2rem;
+            text-align: justify;
+            line-height: 1.26;
     
             &:not(:last-child) {
-                margin-bottom: 3rem;
+                margin-bottom: 4rem;
             }
         }
         
         &__article-title-par {
-            font-size: 3.2rem;
-            margin-bottom: 2.3rem;
+            font-size: 3.6rem;
+            margin-bottom: 4.3rem;
         }
     }
     
@@ -2992,8 +3128,8 @@
         
         &__top {
             height: 100%;
-            padding: 8rem 4rem 8rem 4rem;
-            margin-bottom: 8.1rem;
+            padding: 13rem 3rem 8rem 2rem;
+            margin-bottom: 12rem;
             flex-direction: column;
         }
         
@@ -3010,7 +3146,7 @@
         
         &__top-title {
             font-size: 7rem;
-            margin-bottom: 2.2rem;
+            margin-bottom: 3.2rem;
         }
         
         &__top-subtitle {
@@ -3038,7 +3174,8 @@
             width: 100%;
             height: 27.2rem;
             border-radius: 6rem;
-            padding: 2rem 2rem 2rem 4rem;
+            padding: 4rem 2rem 2rem 4rem;
+            filter: drop-shadow(2rem 4rem 20rem rgba(40, 44, 78, 0.09));
     
             &:not(:last-child) {
                 margin-bottom: 4rem;
@@ -3055,7 +3192,7 @@
         
         &__tel {
             font-size: 4.8rem;
-            margin-bottom: 4.6rem;
+            margin-bottom: 3rem;
         }
         
         &__tel-link {
@@ -3086,6 +3223,7 @@
             grid-row: auto;
             row-gap: 4rem;
             column-gap: 4rem;
+            margin-top: 5rem;
         }
         
         &__nav-list {
@@ -3128,6 +3266,11 @@
             }
 
             &.active {
+
+                .footer__nav-list-wrap {
+                    display: block;
+                }
+
                 svg {
                     transform: rotateX(0deg);
                 }
@@ -3169,6 +3312,11 @@
                 margin-right: 0rem;
                 margin-bottom: 3rem;
             }
+        }
+
+
+        &__nav-list-wrap {
+                display: none;
         }
     }
     

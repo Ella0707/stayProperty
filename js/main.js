@@ -45,7 +45,7 @@ $(document).ready(function () {
     });
 });
 
-
+// кнопки
 $(".real-estate__button-top").click(function (e) {
     e.preventDefault();
     $(".real-estate__button-top").removeClass('active');
@@ -166,141 +166,33 @@ const bigBoxSwiper = new Swiper('.real-estate__big-slider', {
 });
 
 
-// const rewiewsSwiper = new Swiper('.rewiews__slider', {
-//     slidesPerView: 3,
-//     spaceBetween: 109,
-//     speed: 800,
-//     navigation: {
-//         prevEl: '.rewiews__slider-prev',
-//         nextEl: '.rewiews__slider-next',
-//     },
-
-//     pagination: {
-//         el: ".rewiews__pagination",
-//         bullets: true,
-//         clickable: true,
-//     },
-//     on: {
-//         init: rewiewsNumbers,
-//         slideChange: rewiewsNumbers
-//     },
-// });
-
-
-// function rewiewsNumbers() {
-//     let currentSlide = this.realIndex + 1;
-//     if (currentSlide < 10) {
-//         currentSlide = '0' + currentSlide
-//     }
-
-//     $('.rewiews__numbers').text(currentSlide);
-// }
-
-
-const liveSwiper = new Swiper('.live__slider', {
-    slidesPerView: 1,
+const liveSwiper = new Swiper(".live__slider", {
+    slidesPerView: 4,
     spaceBetween: 38,
-    speed: 800,
+    direction: 'vertical',
+
     navigation: {
         prevEl: '.live__slider-prev',
         nextEl: '.live__slider-next',
     },
 
     pagination: {
-        el: ".swiper-bullets-live",
-        bullets: true,
+        el: ".pagination-custom",
         clickable: true,
-    },
-    on: {
-        init: liveNumbers,
-        slideChange: liveNumbers
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + 0 + (index + 1) + "</span>";
+        },
     },
 
     breakpoints: {
 
         769: {
             slidesPerView: 4,
-            spaceBetween: 38,
+            spaceBetween: 37,
+            direction: 'horizontal',
         }
     }
 });
-
-
-function liveNumbers() {
-    let currentSlide = this.realIndex + 1;
-    if (currentSlide < 10) {
-        currentSlide = '0' + currentSlide
-    }
-
-    $('.live__numbers').text(currentSlide);
-}
-
-
-
-
-// pagination: {
-//     el: ".rewiews__pagination",
-//     clickable: true,
-//     bullets: true,
-//     // // renderBullet: function (index, className) {
-//     // //   return '<span class="' + className + '">' + (index + 1) + "</span>";
-//     // // },
-//     // renderFraction: function (currentClass, totalClass, index, total) {
-//     //     return '<span class="' + currentClass + '">0 '+ index +' </span>' +
-//     //         ' / ' +
-//     //         '<span class="' + totalClass + '">0 '+ total +' </span>';
-//     // },
-// },
-
-
-// });
-
-
-// effect: "fade",
-// fadeEffect: {
-//     crossFade: true
-// },
-
-// on: {
-//     init: number,
-//     slideChange: number
-// },
-// });
-
-
-
-// // ADD ACTIVE CLASS TO THE CURRENT BULLET
-
-// // get all bullet elements
-// var bullets = $('.swiper-pagination-bullet');
-
-// swiper.on('slideChange', function () {
-// // Get current slide from fraction pagination number
-// var slide = "slide"+($('.swiper-pagination-current').html());
-// // Remove active class from all bullets
-// bullets.removeClass("swiper-pagination-bullet-active");
-// // Check each bullet element if it has slideNumber class
-// $.each(bullets, function (index, value) {
-//   if($(this).hasClass(slide)) {
-//     $(this).addClass("swiper-pagination-bullet-active");
-//     return false;
-//   }
-// });
-// });
-
-// function number() {
-//     let currentSlide = this.realIndex + 1;
-//     if (currentSlide < 10) {
-//         currentSlide = '0' + currentSlide
-//     }
-
-//     $('.rewiews__numbers').text(currentSlide);
-// }
-
-
-
-
-
 
 const bannerSwiper = new Swiper('.banner__slider', {
     slidesPerView: 1,
@@ -437,7 +329,7 @@ const videoReviewSwiper = new Swiper('.review-video__slider', {
 });
 
 
-
+// счетчик страниц слайдов в слайдере
 var totalSlides = 4;
 const slidesPerView = 6
 const $counter = document.querySelector(".counter")
@@ -453,11 +345,11 @@ const photoReviewSwiper = new Swiper('.photo-review__slider', {
         nextEl: '.photo-review__slider-next',
     },
     on: {
-        init: function(){
-          $counter.innerHTML = 'Показано ' + (this.activeIndex +  1)  + ' из ' + (totalSlides); 
+        init: function () {
+            $counter.innerHTML = 'Показано ' + (this.activeIndex + 1) + ' из ' + (totalSlides);
         },
-        slideChange: function(){
-          $counter.innerHTML = 'Показано ' + (this.activeIndex +  1) + ' из '+ (totalSlides);
+        slideChange: function () {
+            $counter.innerHTML = 'Показано ' + (this.activeIndex + 1) + ' из ' + (totalSlides);
         }
     }
 });
@@ -474,42 +366,6 @@ const cardSwiper = new Swiper('.card__slider', {
         nextEl: '.card__slider-next',
     },
 });
-
-
-// function updateFraction(slider) {
-//     const { params, activeIndex } = slider;
-
-//     slider.$el
-//         .find(`.${params.pagination.currentClass}`)
-//         .text(`${activeIndex + 1} - ${activeIndex + params.slidesPerView}`);
-
-//     slider.$el
-//         .find(`.${params.pagination.totalClass}`)
-//         .text(slider.slides.length)
-// }
-
-
-
-
-
-
-// function show(anything) {
-//     document.querySelector(".textBox").value = anything;
-// }
-
-// let dropdown = document.querySelector('.dropdown');
-// dropdown.onclick = function () {
-//     dropdown.classList.toggle('active');
-// }
-
-
-
-
-// var truncate = document.querySelector(".truncate p");
-// $clamp(truncate, {
-//  clamp: 3, // Число строк
-//  useNativeClamp: false // НЕ используем -webkit-line-clamp
-// });
 
 
 
@@ -565,23 +421,6 @@ $('.service__spoller-title-wrap').on('click', function (e) {
     $content.slideToggle(300);
     $('.service__spoller-content').not($content).slideUp('fast');
 });
-
-
-// $('.paid').on('click', function(e) {
-//     e.preventDefault();
-
-//     if($(this).closest('.paid').hasClass('active')) {
-//         $('.paid').removeClass('active');
-//     } else {
-//         $('.paid').removeClass('active');
-//         $(this).closest('.paid').addClass('active');
-//     }
-
-// Show the content
-//     var $content = $(this).next();
-//     $content.slideToggle(300);
-//     $('.paid-content').not($content).slideUp('fast');
-// });
 
 
 
@@ -642,26 +481,23 @@ $(".real-estate__pagination-bullet").click(function (e) {
 
 
 
-// Двойные буллеты в слайдере
-
 const rewiewsSwiper = new Swiper('.rewiews__slider', {
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 46,
     speed: 800,
+    direction: 'vertical',
+
     navigation: {
         prevEl: '.rewiews__slider-prev',
         nextEl: '.rewiews__slider-next',
     },
 
-    // pagination: {
-    //     el: '.swiper-number',
-    //     type: 'fraction',
-    // },
-
     pagination: {
-        el: ".swiper-bullets",
-        bullets: true,
+        el: ".rewiews__slider-pagination",
         clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + 0 + (index + 1) + "</span>";
+        },
     },
 
     breakpoints: {
@@ -669,17 +505,11 @@ const rewiewsSwiper = new Swiper('.rewiews__slider', {
         769: {
             slidesPerView: 3,
             spaceBetween: 109,
+            direction: "horizontal",
         }
-    }
+    },
 });
 
-function sliderNumber() {
-    let currentSlide = this.realIndex + 1;
-    if (currentSlide < 10) {
-        currentSlide = '0' + currentSlide
-    }
-
-}
 
 
 
@@ -689,21 +519,3 @@ function sliderNumber() {
 
 
 
-// // ADD ACTIVE CLASS TO THE CURRENT BULLET
-
-// // get all bullet elements
-// var bullet = $('.swiper-bullets-two');
-
-// rewiewsSwiper.on('slideChange', function () {
-// // Get current slide from fraction pagination number
-// var slide = "slide"+($('.swiper-pagination-current').html());
-// // Remove active class from all bullets
-// bullet.removeClass("swiper-pagination-bullet-active");
-// // Check each bullet element if it has slideNumber class
-// $.each(bullet, function () {
-//   if($(this).hasClass(slide)) {
-//     $(this).addClass("swiper-pagination-bullet-active");
-//     return false;
-//   }
-// });
-// });
