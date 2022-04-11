@@ -99,7 +99,7 @@
             margin-bottom: 9rem;
         }
 
-        img {
+        &>img {
             position: absolute;
             bottom: 0;
             right: 0;
@@ -138,13 +138,28 @@
 
     .blog {
         &__content {
-            flex-wrap: wrap;
-            column-gap: 4rem;
-            row-gap: 4rem;
+          overflow: visible;
         }
 
         &__title {
             margin-bottom: 6.3rem;
+        }
+
+        &__content-wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__box {
+
+            height: auto;
+
+            &:not(:nth-child(2n + 2)) {
+                margin-right: 4rem;
+            }
+
+            &:nth-child(-n+4) {
+                margin-bottom: 4rem;
+            }
         }
     }
 }
@@ -308,6 +323,10 @@
                     height: 3.1rem;
                 }
             }
+    }
+    
+    &.mobile {
+        display: none;
     }
 }
 

@@ -235,21 +235,40 @@ const videoSwiper = new Swiper('.blog-slider', {
     slidesPerView: 2,
     spaceBetween: 39,
     speed: 800,
+    direction: "vertical",
+
 
     navigation: {
         prevEl: '.blog__slider-prev',
         nextEl: '.blog__slider-next',
     },
+
+    breakpoints: {
+
+        769: {
+            slidesPerView: 2,
+            spaceBetween: 39,
+            direction: "horizontal",
+        }
+    },
 });
 
 const subscribeSwiper = new Swiper('.subscribe__slider', {
-    slidesPerView: 3.5,
-    spaceBetween: 18,
+    slidesPerView: 1.15,
+    spaceBetween: 30,
     speed: 800,
 
     navigation: {
         prevEl: '.subscribe__slider-prev',
         nextEl: '.subscribe__slider-next',
+    },
+
+    breakpoints: {
+
+        769: {
+            slidesPerView: 3.5,
+            spaceBetween: 18,
+        }
     },
 });
 
@@ -511,7 +530,23 @@ const rewiewsSwiper = new Swiper('.rewiews__slider', {
 });
 
 
+const activitySlider = new Swiper('#destroy_1', {
+    slidesPerView: 2,
+    speed: 800,
+    spaceBetween: 30,
+    direction: 'vertical',
 
+    navigation: {
+        nextEl: '.blog__slider-next',
+        prevEl: '.blog__slider-prev',
+    },
+});
+
+if ($('#destroy_1').length) {
+    if ($(window).width() >= 769) {
+        activitySlider.destroy();
+    }
+}
 
 
 
