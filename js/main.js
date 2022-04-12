@@ -444,15 +444,15 @@ $('.service__spoller-title-wrap').on('click', function (e) {
 
 
 // Регулировка высоты контента в секции поддержки
-$('.service__spoller-title-wrap').on('click', function (e) {
-    e.preventDefault();
+// $('.service__spoller-title-wrap').on('click', function (e) {
+//     e.preventDefault();
 
-    if ($(this).closest('.paid').hasClass('active')) {
-        $('.item-paid').addClass('open-bottom');
-    } else {
-        $('.item-paid').removeClass('open-bottom');
-    }
-});
+//     if ($(this).closest('.paid').hasClass('active')) {
+//         $('.item-paid').addClass('open-bottom');
+//     } else {
+//         $('.item-paid').removeClass('open-bottom');
+//     }
+// });
 
 
 // Споллер  страница новости

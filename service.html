@@ -16,8 +16,32 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__top">
-                    <div class="header__location select ">
+                <div class="header__top mobile">
+                    <a class="header__burger-btn" href="">
+                        <span></span>
+                    </a>
+
+                    <a href="" class="header__logo logo mobile">
+                        <img src="./img/logo.svg" alt="">
+                        <div class="logo__text-wrap">
+                            <svg width="188" height="19" viewBox="0 0 188 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.870972 16.799L2.76411 13.2174C3.99209 14.3772 5.29681 14.957 6.67829 14.957C7.46283 14.957 8.03418 14.7609 8.39234 14.3686C8.68228 14.0787 8.82725 13.7205 8.82725 13.2942C8.82725 12.8848 8.66523 12.5437 8.34118 12.2708C8.06829 12.0321 7.33492 11.7336 6.14105 11.3754L4.98982 11.0173C3.84712 10.6591 3.02846 10.1986 2.53386 9.6358C1.88576 8.93653 1.56171 7.93027 1.56171 6.61702C1.56171 4.91149 2.0819 3.53854 3.12227 2.49817C4.19675 1.42369 5.65497 0.886447 7.49694 0.886447C9.25364 0.886447 11.0103 1.34694 12.767 2.26792L11.0018 5.72162C10.0296 4.95413 9.0575 4.57038 8.08535 4.57038C7.47136 4.57038 6.98528 4.74094 6.62712 5.08204C6.33718 5.37198 6.19222 5.67898 6.19222 6.00303C6.19222 6.31002 6.26896 6.56585 6.42246 6.77051C6.66123 7.06045 7.15584 7.31628 7.90627 7.538L9.26216 7.94733C10.6948 8.39076 11.7266 8.95359 12.3577 9.6358C13.0911 10.4203 13.4578 11.4351 13.4578 12.6802C13.4578 14.471 12.9205 15.9036 11.846 16.9781C10.6863 18.1378 9.00633 18.7177 6.8062 18.7177C5.59528 18.7177 4.47816 18.5301 3.45484 18.1549C2.58503 17.8479 1.72374 17.3959 0.870972 16.799ZM26.3334 5.03088H22.7006V18.334H18.2747V5.03088H14.642V1.27019H26.3334V5.03088ZM38.9823 18.334L37.9334 15.4687H31.7423L30.5911 18.334H25.9094L32.4587 1.27019H37.2938L43.7151 18.334H38.9823ZM32.9703 12.0918H36.7566L34.8379 6.56585L32.9703 12.0918ZM47.828 18.334V10.1475L41.6625 1.27019H46.9582L50.1816 5.92628L53.2771 1.27019H58.6495L52.2794 10.1475V18.334H47.828Z"
+                                    fill="#EA2938" />
+                                <path
+                                    d="M60.2011 1.27019H66.2131C68.1403 1.27019 69.6327 1.73921 70.6901 2.67725C71.7987 3.6494 72.353 5.03088 72.353 6.82168C72.353 8.4931 71.8669 9.83193 70.8948 10.8382C69.9056 11.8445 68.4559 12.3476 66.5457 12.3476H64.1409V18.334H60.2011V1.27019ZM64.1409 4.49364V9.12414H65.5479C66.5201 9.12414 67.2279 8.91095 67.6713 8.48457C68.0977 8.05819 68.3109 7.49536 68.3109 6.7961C68.3109 6.07978 68.0977 5.52548 67.6713 5.13321C67.2279 4.70683 66.4945 4.49364 65.4712 4.49364H64.1409ZM75.8646 1.27019H81.851C83.693 1.27019 85.1427 1.76479 86.2001 2.754C87.1893 3.70909 87.6839 4.97971 87.6839 6.56585C87.6839 8.01555 87.2405 9.17531 86.3536 10.0451C85.6714 10.6932 84.8783 11.1281 83.9744 11.3499L89.2189 18.334H84.4093L79.8044 11.6057V18.334H75.8646V1.27019ZM79.8044 4.34014V9.02181H80.6998C81.7743 9.02181 82.5588 8.77451 83.0534 8.27991C83.4798 7.85352 83.693 7.29923 83.693 6.61702C83.693 5.86658 83.4286 5.28671 82.8999 4.87738C82.4224 4.51922 81.6975 4.34014 80.7254 4.34014H79.8044ZM100.947 0.886447C103.641 0.886447 105.842 1.71363 107.547 3.36799C109.321 5.09057 110.208 7.23953 110.208 9.81488C110.208 12.3561 109.321 14.488 107.547 16.2106C105.824 17.882 103.624 18.7177 100.947 18.7177C98.2519 18.7177 96.0348 17.882 94.2951 16.2106C93.4594 15.4261 92.8028 14.488 92.3252 13.3965C91.8647 12.2879 91.6345 11.1111 91.6345 9.86604C91.6345 8.67218 91.8733 7.49536 92.3508 6.33561C92.8454 5.15879 93.485 4.17811 94.2695 3.39357C95.9409 1.72216 98.1667 0.886447 100.947 0.886447ZM100.921 4.51922C99.4032 4.51922 98.1581 5.00529 97.186 5.97744C96.1797 6.94959 95.6766 8.23727 95.6766 9.84046C95.6766 11.3754 96.1968 12.6546 97.2371 13.6779C98.2264 14.6159 99.4458 15.085 100.896 15.085C102.448 15.085 103.71 14.5989 104.682 13.6267C105.671 12.6716 106.166 11.401 106.166 9.81488C106.166 8.2458 105.671 6.96665 104.682 5.97744C103.676 5.00529 102.422 4.51922 100.921 4.51922ZM114.162 1.27019H120.174C122.101 1.27019 123.594 1.73921 124.651 2.67725C125.76 3.6494 126.314 5.03088 126.314 6.82168C126.314 8.4931 125.828 9.83193 124.856 10.8382C123.866 11.8445 122.417 12.3476 120.507 12.3476H118.102V18.334H114.162V1.27019ZM118.102 4.49364V9.12414H119.509C120.481 9.12414 121.189 8.91095 121.632 8.48457C122.059 8.05819 122.272 7.49536 122.272 6.7961C122.272 6.07978 122.059 5.52548 121.632 5.13321C121.189 4.70683 120.455 4.49364 119.432 4.49364H118.102ZM139.47 1.27019V4.59597H133.765V7.89616H139.189V11.2219H133.765V15.0082H139.47V18.334H129.826V1.27019H139.47ZM143.69 1.27019H149.677C151.519 1.27019 152.968 1.76479 154.026 2.754C155.015 3.70909 155.51 4.97971 155.51 6.56585C155.51 8.01555 155.066 9.17531 154.179 10.0451C153.497 10.6932 152.704 11.1281 151.8 11.3499L157.045 18.334H152.235L147.63 11.6057V18.334H143.69V1.27019ZM147.63 4.34014V9.02181H148.525C149.6 9.02181 150.384 8.77451 150.879 8.27991C151.305 7.85352 151.519 7.29923 151.519 6.61702C151.519 5.86658 151.254 5.28671 150.726 4.87738C150.248 4.51922 149.523 4.34014 148.551 4.34014H147.63ZM169.4 4.59597H165.69V18.334H161.75V4.59597H158.041V1.27019H169.4V4.59597ZM177.54 18.334V10.3777L171.426 1.27019H176.082L179.51 6.56585L182.938 1.27019H187.594L181.48 10.3777V18.334H177.54Z"
+                                    fill="#0199E4" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="tel:88003010790" class="header__phone">
+                        <img class="header__phone-img" src="./img/call.png" alt="">
+                    </a>
+                </div>
+                <div class="header__top desctop">
+                    <div class="header__location select">
                         <div class="header__location-select  select__header">
                             <div class="header__office-wrap">
                                 <img src="./img/location.svg" alt="">
@@ -38,15 +62,14 @@
                             <div class="header__location-item select__item">США</div>
                         </div>
                     </div>
-
                     <div class="header__money-language-wrap">
                         <div class="header__money select">
                             <div class="header__money-select select__header">
-                                
+
                                 <div class="header__money-wrap select__current">
                                     €
                                 </div>
-                                
+
                                 <svg class="header__money-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 2L7 6L12 2" stroke="#2B2F36" stroke-width="2.2" stroke-linecap="round"
@@ -82,7 +105,7 @@
                         </div>
                     </div>
 
-                    <div class="header__about">Гражданство в Турции</div>
+                    <div class="header__about">Гражданство Турции</div>
 
                     <div class="header__social-wrap">
                         <a href="" class="header__social-item">
@@ -111,7 +134,28 @@
                 </div>
 
                 <div class="header__bottom">
-                    <a href="" class="header__logo logo">
+                    <div class="header__location select mobile">
+                        <div class="header__location-select  select__header">
+                            <div class="header__office-wrap">
+                                <img src="./img/location.svg" alt="">
+                                <div class="header__office-name">Офис:</div>
+                            </div>
+                            <div class="header__office-place select__current">Москва</div>
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2L7 6L12 2" stroke="#2B2F36" stroke-width="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="header__location-body">
+                            <div class="header__location-item select__item">Москва</div>
+                            <div class="header__location-item select__item">Украина</div>
+                            <div class="header__location-item select__item">Казахстан</div>
+                            <div class="header__location-item select__item">Великобритания</div>
+                            <div class="header__location-item select__item">США</div>
+                        </div>
+                    </div>
+                    <a href="" class="header__logo logo desctop">
                         <img src="./img/logo.svg" alt="">
                         <div class="logo__text-wrap">
                             <svg width="188" height="19" viewBox="0 0 188 19" fill="none"
@@ -132,7 +176,7 @@
                         </div>
                     </a>
 
-                    <nav class="header__nav">
+                    <nav class="header__nav desctop">
                         <ul class="header__list">
                             <li class="header__item">
                                 <a href="#">О компании</a>
@@ -166,7 +210,7 @@
                             </a>
                         </div>
 
-                        <button class="header__btn-back-call">
+                        <button class="header__btn-back-call desctop">
                             <span>Обратный звонок</span>
                             <div class="header__btn-arrow">
                                 <img src="./img/arrow.svg" alt="">
@@ -174,20 +218,126 @@
                         </button>
                     </div>
                 </div>
+
+                <div class="header__menu-mobile mobile">
+                    <a class="header__burger-btn" href="">
+                        <span></span>
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#">О компании</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#">Недвижимость</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#">Инвестиции</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#">Полезное</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__about">Гражданство Турции</div>
+
+                    <div class="header__money-language-wrap">
+                        <div class="header__money select">
+                            <div class="header__money-select select__header">
+
+                                <div class="header__money-wrap select__current">
+                                    €
+                                </div>
+
+                                <svg class="header__money-arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2L7 6L12 2" stroke="#2B2F36" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="header__money-body">
+                                <div class="header__money-item select__item">
+                                    €
+                                </div>
+                                <div class="header__money-item select__item">
+                                    $
+                                </div>
+                                <div class="header__money-item select__item">
+                                    ₽
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header__language select">
+                            <div class="header__language-select select__header">
+                                <div class="header__language-title select__current">RU</div>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2L7 6L12 2" stroke="#2B2F36" stroke-width="2.2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="header__language-body select__body">
+                                <div class="header__language-item select__item">RU</div>
+                                <div class="header__language-item select__item">EN</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__social-wrap">
+                        <a href="" class="header__social-item">
+                            <img src="./img/vk.svg" alt="">
+                        </a>
+                        <a href="" class="header__social-item">
+                            <img src="./img/youtub.svg" alt="">
+                        </a href="">
+                        <a href="" class="header__social-item">
+                            <img src="./img/twitter.svg" alt="">
+                        </a href="">
+                        <a href="" class="header__social-item">
+                            <img src="./img/inst.svg" alt="">
+                        </a href="">
+                        <a href="" class="header__social-item">
+                            <img src="./img/linkedin.svg" alt="">
+                        </a href="">
+                        <a href="" class="header__social-item">
+                            <img src="./img/fb.svg" alt="">
+                        </a href="">
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
 
     <main class="main">
         <section class="banner no-img service">
             <div class="container">
                 <div class="banner__inner">
-                    <div class="filter">
+                    <div class="filter" id="spoller-filter">
                         <div class="filter__header">
                             <div class="filter__title-wrap">
                                 <img class="filter__title-img" src="./img/filter-filter.svg" alt="">
                                 <div class="filter__title">Фильтр объектов</div>
-                                <div class="filter__corner"></div>
+                                <div class="filter__corner desctop"></div>
+                            </div>
+                            <div class="filter__header-right mobile">
+                                <div class="slice"></div>
+                                <button class="filter__btn">
+                                    <div class="corner"></div>
+                                    <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                            fill=""></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                         <div class="filter__body">
@@ -258,11 +408,21 @@
                                     <input type="text">
                                 </div>
 
+                                <button class="filter__more-filters mobile">
+                                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.9 1C7.9 0.502944 7.49706 0.1 7 0.1C6.50294 0.1 6.1 0.502944 6.1 1L7.9 1ZM6.3636 21.6364C6.71507 21.9879 7.28492 21.9879 7.6364 21.6364L13.364 15.9088C13.7154 15.5574 13.7154 14.9875 13.364 14.636C13.0125 14.2846 12.4426 14.2846 12.0912 14.636L7 19.7272L1.90883 14.636C1.55736 14.2846 0.987511 14.2846 0.636039 14.636C0.284567 14.9875 0.284567 15.5574 0.636039 15.9088L6.3636 21.6364ZM6.1 1L6.1 21L7.9 21L7.9 1L6.1 1Z"
+                                            fill="#C6CADA" />
+                                    </svg>
+                                    <span>Еще фильтры</span>
+                                </button>
+
                                 <a href="" class="filter__value">903 объекта</a>
                             </div>
 
                             <div class="filter__body-bottom">
-                                <button class="filter__more-filters">
+                                <button class="filter__more-filters desctop">
                                     <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -293,12 +453,16 @@
             <div class="container">
                 <div class="service__inner">
                     <div class="service__top">
+                        <div class="service__title title mobile">Послепродажный сервис</div>
                         <div class="service__top-text">
-                            <div class="service__title title">Послепродажный сервис</div>
-                            <div class="service__par">Сделка купли-продажи прошла успешно, а вы стали счастливым обладателем турецкой недвижимости. Основные формальности позади, но впереди также есть множество нюансов, которые вам всегда помогут решить специалисты агентства STAY PROPERTY. Мы предлагаем полный послепродажный сервис. Наша задача – 
-                                сделать процесс владения максимально удобным и 
-                                простым, а адаптация в новой стране – максимально 
-                                комфортной. 
+                        <div class="service__title title desctop">Послепродажный сервис</div>
+                            <div class="service__par">Сделка купли-продажи прошла успешно, а вы стали счастливым
+                                обладателем турецкой недвижимости. Основные формальности позади, но впереди также есть
+                                множество нюансов, которые вам всегда помогут решить специалисты агентства STAY
+                                PROPERTY. Мы предлагаем полный послепродажный сервис. Наша задача –
+                                сделать процесс владения максимально удобным и
+                                простым, а адаптация в новой стране – максимально
+                                комфортной.
                             </div>
                         </div>
                         <div class="service__top-img">
@@ -306,21 +470,26 @@
                         </div>
                     </div>
                     <div class="service__main">
-                        <div class="service__main-item item-free">
+                        <div class="service__main-item-wrap">
+                            <div class="service__main-item item-free">
                             <div class="service__main-title">Бесплатные услуги</div>
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap free active">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content free-content" style="display: block;">
@@ -330,9 +499,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -345,23 +517,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -374,16 +552,20 @@
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap free">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content free-content">
@@ -393,9 +575,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -408,23 +593,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -437,16 +628,20 @@
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap free">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content free-content">
@@ -456,9 +651,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -471,23 +669,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -500,16 +704,20 @@
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap free">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content free-content">
@@ -519,9 +727,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -534,23 +745,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -563,16 +780,20 @@
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap free">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content free-content">
@@ -582,9 +803,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -597,23 +821,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -624,22 +854,29 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="service__main-right"></div>
+                        </div>
+                        
 
-                        <div class="service__main-item item-paid">
+                        <!-- <div class="service__main-item item-paid">
                             <div class="service__main-title">Платные услуги</div>
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap paid">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content paid-content">
@@ -649,9 +886,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -664,23 +904,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -693,16 +939,20 @@
                             <div class="service__spoller ">
                                 <div class="service__spoller-title-wrap paid">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content paid-content">
@@ -712,9 +962,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -727,23 +980,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -756,16 +1015,20 @@
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap paid">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content paid-content">
@@ -775,9 +1038,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -790,23 +1056,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -819,16 +1091,20 @@
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap paid">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content paid-content">
@@ -838,9 +1114,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -853,23 +1132,29 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -882,16 +1167,20 @@
                             <div class="service__spoller">
                                 <div class="service__spoller-title-wrap paid">
                                     <div class="service__spoller-title-text">
-                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью</div>
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
                                     </div>
                                     <div class="service__spoller-scenery">
                                         <div class="slice"></div>
-                                            <button class="service__btn">
+                                        <button class="service__btn">
                                             <div class="corner"></div>
-                                                <svg width="16" height="25" viewBox="0 0 16 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z" fill=""></path>
-                                                </svg>
-                                            </button>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="service__spoller-content paid-content">
@@ -901,9 +1190,12 @@
                                                 <img src="./img/service2.jpg" alt="">
                                             </div>
                                             <div class="service__spoller-content-text">
-                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под ключ». Это значит, что проблем с
-                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после оформления документов. Нужно лишь
-                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а также другие мелочи, домашний декор.
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
                                                 В турецких магазинах подобных товаров достаточно,
                                                 но процесс покупки будет сложен, если вы не владеете хотя бы
                                                 базовым разговорным английским.
@@ -916,23 +1208,413 @@
                                             скидки, расширенную гарантию и многое другое.
                                         </div>
                                         <div class="service__spoller-text">
-                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно по каталогам,
-                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые детали легко можно согласовать по
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
                                             интернету, а наши специалисты выполнят непосредственные покупки,
-                                            возьмут на себя процесс координации доставки и расстановки приобретенных товаров внутри квартиры.
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
                                         </div>
                                         <a href="" class="service__btn-text btn">
                                             <span>Заказать</span>
                                             <div class="btn__arrow btn--white">
-                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
                                                 </svg>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="service__spoller-catalog">
-                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса</div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
+                                        <a href="" class="service__btn-catalog btn">
+                                            <span>Скачать каталог</span>
+                                            <div class="btn__arrow btn--red">
+                                                <img src="./img/arrow-white.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="service__main-item-wrap">
+                            <div class="service__main-item item-free">
+                            <div class="service__main-title">Бесплатные услуги</div>
+                            <div class="service__spoller">
+                                <div class="service__spoller-title-wrap free active">
+                                    <div class="service__spoller-title-text">
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
+                                    </div>
+                                    <div class="service__spoller-scenery">
+                                        <div class="slice"></div>
+                                        <button class="service__btn">
+                                            <div class="corner"></div>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service__spoller-content free-content" style="display: block;">
+                                    <div class="service__spoller-content-wrap">
+                                        <div class="service__spoller-content-top">
+                                            <div class="service__spoller-content-img">
+                                                <img src="./img/service2.jpg" alt="">
+                                            </div>
+                                            <div class="service__spoller-content-text">
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
+                                                В турецких магазинах подобных товаров достаточно,
+                                                но процесс покупки будет сложен, если вы не владеете хотя бы
+                                                базовым разговорным английским.
+                                            </div>
+                                        </div>
+                                        <div class="service__spoller-text substrate">
+                                            Компания STAY PROPERTY предоставляет услуги гида-переводчика,
+                                            который поможет купить все необходимое,
+                                            а также получить в местных магазинах дополнительные сервисы:
+                                            скидки, расширенную гарантию и многое другое.
+                                        </div>
+                                        <div class="service__spoller-text">
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
+                                            интернету, а наши специалисты выполнят непосредственные покупки,
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
+                                        </div>
+                                        <a href="" class="service__btn-text btn">
+                                            <span>Заказать</span>
+                                            <div class="btn__arrow btn--white">
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
+                                        <a href="" class="service__btn-catalog btn">
+                                            <span>Скачать каталог</span>
+                                            <div class="btn__arrow btn--red">
+                                                <img src="./img/arrow-white.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__spoller">
+                                <div class="service__spoller-title-wrap free">
+                                    <div class="service__spoller-title-text">
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
+                                    </div>
+                                    <div class="service__spoller-scenery">
+                                        <div class="slice"></div>
+                                        <button class="service__btn">
+                                            <div class="corner"></div>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service__spoller-content free-content">
+                                    <div class="service__spoller-content-wrap">
+                                        <div class="service__spoller-content-top">
+                                            <div class="service__spoller-content-img">
+                                                <img src="./img/service2.jpg" alt="">
+                                            </div>
+                                            <div class="service__spoller-content-text">
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
+                                                В турецких магазинах подобных товаров достаточно,
+                                                но процесс покупки будет сложен, если вы не владеете хотя бы
+                                                базовым разговорным английским.
+                                            </div>
+                                        </div>
+                                        <div class="service__spoller-text substrate">
+                                            Компания STAY PROPERTY предоставляет услуги гида-переводчика,
+                                            который поможет купить все необходимое,
+                                            а также получить в местных магазинах дополнительные сервисы:
+                                            скидки, расширенную гарантию и многое другое.
+                                        </div>
+                                        <div class="service__spoller-text">
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
+                                            интернету, а наши специалисты выполнят непосредственные покупки,
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
+                                        </div>
+                                        <a href="" class="service__btn-text btn">
+                                            <span>Заказать</span>
+                                            <div class="btn__arrow btn--white">
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
+                                        <a href="" class="service__btn-catalog btn">
+                                            <span>Скачать каталог</span>
+                                            <div class="btn__arrow btn--red">
+                                                <img src="./img/arrow-white.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__spoller">
+                                <div class="service__spoller-title-wrap free">
+                                    <div class="service__spoller-title-text">
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
+                                    </div>
+                                    <div class="service__spoller-scenery">
+                                        <div class="slice"></div>
+                                        <button class="service__btn">
+                                            <div class="corner"></div>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service__spoller-content free-content">
+                                    <div class="service__spoller-content-wrap">
+                                        <div class="service__spoller-content-top">
+                                            <div class="service__spoller-content-img">
+                                                <img src="./img/service2.jpg" alt="">
+                                            </div>
+                                            <div class="service__spoller-content-text">
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
+                                                В турецких магазинах подобных товаров достаточно,
+                                                но процесс покупки будет сложен, если вы не владеете хотя бы
+                                                базовым разговорным английским.
+                                            </div>
+                                        </div>
+                                        <div class="service__spoller-text substrate">
+                                            Компания STAY PROPERTY предоставляет услуги гида-переводчика,
+                                            который поможет купить все необходимое,
+                                            а также получить в местных магазинах дополнительные сервисы:
+                                            скидки, расширенную гарантию и многое другое.
+                                        </div>
+                                        <div class="service__spoller-text">
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
+                                            интернету, а наши специалисты выполнят непосредственные покупки,
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
+                                        </div>
+                                        <a href="" class="service__btn-text btn">
+                                            <span>Заказать</span>
+                                            <div class="btn__arrow btn--white">
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
+                                        <a href="" class="service__btn-catalog btn">
+                                            <span>Скачать каталог</span>
+                                            <div class="btn__arrow btn--red">
+                                                <img src="./img/arrow-white.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__spoller">
+                                <div class="service__spoller-title-wrap free">
+                                    <div class="service__spoller-title-text">
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
+                                    </div>
+                                    <div class="service__spoller-scenery">
+                                        <div class="slice"></div>
+                                        <button class="service__btn">
+                                            <div class="corner"></div>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service__spoller-content free-content">
+                                    <div class="service__spoller-content-wrap">
+                                        <div class="service__spoller-content-top">
+                                            <div class="service__spoller-content-img">
+                                                <img src="./img/service2.jpg" alt="">
+                                            </div>
+                                            <div class="service__spoller-content-text">
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
+                                                В турецких магазинах подобных товаров достаточно,
+                                                но процесс покупки будет сложен, если вы не владеете хотя бы
+                                                базовым разговорным английским.
+                                            </div>
+                                        </div>
+                                        <div class="service__spoller-text substrate">
+                                            Компания STAY PROPERTY предоставляет услуги гида-переводчика,
+                                            который поможет купить все необходимое,
+                                            а также получить в местных магазинах дополнительные сервисы:
+                                            скидки, расширенную гарантию и многое другое.
+                                        </div>
+                                        <div class="service__spoller-text">
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
+                                            интернету, а наши специалисты выполнят непосредственные покупки,
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
+                                        </div>
+                                        <a href="" class="service__btn-text btn">
+                                            <span>Заказать</span>
+                                            <div class="btn__arrow btn--white">
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
+                                        <a href="" class="service__btn-catalog btn">
+                                            <span>Скачать каталог</span>
+                                            <div class="btn__arrow btn--red">
+                                                <img src="./img/arrow-white.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service__spoller">
+                                <div class="service__spoller-title-wrap free">
+                                    <div class="service__spoller-title-text">
+                                        <div class="service__spoller-title">Обстановка квартиры и комплектация мебелью
+                                        </div>
+                                    </div>
+                                    <div class="service__spoller-scenery">
+                                        <div class="slice"></div>
+                                        <button class="service__btn">
+                                            <div class="corner"></div>
+                                            <svg width="16" height="25" viewBox="0 0 16 25" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7 1C7 0.447715 7.44772 2.41411e-08 8 0C8.55228 -2.41411e-08 9 0.447715 9 1L7 1ZM8.70711 24.7071C8.31658 25.0976 7.68342 25.0976 7.29289 24.7071L0.928933 18.3431C0.538409 17.9526 0.538409 17.3195 0.928933 16.9289C1.31946 16.5384 1.95262 16.5384 2.34315 16.9289L8 22.5858L13.6569 16.9289C14.0474 16.5384 14.6805 16.5384 15.0711 16.9289C15.4616 17.3195 15.4616 17.9526 15.0711 18.3431L8.70711 24.7071ZM9 1L9 24L7 24L7 1L9 1Z"
+                                                    fill=""></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service__spoller-content free-content">
+                                    <div class="service__spoller-content-wrap">
+                                        <div class="service__spoller-content-top">
+                                            <div class="service__spoller-content-img">
+                                                <img src="./img/service2.jpg" alt="">
+                                            </div>
+                                            <div class="service__spoller-content-text">
+                                                Квартиры в Турции чаще всего представлены к продаже с отделкой «под
+                                                ключ». Это значит, что проблем с
+                                                ремонтом вы не будете испытывать, а в жилье можно переезжать сразу после
+                                                оформления документов. Нужно лишь
+                                                позаботиться об обстановке: купить и завести мебель, бытовую технику, а
+                                                также другие мелочи, домашний декор.
+                                                В турецких магазинах подобных товаров достаточно,
+                                                но процесс покупки будет сложен, если вы не владеете хотя бы
+                                                базовым разговорным английским.
+                                            </div>
+                                        </div>
+                                        <div class="service__spoller-text substrate">
+                                            Компания STAY PROPERTY предоставляет услуги гида-переводчика,
+                                            который поможет купить все необходимое,
+                                            а также получить в местных магазинах дополнительные сервисы:
+                                            скидки, расширенную гарантию и многое другое.
+                                        </div>
+                                        <div class="service__spoller-text">
+                                            Покупка мебели может осуществляться как лично с клиентом, так и дистанционно
+                                            по каталогам,
+                                            если на данном этапе вы пока не можете приехать в Турцию. Все необходимые
+                                            детали легко можно согласовать по
+                                            интернету, а наши специалисты выполнят непосредственные покупки,
+                                            возьмут на себя процесс координации доставки и расстановки приобретенных
+                                            товаров внутри квартиры.
+                                        </div>
+                                        <a href="" class="service__btn-text btn">
+                                            <span>Заказать</span>
+                                            <div class="btn__arrow btn--white">
+                                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732"
+                                                        stroke="#DE1117" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service__spoller-catalog desctop">
+                                        <div class="service__spoller-catalog-title">Каталог послепродажного сервиса
+                                        </div>
                                         <a href="" class="service__btn-catalog btn">
                                             <span>Скачать каталог</span>
                                             <div class="btn__arrow btn--red">
@@ -943,7 +1625,8 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="service__main-right"></div>
+                        </div>
 
                     </div>
                 </div>
@@ -954,10 +1637,13 @@
             <div class="container">
                 <div class="blog__inner">
                     <div class="swiper__arrows">
-                        <div class="blog__slider-prev swiper__arrow swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-2b210f005de744963" aria-disabled="true">
+                        <div class="blog__slider-prev swiper__arrow swiper-button-disabled" tabindex="-1" role="button"
+                            aria-label="Previous slide" aria-controls="swiper-wrapper-2b210f005de744963"
+                            aria-disabled="true">
                             <img src="./img/slider-arrow-next.svg" alt="">
                         </div>
-                        <div class="blog__slider-next swiper__arrow" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-2b210f005de744963" aria-disabled="false">
+                        <div class="blog__slider-next swiper__arrow" tabindex="0" role="button" aria-label="Next slide"
+                            aria-controls="swiper-wrapper-2b210f005de744963" aria-disabled="false">
                             <img src="./img/slider-arrow-prew.svg" alt="">
                         </div>
                     </div>
@@ -967,7 +1653,7 @@
                             <div class="blog__box blog-slide swiper-slide">
                                 <div class="blog__photo">
                                     <img src="./img/real-estate4.png" alt="">
-                                    <a href="" class="banner__btn-video"></a>
+                                    <a href="" class="blog__btn-video btn-video"></a>
                                 </div>
                                 <div class="blog__box-content">
                                     <div class="blog__box-top">
@@ -990,7 +1676,8 @@
                                             <div class="blog__box-top-number">3 546</div>
                                         </div>
                                     </div>
-                                    <div class="blog__box-title">Почему я купил квартиру в Алании? Элитный проект. Район Оба
+                                    <div class="blog__box-title">Почему я купил квартиру в Алании? Элитный проект. Район
+                                        Оба
                                     </div>
                                     <div class="blog__box-bottom">
                                         <div class="blog__box__bottom-clock">
@@ -1006,7 +1693,7 @@
                             <div class="blog__box blog-slide swiper-slide">
                                 <div class="blog__photo">
                                     <img src="./img/real-estate6.png" alt="">
-                                    <a href="" class="banner__btn-video"></a>
+                                    <a href="" class="blog__btn-video btn-video"></a>
                                 </div>
                                 <div class="blog__box-content">
                                     <div class="blog__box-top">
@@ -1045,7 +1732,7 @@
                             <div class="blog__box blog-slide swiper-slide">
                                 <div class="blog__photo">
                                     <img src="./img/real-estate4.png" alt="">
-                                    <a href="" class="banner__btn-video"></a>
+                                    <a href="" class="blog__btn-video btn-video"></a>
                                 </div>
                                 <div class="blog__box-content">
                                     <div class="blog__box-top">
@@ -1068,7 +1755,8 @@
                                             <div class="blog__box-top-number">3 546</div>
                                         </div>
                                     </div>
-                                    <div class="blog__box-title">Почему я купил квартиру в Алании? Элитный проект. Район Оба
+                                    <div class="blog__box-title">Почему я купил квартиру в Алании? Элитный проект. Район
+                                        Оба
                                     </div>
                                     <div class="blog__box-bottom">
                                         <div class="blog__box__bottom-clock">
@@ -1084,7 +1772,7 @@
                             <div class="blog__box blog-slide swiper-slide">
                                 <div class="blog__photo">
                                     <img src="./img/real-estate6.png" alt="">
-                                    <a href="" class="banner__btn-video"></a>
+                                    <a href="" class="blog__btn-video btn-video"></a>
                                 </div>
                                 <div class="blog__box-content">
                                     <div class="blog__box-top">
@@ -1123,7 +1811,7 @@
                             <div class="blog__box blog-slide swiper-slide">
                                 <div class="blog__photo">
                                     <img src="./img/real-estate4.png" alt="">
-                                    <a href="" class="banner__btn-video"></a>
+                                    <a href="" class="blog__btn-video btn-video"></a>
                                 </div>
                                 <div class="blog__box-content">
                                     <div class="blog__box-top">
@@ -1146,7 +1834,8 @@
                                             <div class="blog__box-top-number">3 546</div>
                                         </div>
                                     </div>
-                                    <div class="blog__box-title">Почему я купил квартиру в Алании? Элитный проект. Район Оба
+                                    <div class="blog__box-title">Почему я купил квартиру в Алании? Элитный проект. Район
+                                        Оба
                                     </div>
                                     <div class="blog__box-bottom">
                                         <div class="blog__box__bottom-clock">
@@ -1162,7 +1851,7 @@
                             <div class="blog__box blog-slide swiper-slide">
                                 <div class="blog__photo">
                                     <img src="./img/real-estate6.png" alt="">
-                                    <a href="" class="banner__btn-video"></a>
+                                    <a href="" class="blog__btn-video btn-video"></a>
                                 </div>
                                 <div class="blog__box-content">
                                     <div class="blog__box-top">
@@ -1203,8 +1892,10 @@
                     <a href="" class="blog__btn btn">
                         <span>Перейти на канал</span>
                         <div class="btn__arrow btn--white">
-                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </div>
                     </a>
@@ -1380,49 +2071,41 @@
             </div>
             </div>
         </section>
-     
+
     </main>
+
 
 
     <footer class="footer">
         <div class="footer__top">
             <div class="footer__top-left">
-            <div class="footer__top-img">
-                <img src="./img/footer1.svg" alt="">
-            </div>
-            <div class="footer__top-title-wrap">
-                <div class="footer__top-title">Новые проекты в 2022 году!</div>
-                <div class="footer__top-subtitle">Узнайте первыми о старте продаж</div>
-            </div>
+                <div class="footer__top-img">
+                    <img src="./img/footer1.svg" alt="">
+                </div>
+                <div class="footer__top-title-wrap">
+                    <div class="footer__top-title">Новые проекты в&nbsp;2022 году!</div>
+                    <div class="footer__top-subtitle">Узнайте первыми о&nbsp;старте продаж</div>
+                </div>
             </div>
             <a href="" class="footer__btn btn">
                 <span>Заказать звонок</span>
                 <div class="btn__arrow btn--white">
                     <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.83333 1.33398L6 5.50065L1.83333 9.66732" stroke="#DE1117" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        
+                        <path d="M1.83337 1.33398L6 5.50061L1.83337 9.66724" stroke="#DE1117" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </div>
             </a>
         </div>
         <div class="container">
-          
             <div class="footer__content">
                 <div class="footer__contacts-block">
                     <div class="footer__contacts-item">
                         <a class="footer__tel" href="">8 499 112-09-70</a>
                         <a href="" class="footer__tel-link">
-                            <span>Заказать звонок</span>
+                            <span>Перезвоните мне</span>
                             <div class="btn__arrow btn--red">
-                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2.09668 1.51562L7.09668 7.02441L2.09668 12.5332" stroke="url(#paint0_linear_296_9452)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <defs>
-                                        <linearGradient id="paint0_linear_296_9452" x1="2.29668" y1="1.07487" x2="0.697986" y2="27.945" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="white"></stop>
-                                            <stop offset="1" stop-color="white" stop-opacity="0.24"></stop>
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <img src="./img/arrow-white.svg" alt="">
                             </div>
                         </a>
                     </div>
@@ -1432,20 +2115,12 @@
                         <a href="" class="footer__tel-link">
                             <span>Напишите нам</span>
                             <div class="btn__arrow btn--blue">
-                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2.09668 1.51562L7.09668 7.02441L2.09668 12.5332" stroke="url(#paint0_linear_296_9452)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <defs>
-                                        <linearGradient id="paint0_linear_296_9452" x1="2.29668" y1="1.07487" x2="0.697986" y2="27.945" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="white"></stop>
-                                            <stop offset="1" stop-color="white" stop-opacity="0.24"></stop>
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <img src="./img/arrow-white.svg" alt="">
                             </div>
                         </a>
                     </div>
 
-                    <div class="footer__contacts-item">
+                    <div class="footer__contacts-item desctop">
                         <div class="footer__contact-title">Наши соцсети</div>
                         <div class="footer__social-wrap">
                             <a class="footer__social-link" href="">
@@ -1469,10 +2144,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__nav">
-                        <ul class="footer__nav-list">
-                            <div class="footer__nav-title">Проекты в Турции</div>
-
+                <div class="footer__nav" id="footer-spoller">
+                    <ul class="footer__nav-list">
+                        <div class="footer__nav-title active">Проекты в Турции
+                            <svg class="mobile" width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.03906 6.4186L6.89953 2L11.76 6.4186" stroke="#2B2F36" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="footer__nav-list-wrap" style="display: block">
                             <li>
                                 <a href="">Окуджалар</a>
                             </li>
@@ -1517,10 +2198,18 @@
                                 <a href="">Все города
                                 </a>
                             </li>
-                        </ul>
+                        </div>
+                    </ul>
 
-                        <ul class="footer__nav-list">
-                            <div class="footer__nav-title">Недвижимость</div>
+                    <ul class="footer__nav-list">
+                        <div class="footer__nav-title">Недвижимость
+                            <svg class="mobile" width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.03906 6.4186L6.89953 2L11.76 6.4186" stroke="#2B2F36" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="footer__nav-list-wrap">
                             <li>
                                 <a href="">Недвижимость по районам</a>
                             </li>
@@ -1530,7 +2219,6 @@
                             <li>
                                 <a href="">Наши проекты</a>
                             </li>
-       
                             <li>
                                 <a href="">Апартаменты</a>
                             </li>
@@ -1558,10 +2246,18 @@
                             <li>
                                 <a href=""> Продано</a>
                             </li>
-                        </ul>
+                        </div>
+                    </ul>
 
-                        <ul class="footer__nav-list">
-                            <div class="footer__nav-title">Информация</div>
+                    <ul class="footer__nav-list">
+                        <div class="footer__nav-title">Информация
+                            <svg class="mobile" width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.03906 6.4186L6.89953 2L11.76 6.4186" stroke="#2B2F36" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="footer__nav-list-wrap">
                             <li>
                                 <a href="">О нас</a>
                             </li>
@@ -1571,7 +2267,6 @@
                             <li>
                                 <a href="">Отзывы</a>
                             </li>
-                                      
                             <li>
                                 <a href="">Инфо-тур Бесплатно</a>
                             </li>
@@ -1596,49 +2291,81 @@
                             <li>
                                 <a href="">Недвижимость Махмутлар</a>
                             </li>
-                        </ul>
+                        </div>
+                    </ul>
 
-                    <ul class="footer__nav-list">
-                        <div class="footer__nav-title">Контакты</div>
-                        <div class="footer__nav-tel">
-                            <span>Турция</span>
-                            <a href="">+90 530 178-2902</a>
+                    <ul class="footer__nav-list contact">
+                        <div class="footer__nav-title active">Контакты
+                            <svg class="mobile" width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.03906 6.4186L6.89953 2L11.76 6.4186" stroke="#2B2F36" stroke-width="2.2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <div class="footer__nav-tel">
-                            <span>Россия</span>
-                            <a href="">+7 499 112-09-70</a>
-                        </div>
-                        <div class="footer__nav-tel">
-                            <span>Москва</span>
-                            <a href="">+7 916 654-34-07</a>
-                        </div>
+                        <div class="footer__nav-list-wrap" style="display: block">
+                            <div class="footer__nav-tel">
+                                <span>Турция</span>
+                                <a href="">+90 530 178-2902</a>
+                            </div>
+                            <div class="footer__nav-tel">
+                                <span>Россия</span>
+                                <a href="">+7 499 112-09-70</a>
+                            </div>
+                            <div class="footer__nav-tel">
+                                <span>Москва</span>
+                                <a href="">+7 916 654-34-07</a>
+                            </div>
 
-                        <div class="footer__nav-tel">
-                            <span>Украина</span>
-                            <a href="">+380 943-200-618</a>
-                        </div>
-                        <div class="footer__nav-tel">
-                            <span>Казахстан</span>
-                            <a href="">+7 727 312-27-06</a>
-                        </div>
-                        <div class="footer__nav-tel">
-                            <span>Британия</span>
-                            <a href="">+44 757 745-77-70</a>
-                        </div>
-                        <div class="footer__nav-tel">
-                            <span>США</span>
-                            <a href=""> +1 202 918-22-90</a>
+                            <div class="footer__nav-tel">
+                                <span>Украина</span>
+                                <a href="">+380 943-200-618</a>
+                            </div>
+                            <div class="footer__nav-tel">
+                                <span>Казахстан</span>
+                                <a href="">+7 727 312-27-06</a>
+                            </div>
+                            <div class="footer__nav-tel">
+                                <span>Британия</span>
+                                <a href="">+44 757 745-77-70</a>
+                            </div>
+                            <div class="footer__nav-tel">
+                                <span>США</span>
+                                <a href=""> +1 202 918-22-90</a>
+                            </div>
                         </div>
                     </ul>
                 </div>
+
+                <div class="footer__contacts-item social mobile">
+                    <div class="footer__contact-title">Наши соцсети</div>
+                    <div class="footer__social-wrap">
+                        <a class="footer__social-link" href="">
+                            <img src="./img/s1.svg" alt="">
+                        </a>
+                        <a class="footer__social-link" href="">
+                            <img src="./img/s2.svg" alt="">
+                        </a>
+                        <a class="footer__social-link" href="">
+                            <img src="./img/s3.svg" alt="">
+                        </a>
+                        <a class="footer__social-link" href="">
+                            <img src="./img/s4.svg" alt="">
+                        </a>
+                        <a class="footer__social-link" href="">
+                            <img src="./img/s5.svg" alt="">
+                        </a>
+                        <a class="footer__social-link" href="">
+                            <img src="./img/s6.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
-        <!-- </div> -->
-    <div class="footer__bottom">
-        <div class="footer__bottom-info">StayProperty. All rights reserved © 2021</div>
-        <div class="footer__bottom-info">office@stayproperty.com</div>
-        <div class="footer__bottom-info">Oba Mah., Mesut Cd., No: 54/A – 07400 Alanya / Antalya / Turkey</div>
-    </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-info">StayProperty. All rights reserved © 2021</div>
+            <div class="footer__bottom-info">office@stayproperty.com</div>
+            <div class="footer__bottom-info">Oba Mah., Mesut Cd., No: 54/A – 07400 Alanya / Antalya / Turkey</div>
+        </div>
     </footer>
 
 

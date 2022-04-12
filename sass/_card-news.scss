@@ -265,20 +265,21 @@
     }
 
     &__spoller-content-absolute {
-        width: 37.5rem;
-        height: 34.3rem;
-        padding: 4.3rem 1.5rem 20rem 23rem;
+        width: 26.5rem;
+        height: 26.3rem;
+        padding: 7.3rem 3.5rem 6rem 4rem;
         position: absolute;
         right: -4rem;
         top: 22.5rem;
 
-        svg {
-            width: 37.5rem;
-            height: 34.3rem;
-
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
             position: absolute;
-            top: -6rem;
-            right: -13rem;
+            top: 0;
+            right: 0;
+            filter: drop-shadow(20px 20px 100px rgba(40, 44, 78, 0.15));
         }
     }
 
