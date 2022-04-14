@@ -12178,7 +12178,6 @@ input[type=number] {
   .banner.no-img {
     padding-top: 0rem;
     margin-bottom: 11rem;
-    padding: 0 4rem;
   }
 
   .banner.no-img .filter__body {
@@ -13766,5 +13765,107 @@ input[type=number] {
     height: 10.6rem;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+
+  .articles.page-buy .articles__title {
+    margin-bottom: 5rem;
+    text-align: left;
+  }
+
+  .articles.page-buy .articles__substrate {
+    font-size: 3.4rem;
+    padding: 6rem 4rem;
+    text-align: left;
+    border-radius: 4rem;
+  }
+
+  .articles.page-buy .articles__substrate-item::before {
+    width: 1.6rem;
+    height: 1.6rem;
+    top: 1rem;
+    left: -0.5rem;
+  }
+
+  .articles.page-buy .articles__substrate-item {
+    padding-left: 2rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .articles.page-buy .articles__text-block-img {
+    height: 44.4rem;
+    border-radius: 4rem;
+    margin-bottom: 10rem;
+  }
+
+  .articles__right-item.all-bg {
+    height: 124.4rem;
+  }
+
+  .real-estate.page-real-estate .real-estate__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .real-estate.page-real-estate .real-estate__top-sorting {
+    display: none;
+  }
+  .real-estate.page-real-estate .real-estate__title {
+    margin-bottom: 5rem;
+  }
+  .real-estate.page-real-estate .real-estate__sorting-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .real-estate.page-real-estate .real-estate__select-sort {
+    padding-right: 10rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .real-estate.page-real-estate .real-estate__select-sort .dropdown {
+    width: 40rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(138, 145, 170);
+    position: relative;
+  }
+  .real-estate.page-real-estate .real-estate__select-sort .dropdown.active .real-estate__select-arrow {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .real-estate.page-real-estate .real-estate__select-sort .select {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .real-estate.page-real-estate .real-estate__select-sort .select:focus-visible {
+    outline: transparent;
+  }
+  .real-estate.page-real-estate .real-estate__select-sort .dropdown-menu:focus-visible {
+    outline: transparent;
+  }
+  .real-estate.page-real-estate .real-estate__select-arrow {
+    width: 2rem;
+    height: 2rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-top: 1.1rem;
+  }
+  .real-estate.page-real-estate .real-estate__sorting-view {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }/*# sourceMappingURL=style.css.map */

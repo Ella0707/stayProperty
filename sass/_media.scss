@@ -3145,7 +3145,7 @@
     .banner.no-img {
         padding-top: 0rem;
         margin-bottom: 11rem;
-        padding: 0 4rem;
+        // padding: 0 4rem;
     }
 
     .banner.no-img .filter__body {
@@ -4981,4 +4981,130 @@
         }
     }
 
+
+    .articles.page-buy .articles__title {
+        margin-bottom: 5rem;
+        text-align: left;
+    }
+
+    .articles.page-buy .articles__substrate {
+        font-size: 3.4rem;
+        padding: 6rem 4rem;
+        text-align: left;
+        border-radius: 4rem;
+    }
+
+    .articles.page-buy .articles__substrate-item::before {
+        width: 1.6rem;
+        height: 1.6rem;
+        top: 1rem;
+        left: -0.5rem;
+    }
+
+    .articles.page-buy .articles__substrate-item {
+        padding-left: 2rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    .articles.page-buy .articles__text-block-img {
+        height: 44.4rem;
+        border-radius: 4rem;
+        margin-bottom: 10rem;
+    }
+
+    .articles__right-item.all-bg {
+        height: 124.4rem;
+    }
+
+
+    .real-estate.page-real-estate 
+
+    .real-estate {
+
+        &__top {
+            flex-direction: column;
+        }
+
+        &__top-sorting {
+            display: none;
+        }
+
+        &__title {
+            margin-bottom: 5rem;
+        }
+
+        &__sorting-wrap {
+            display: flex;
+            align-items: center;
+            // width: 50%;
+            justify-content: flex-end;
+            // margin-left: auto;
+        }
+
+
+        &__select-sort {
+            padding-right: 10rem;
+            position: relative;
+            cursor: pointer;
+
+            .dropdown {
+                width: 40rem;
+                @include text(3rem, 400, rgba(138, 145, 170, 1));
+                position: relative;
+
+                &.active {
+                    .real-estate__select-arrow {
+                        transform: rotate(180deg);
+                    }
+ 
+                 }
+ 
+            }
+
+            
+            .select {
+                width: max-content;
+
+                &:focus-visible {
+                    outline: transparent;
+                }
+
+              
+            }
+            .fa {
+            }
+            .fa-chevron-left {
+            }
+            .dropdown-menu {
+
+                &:focus-visible {
+                    outline: transparent;
+                }
+
+            }
+
+        }
+
+        &__select-arrow {
+            width: 2rem;
+            height: 2rem;
+            object-fit: contain;
+            position: absolute;
+            top: 0;
+            right: 0;
+            // transform: translateY(-50%);
+            transition: 0.5s;
+            margin-top: 1.1rem;
+        }
+
+        &__sorting-view {
+            align-self: flex-start;
+        }
+       
+       
+        
+    }
+    
+   
 }
