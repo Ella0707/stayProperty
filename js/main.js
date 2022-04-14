@@ -88,6 +88,13 @@ $(".vacancies__item-name").click(function (e) {
     $(this).addClass('active');
 })
 
+//   переключение класса на странице "наша команда"
+$(".command__lacation-item").click(function (e) {
+    e.preventDefault();
+    $(".command__lacation-item").removeClass('active');
+    $(this).addClass('active');
+})
+
 
 // слайдеры
 const objectSwiper = new Swiper('.objects-box__slider', {
@@ -309,17 +316,29 @@ const staffSwiper = new Swiper('.staff__slider', {
     slidesPerView: 3,
     spaceBetween: 37,
     speed: 800,
+    direction: "vertical",
 
     navigation: {
         prevEl: '.staff__slider-prev',
         nextEl: '.staff__slider-next',
     },
+
+    breakpoints: {
+
+        769: {
+            slidesPerView: 3,
+            spaceBetween: 39,
+            direction: "horizontal",
+        }
+    },
 });
 
 
 const catalogSwiper = new Swiper('.catalog__content', {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 37,
+    direction: "vertical",
+
 
     navigation: {
         prevEl: '.catalog__slider-prev',
@@ -331,6 +350,7 @@ const catalogSwiper = new Swiper('.catalog__content', {
         769: {
             slidesPerView: 4,
             spaceBetween: 37,
+            direction: "horizontal",
         }
     }
 });
