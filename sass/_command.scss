@@ -136,10 +136,12 @@
 
     &__item {
         width: 49.5rem;
+        height: 76rem;
         padding: 0 2rem 5rem 2rem;
 
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
 
 
@@ -285,7 +287,7 @@
     
     &__language-wrap {
         display: flex;
-        align-items: center;
+        align-items: start;
         margin-bottom: 2rem;
     }
     
