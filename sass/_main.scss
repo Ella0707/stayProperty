@@ -607,15 +607,12 @@
 
 
 .swiper-controll {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
-
-    margin-bottom: 1.5rem;
-
+    // width: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    // position: relative;
+    // z-index: 1;
 }
 
 .swiper__pagination-wrap {
@@ -1159,7 +1156,7 @@
     }
     
     &__content {
-        // display: flex;
+        overflow: visible;
     }
 
     &__content-slide {
@@ -2279,7 +2276,7 @@
         position: absolute;
         bottom: -10rem;
         left: 0;
-        width: 100%;
+        width:  max-content;
     
         &::after {
             content: "";
@@ -2647,7 +2644,7 @@
         height: 5rem;
         position: static;
 
-        width: 100%;
+        width:  max-content;
     
         &::after {
             content: "";
@@ -3310,6 +3307,8 @@
         transition: 0.8s;
 
         svg {
+            width: 1.6rem;
+            height: 2.5rem;
             fill: #2B2F36;
             transition: 0.5s;
         }

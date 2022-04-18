@@ -4,7 +4,8 @@
 }
 
 .command {
-    margin-bottom: 17rem;
+    margin-bottom: 7rem;
+    overflow: hidden;
 
     
     &__inner {
@@ -118,6 +119,10 @@
             object-fit: contain;
         }
     
+    }
+
+    &__pipl {
+        padding-bottom: 10rem;
     }
 
     &__worker {

@@ -174,9 +174,12 @@ const bigBoxSwiper = new Swiper('.real-estate__big-slider', {
 
 
 const liveSwiper = new Swiper(".live__slider", {
-    slidesPerView: 4,
     spaceBetween: 38,
-    direction: 'vertical',
+
+    grid: {
+        rows: 4,
+        fill: 'row'
+    },
 
     navigation: {
         prevEl: '.live__slider-prev',
@@ -196,7 +199,10 @@ const liveSwiper = new Swiper(".live__slider", {
         769: {
             slidesPerView: 4,
             spaceBetween: 37,
-            direction: 'horizontal',
+
+            grid: {
+                rows: 1,
+            },
         }
     }
 });
@@ -239,10 +245,13 @@ function sliderCounter() {
 
 
 const videoSwiper = new Swiper('.blog-slider', {
-    slidesPerView: 2,
     spaceBetween: 39,
     speed: 800,
-    direction: "vertical",
+
+    grid: {
+        rows: 2,
+        fill: 'row'
+    },
 
 
     navigation: {
@@ -255,7 +264,10 @@ const videoSwiper = new Swiper('.blog-slider', {
         769: {
             slidesPerView: 2,
             spaceBetween: 39,
-            direction: "horizontal",
+
+            grid: {
+                rows: 1,
+            },
         }
     },
 });
@@ -313,10 +325,14 @@ const newsSwiper = new Swiper('.articles__box-photo', {
 });
 
 const staffSwiper = new Swiper('.staff__slider', {
-    slidesPerView: 3,
     spaceBetween: 37,
     speed: 800,
-    direction: "vertical",
+
+    grid: {
+        rows: 3,
+        fill: 'row'
+    },
+    
 
     navigation: {
         prevEl: '.staff__slider-prev',
@@ -328,16 +344,24 @@ const staffSwiper = new Swiper('.staff__slider', {
         769: {
             slidesPerView: 3,
             spaceBetween: 39,
-            direction: "horizontal",
+
+            grid: {
+                rows: 1,
+            },
         }
     },
 });
 
 
 const catalogSwiper = new Swiper('.catalog__content', {
-    slidesPerView: 4,
+    // slidesPerView: 1,
     spaceBetween: 37,
-    direction: "vertical",
+    // direction: "vertical",
+
+    grid: {
+        rows: 4,
+        fill: 'row'
+      },
 
 
     navigation: {
@@ -350,14 +374,18 @@ const catalogSwiper = new Swiper('.catalog__content', {
         769: {
             slidesPerView: 4,
             spaceBetween: 37,
-            direction: "horizontal",
+            // direction: "horizontal",
+
+            grid: {
+                rows: 1,
+              },
         }
     }
 });
 
 
 const videoReviewSwiper = new Swiper('.review-video__slider', {
-    slidesPerView: 3,
+    // slidesPerView: 3,
     spaceBetween: 37,
     speed: 800,
 
@@ -521,10 +549,12 @@ $(".real-estate__pagination-bullet").click(function (e) {
 
 
 const rewiewsSwiper = new Swiper('.rewiews__slider', {
-    slidesPerView: 3,
-    spaceBetween: 46,
-    speed: 800,
-    direction: 'vertical',
+    spaceBetween: 60,
+
+    grid: {
+        rows: 3,
+        fill: 'row'
+    },
 
     navigation: {
         prevEl: '.rewiews__slider-prev',
@@ -544,17 +574,23 @@ const rewiewsSwiper = new Swiper('.rewiews__slider', {
         769: {
             slidesPerView: 3,
             spaceBetween: 109,
-            direction: "horizontal",
+
+            grid: {
+                rows: 1,
+            },
         }
     },
 });
 
 
 const activitySlider = new Swiper('#destroy_1', {
-    slidesPerView: 2,
     speed: 800,
     spaceBetween: 30,
-    direction: 'vertical',
+
+    grid: {
+        rows: 2,
+        fill: 'row'
+    },
 
     navigation: {
         nextEl: '.blog__slider-next',

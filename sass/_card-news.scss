@@ -51,31 +51,34 @@
             margin-bottom: 5rem;
             position: relative;
 
-            .swiper__arrows {
+            .swiper__arrow {
+                width: 6.5rem;
+                height: 6.5rem;
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                width: 90%;
+                // width: 90%;
                 z-index: 2;
-                left: 7rem;
-                right: 7rem;
+
+
+                &.swiper-button-disabled {
+                    width: 5rem;
+                    height: 5rem;
+                }
             }
-        }
+            }
 
-        
-
-        
         &__slider-prev {
-            width: 5rem;
-            height: 5rem;
-        
+            // width: 5rem;
+            // height: 5rem;
+            left: 7rem;
         }
     
         
         &__slider-next {
-            width: 6.5rem;
-            height: 6.5rem;
-        
+            // width: 6.5rem;
+            // height: 6.5rem;
+            right: 7rem;
         }
         
         &__slider-wrapper {
