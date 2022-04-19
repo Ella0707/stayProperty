@@ -530,12 +530,16 @@
 
         .swiper__arrows {
             position: static;
+            width: max-content;
         }
     }
 
 
     .swiper-controll {
         margin-bottom: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .swiper__pagination {
