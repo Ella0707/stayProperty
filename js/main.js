@@ -354,7 +354,6 @@ const staffSwiper = new Swiper('.staff__slider', {
 
 
 const catalogSwiper = new Swiper('.catalog__content', {
-    // slidesPerView: 1,
     spaceBetween: 37,
     // direction: "vertical",
 
@@ -374,7 +373,6 @@ const catalogSwiper = new Swiper('.catalog__content', {
         769: {
             slidesPerView: 4,
             spaceBetween: 37,
-            // direction: "horizontal",
 
             grid: {
                 rows: 1,
@@ -385,14 +383,30 @@ const catalogSwiper = new Swiper('.catalog__content', {
 
 
 const videoReviewSwiper = new Swiper('.review-video__slider', {
-    // slidesPerView: 3,
     spaceBetween: 37,
     speed: 800,
+
+    grid: {
+        rows: 3,
+        fill: 'row'
+    },
 
     navigation: {
         prevEl: '.review-video__slider-prev',
         nextEl: '.review-video__slider-next',
     },
+
+    breakpoints: {
+
+        769: {
+            slidesPerView: 3,
+            spaceBetween: 37,
+
+            grid: {
+                rows: 1,
+            },
+        }
+    }
 });
 
 
@@ -401,9 +415,9 @@ var totalSlides = 4;
 const slidesPerView = 6
 const $counter = document.querySelector(".counter")
 const photoReviewSwiper = new Swiper('.photo-review__slider', {
-    slidesPerView: 3,
     grid: {
-        rows: 2,
+        rows: 3,
+        fill: 'row'
     },
     spaceBetween: 25,
     speed: 800,
@@ -411,6 +425,28 @@ const photoReviewSwiper = new Swiper('.photo-review__slider', {
         prevEl: '.photo-review__slider-prev',
         nextEl: '.photo-review__slider-next',
     },
+
+    pagination: {
+        el: ".photo-review__slider-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + 0 + (index + 1) + "</span>";
+        },
+    },
+
+    breakpoints: {
+
+        769: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+
+            grid: {
+                rows: 2,
+                fill: 'row'
+            },
+        }
+    },
+
     on: {
         init: function () {
             $counter.innerHTML = 'Показано ' + (this.activeIndex + 1) + ' из ' + (totalSlides);

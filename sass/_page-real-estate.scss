@@ -111,7 +111,6 @@
 
         &__content {
             flex-wrap: nowrap;
-            gap: 0;
             justify-content: space-between;
         }
 
@@ -197,6 +196,11 @@
             top: 1.2rem;
             right: 1.3rem;
             z-index: 10;
+
+
+            &.mobile {
+                display: none;
+            }
         }
 
         &__box-cart {
@@ -479,6 +483,8 @@
 
             &.swiper-pagination {
                 bottom: 1.5rem;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
 

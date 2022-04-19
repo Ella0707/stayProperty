@@ -64,7 +64,12 @@
 
 
 .photo-review {
-    margin-bottom: 27rem;
+    margin-bottom: 23rem;
+    padding-bottom: 4rem;
+
+    &__inner {
+        position: relative;
+    }
 
     &__title-wrap {
         display: flex;
@@ -75,17 +80,6 @@
     &__number {
         @include text (2rem, 700, rgba(0, 0, 0, 1));
         margin-bottom: 2rem;
-    }
-
-    &__slider-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-auto-flow: column;
-
-        &>.swiper-slide {
-            height: 47.5rem;
-        }
     }
 
     &__slide {
@@ -134,6 +128,59 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: 0.8s;
+    }
+
+    .swiper-pagination {
+        @include text (4rem, 500, #000000); 
+        z-index: 10;
+    
+        display: flex;
+        align-items: center;
+        height: 5rem;
+
+        position: absolute;
+        bottom: -10rem;
+        left: 0;
+        width:  max-content;
+    
+        &::after {
+            content: "";
+            width: 6rem;
+            height: 0.1rem;
+            background: #CAD7E7;
+    
+            position: absolute;
+            top: 50%;
+            left: 7rem;
+            transform: translateY(-50%);
+        }
+    
+        .swiper-pagination-bullet {
+            height: 5rem;
+            width: 2rem;
+            font-size: 2rem;
+            color: #ACBACB;
+            opacity: 1;
+            background: transparent;
+            margin-right: 2rem;
+            position: relative;
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            &:first-child {
+                margin-right: 11.8rem;
+            }
+        }
+    
+        .swiper-pagination-bullet-active {
+            font-size: 4rem;
+            color: #2B2F36;
+            background: transparent;
+            margin-right: 3rem;
+            margin-left: 1rem;
+        }
     }
 }
 
