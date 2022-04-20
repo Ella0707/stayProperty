@@ -53,26 +53,32 @@
             content: "";
             width: 8rem;
             height: 8rem;
-            background: #ffffff;
+            background: #fafaff;
             border-radius: 0 0 0rem 3rem;
             background-position: center;
 
             position: absolute;
-            top: -0.1rem;
-            right: -0.1rem;
+            top: -0.2rem;
+            right: -0.4rem;
             z-index: 2;
         }
     }
 
-    .swiper__arrows {
+    .swiper__arrow {
         position: absolute;
         top: 50%;
-        width: 95%;
         z-index: 10;
-        left: 4rem;
         transform: translateY(-50%);
+
+        &.card__slider-prev {
+            left: 4rem;
+        }
+
+        &.card__slider-next {
+            right: 4rem;
+        }
     }
-    
+
     &__slide {
         height: 75.4rem;
         width: 100%;
@@ -237,6 +243,7 @@
         display: flex;
         align-items: center;
         @include text (1.6rem, 600, #2B2F36);
+        width: 70%;
     }
     
     &__info-price-room {
@@ -500,6 +507,8 @@
         }
 
         svg {
+            width: 3rem;
+            height: 3rem;
             fill: #2B2F36;
             transition: 0.5s;
         }
@@ -725,6 +734,7 @@
 
         margin-left: auto;
         margin-right: 15rem;
+        cursor: pointer;
     }
     
     &__sort-item {
@@ -758,6 +768,7 @@
         &__box {
             width: 36.8rem;
             height: 47.6rem;
+            margin-right: 0;
 
             &:not(:nth-child(4n+4)) {
                 margin-right: 2.8rem;
