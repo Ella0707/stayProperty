@@ -83,7 +83,6 @@
         cursor: pointer;
 
         &.active {
-
             .service__btn {
                 background: rgba(1, 153, 228, 1);
 
@@ -92,9 +91,6 @@
                     transform: rotateX(180deg);
                 }
             }
-            
-
-
         }
     }
     
@@ -111,7 +107,12 @@
 
     &__main-item-wrap {
         display: flex;
+        justify-content: space-between;
         position: relative;
+    }
+
+    &__main-item-tabs {
+        width: 75.5rem;
     }
 
     &__main-right {
@@ -171,10 +172,10 @@
         margin-bottom: 3rem;
         display: none;
 
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 75.7rem;
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        width: 100%;
     }
 
   

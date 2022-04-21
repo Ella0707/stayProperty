@@ -670,11 +670,15 @@
 
     .mortgage__ranger-payment {
         position: relative;
-        width: 78%;
+        width: 60%;
+    }
+
+    .mortgage__ranger-term {
+        width: 40%;
     }
 
     .mortgage__ranger-sale {
-        top: 6rem;
+        top: 4.2rem;
     }
 
     .irs--round .irs-handle {

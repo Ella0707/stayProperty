@@ -509,23 +509,62 @@ if ($('#footer-spoller').length) {
 }
 
 // Споллер саппорт
-$('.service__spoller-title-wrap').on('click', function (e) {
-    e.preventDefault();
+// $('.service__spoller-title-wrap').on('click', function (e) {
+//     e.preventDefault();
 
-    if ($(this).closest('.service__spoller-title-wrap').hasClass('active')) {
-        $('.service__spoller-title-wrap').removeClass('active');
-    } else {
-        $('.service__spoller-title-wrap').removeClass('active');
-        $(this).closest('.service__spoller-title-wrap').addClass('active');
+//     if ($(this).closest('.service__spoller-title-wrap').hasClass('active')) {
+//         $('.service__spoller-title-wrap').removeClass('active');
+//     } else {
+//         $('.service__spoller-title-wrap').removeClass('active');
+//         $(this).closest('.service__spoller-title-wrap').addClass('active');
+//     }
+
+//     // Show the content
+//     var $content = $(this).next();
+//     $content.slideToggle();
+//     $('.service__spoller-content').not($content).slideUp();
+// });
+
+// $(document).ready(function () {
+//     $('.tablinks').click(function (event) {
+//         $(this).toggleClass('active').next().slideToggle(300);
+//     });
+// });
+
+if ($('#service-destroy').length) {
+    if ($(window).width() <= 769) {
+        $(document).ready(function () {
+            $('.service__spoller-title-wrap').click(function (e) {
+                e.preventDefault();
+                $(this).removeClass("active");
+                $(this).toggleClass("open").next().slideToggle();
+            });
+        });
+    }
+}
+
+
+// Табы при наведении на странице карточка товара
+function openTab(evt, cityName) {
+    // Объявить все переменные
+    var i, tabcontent, tablinks;
+
+    // Получить все элементы с class="tabcontent" и скрыть их
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
     }
 
-    // Show the content
-    var $content = $(this).next();
-    $content.slideToggle(300);
-    $('.service__spoller-content').not($content).slideUp('fast');
-});
+    // Получить все элементы с class="tablinks" и снять класс "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
 
-
+    // Показать на текущей вкладке, и добавить класс "active" по ссылке, которая откроется вкладка
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 
 // Регулировка высоты контента в секции поддержки
 // $('.service__spoller-title-wrap').on('click', function (e) {

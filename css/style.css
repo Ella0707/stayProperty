@@ -2497,7 +2497,7 @@ input[type=number] {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0.2rem;
+  bottom: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5568,7 +5568,13 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
+}
+.service__main-item-tabs {
+  width: 75.5rem;
 }
 .service__main-right {
   width: 40%;
@@ -5623,10 +5629,7 @@ input[type=number] {
   z-index: 1;
   margin-bottom: 3rem;
   display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 75.7rem;
+  width: 100%;
 }
 .service__spoller-content-wrap {
   padding: 3.5rem 4.6rem 4.6rem 4.6rem;
@@ -8410,10 +8413,13 @@ input[type=number] {
 }
 .object-video .mortgage__ranger-payment {
   position: relative;
-  width: 78%;
+  width: 60%;
+}
+.object-video .mortgage__ranger-term {
+  width: 40%;
 }
 .object-video .mortgage__ranger-sale {
-  top: 6rem;
+  top: 4.2rem;
 }
 .object-video .irs--round .irs-handle {
   top: 30px;
@@ -13177,6 +13183,7 @@ input[type=number] {
     margin-bottom: 5rem;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    width: 100%;
   }
   .service__main-item.open-bottom {
     margin-bottom: 0rem;
@@ -13195,10 +13202,10 @@ input[type=number] {
     position: relative;
     cursor: pointer;
   }
-  .service__spoller-title-wrap.active .service__btn {
+  .service__spoller-title-wrap.open .service__btn {
     background: rgb(1, 153, 228);
   }
-  .service__spoller-title-wrap.active .service__btn svg {
+  .service__spoller-title-wrap.open .service__btn svg {
     fill: #ffffff;
     -webkit-transform: rotateX(180deg);
             transform: rotateX(180deg);
@@ -13235,6 +13242,7 @@ input[type=number] {
     margin-bottom: 3rem;
     position: static;
     width: 100%;
+    display: none;
   }
   .service__spoller-content-wrap {
     padding: 4rem 4rem 6rem 4rem;
@@ -15389,13 +15397,7 @@ input[type=number] {
     margin-bottom: 5rem;
   }
   .stages__item:not(:last-child)::before {
-    content: "";
-    width: 0.3rem;
-    height: 100%;
-    border-left: 0.4rem dashed #0199e4;
-    position: absolute;
-    top: 4.7rem;
-    left: 4.3rem;
+    top: 12rem;
     z-index: 100;
   }
   .stages__item.done .stages__mark-circle {
@@ -15418,15 +15420,12 @@ input[type=number] {
     border-left: 0.4rem dashed rgb(188, 195, 219);
   }
   .stages__item.not-done .stages__mark-circle {
-    background: rgb(255, 255, 255);
+    background: rgb(235, 237, 244);
   }
   .stages__item.not-done .stages__mark-circle span {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: rgb(189, 196, 220);
+    color: #ffffff;
   }
   .stages__item.in-progress::before {
     content: "";
@@ -15463,22 +15462,9 @@ input[type=number] {
   .stages__mark {
     width: 9rem;
     height: 9rem;
-    background: #fafaff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    background: transparent;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 6rem;
     z-index: 100;
   }
   .stages__mark-circle {
@@ -15493,7 +15479,7 @@ input[type=number] {
     display: none;
   }
   .stages .description__spoller .slice {
-    height: 3rem;
+    height: calc(100% - 11rem);
     background: #FFFFFF;
     border-radius: 0 3rem 3rem 0;
   }
@@ -15501,96 +15487,55 @@ input[type=number] {
     margin-bottom: 0;
   }
   .stages .description__spoller.stage .description__spoller-content {
-    padding: 4.6rem;
-    margin-top: 3rem;
-    margin-bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    font-size: 3.2rem;
+    padding: 4rem;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 101;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .stages .description__spoller.stage .description__spoller-content-img {
-    width: 26.6rem;
-    height: 19.1rem;
-    border-radius: 2rem;
-    margin-right: 4rem;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-  .stages .description__spoller.stage .description__spoller-content-img img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: inherit;
+    width: 100%;
+    height: 42.2rem;
+    border-radius: 4rem;
+    margin-right: 0rem;
+    margin-bottom: 4rem;
   }
   .stages .description__spoller.stage .description__spoller-title-box {
-    position: relative;
-    z-index: 3;
+    padding: 3rem 2rem 3rem 11rem;
   }
   .stages__info {
-    width: 36.2rem;
+    width: 100%;
+    margin-bottom: 6rem;
   }
   .stages__info-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgb(43, 47, 54);
+    font-size: 5rem;
     margin-bottom: 6rem;
     text-align: center;
-    padding: 0 2rem;
+    padding: 0;
   }
   .stages__info-progress-day {
-    width: 35.6rem;
-    height: 35.6rem;
-    border-radius: 50%;
-    background: #ffffff;
-    margin: 0 auto 6rem auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 100%;
+    height: 67rem;
   }
   .stages__progress-day-circle {
-    width: 30.2rem;
-    height: 30.2rem;
-    border-radius: 50%;
-    background-image: linear-gradient(187deg, transparent 50%, #0199E4 50%), linear-gradient(90deg, rgb(250, 250, 255) 50%, #0199E4 50%);
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 52rem;
+    height: 52rem;
   }
   .stages__progress-day-circle::after {
     content: "";
-    width: 27rem;
-    height: 27rem;
-    border-radius: 50%;
-    background: rgb(250, 250, 255);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    width: 48rem;
+    height: 48rem;
   }
   .stages__progress-day-circle::before {
     content: "";
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: #0199E4;
-    position: absolute;
-    top: 11rem;
-    left: -0.5rem;
-    z-index: 3;
+    width: 5.8rem;
+    height: 5.7rem;
+    top: 18rem;
+    left: -1rem;
   }
   .stages__info-progress-text {
     padding: 1rem;
@@ -15613,63 +15558,28 @@ input[type=number] {
     z-index: 10;
   }
   .stages__day-value {
-    font-size: 5.5rem;
-    font-weight: 600;
-    color: rgb(1, 153, 228);
+    font-size: 8rem;
     width: 95%;
-    margin-bottom: 0.4rem;
+    margin-bottom: 10rem;
   }
   .stages__day-key {
-    font-size: 1.7rem;
-    font-weight: 400;
-    color: rgb(159, 170, 180);
-  }
-  .stages__info-progressbar-wrap {
-    width: 100%;
-    margin-bottom: 6rem;
+    font-size: 3.4rem;
   }
   .stages__progressbar-inner {
     width: 100%;
-    height: 2rem;
-    background: #F5F5FA;
-    opacity: 0.9;
-    -webkit-box-shadow: inset 0px 0px 0.4rem rgba(67, 72, 82, 0.25);
-            box-shadow: inset 0px 0px 0.4rem rgba(67, 72, 82, 0.25);
-    border-radius: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 1rem;
-    margin-bottom: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 8rem;
   }
   .stages__progressbar {
-    width: 100%;
-    height: 0.3rem;
-    background-color: #ffffff;
-    border-radius: 10rem;
-    position: relative;
+    height: 1rem;
   }
   .stages__progressbar::before {
-    content: "";
-    width: 43%;
-    height: 0.5rem;
-    background: linear-gradient(90.09deg, rgba(1, 153, 228, 0.3) 0%, rgba(1, 153, 228, 0.5) 45.17%, rgba(1, 153, 228, 0.812047) 85.39%, #0199E4 108.05%);
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 0.8rem;
   }
   .stages__progressbar-title {
-    font-size: 3.5rem;
-    font-weight: 600;
-    color: rgb(1, 153, 228);
-    text-align: center;
+    font-size: 4.8rem;
   }
   .stages .articles__right-item.medium-bg {
     -webkit-box-shadow: none;
