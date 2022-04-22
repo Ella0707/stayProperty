@@ -832,6 +832,7 @@
 
             span {
                 font-size: 3.2rem;
+                z-index: 10;
             }
         }
 
@@ -1630,6 +1631,11 @@
         .irs--round .irs-handle {
             width: 4rem;
             height: 4rem;
+            bottom: 0.5rem;
+        }
+
+        .irs-bar {
+            bottom: 2rem;
         }
 
         .extra-controls {
@@ -3189,6 +3195,7 @@
 
         &__title {
             margin-bottom: 6.5rem;
+            text-align: left;
         }
 
         &__par {
@@ -3206,16 +3213,15 @@
 
         &__right-item {
             border-radius: 6rem;
-            padding: 10.6rem 6rem 2rem 6rem;
+            padding: 10.6rem 6rem 4rem 6rem;
 
             &.all-bg {
-                height: 131.4rem;
                 margin: 8rem 0;
             }
 
             &.medium-bg {
-                height: 96.7rem;
                 margin: 12rem 0;
+                padding-bottom: 34.5rem;
 
                 img {
                     height: 40rem;
@@ -3645,7 +3651,7 @@
 
     .articles.channel {
         .articles__right-item.all-bg {
-            height: 124.4rem;
+            padding-bottom: 69rem;
         }
     }
 
@@ -5049,7 +5055,7 @@
     }
 
     .articles__right-item.all-bg {
-        height: 124.4rem;
+        padding-bottom: 69rem;
     }
 
 

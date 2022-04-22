@@ -46,12 +46,12 @@
         width: 100%;
         background: #FFFFFF;
         border-radius: 4rem;
-        padding: 5.3rem 1.4rem 2rem 3rem;
+        padding: 5.3rem 1.4rem 3rem 3rem;
         position: relative;
 
         &.all-bg {
             background: linear-gradient(179.65deg, #D6E1F1 1.84%, #E6EEFB 47.03%, #F0F7FF 99.28%);
-            height: 67.2rem;
+            padding-bottom: 38.5rem;
         }
 
         &.black {
@@ -79,7 +79,7 @@
 
         &.medium-bg {
             box-shadow: 0.5rem 1.1rem 15.2rem rgba(40, 44, 78, 0.1);
-            height: 55.4rem;
+            padding-bottom: 25.5rem;
 
             &>img {
                 height: 22.3rem;

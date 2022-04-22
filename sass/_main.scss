@@ -1691,10 +1691,16 @@
     .irs--round .irs-handle {
         border: 0.5rem solid #ffffff;
         background-color: #0199E4;
+        top: auto;
+        bottom: 0rem;
+        width: 2.4rem;
+        height: 2.4rem;
     }
 
     .irs-bar {
         background: #0199E4;
+        bottom: 1rem;
+        top: auto;
     }
 
     .irs-line {
