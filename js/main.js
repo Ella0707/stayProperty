@@ -707,5 +707,32 @@ $('.msg').html(msg + input + '</span>');
 
 
 
+// POPAP
+$('.popup-link').click(function (e) {
+    e.preventDefault();
+    $('.popup').fadeIn(800);
+    $('body').toggleClass('lock');
+});
 
+$('.close-popup').click(function () {
+    $('.popup').fadeOut(800);
+    $('body').toggleClass('lock');
+});
+
+
+// закрытие основного попапа в случае отправки заявки 
+$('.popup-accepted').click(function () {
+    $('.popup').fadeOut(800);
+});
+
+
+// окно "заявка принята"
+$('.popup-accepted').click(function (e) {
+    e.preventDefault();
+    $('.accepted').fadeIn(800);
+});
+
+$('.close-popup').click(function () {
+    $('.accepted').fadeOut(800);
+});
 

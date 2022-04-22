@@ -1,0 +1,196 @@
+.popup {
+    position: fixed;
+    z-index: 999999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.4);
+    top: 0;
+    left: 0;
+
+    overflow-y: auto;
+
+    // display: none;
+
+    &.back-call {
+        display: none;
+    }
+
+    &.mortgage-popup {
+
+        .popup__content {
+            height: 102rem;
+        }
+    }
+
+    &__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 6rem;
+    }
+
+    &__content {
+        width: 73.4rem;
+        height: 85.8rem;
+        padding: 7rem 5.5rem 6rem 5.5rem;
+
+        background: linear-gradient(179.65deg, #D6E1F1 1.84%, #E6EEFB 47.03%, #F0F7FF 99.28%);
+        border-radius: 4rem;
+
+        position: relative;
+    }
+
+    &__close {
+        width: 4.3rem;
+        height: 4.3rem;
+
+        position: absolute;
+        right: 3.2rem;
+        top: 1.7rem;
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__substrate {
+        display: flex;
+        justify-content: center;
+        padding: 0 2.7rem;
+        margin-bottom: 3rem;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 19.7rem;
+            left: 0;
+            background: #F7F7FD;
+            border-radius: 2rem;
+
+            position: absolute;
+            top: -1rem;
+        }
+
+        img {
+            width: 12.6rem;
+            height: 26.6rem;
+            object-fit: contain;
+            filter: drop-shadow(6px 4px 8px rgba(1, 153, 228, 0.1));
+        }
+    }
+
+    &__title {
+        font-size: 3.7rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 auto 5.3rem auto;
+        width: 59%;
+    }
+
+    &__form-label {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        &:last-child {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__form-input {
+        width: 100%;
+        background: #F7F7FD;
+        padding: 1.4rem 2rem 1.4rem 2.7rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(138, 145, 170);
+        height: 100%;
+        height: 5rem;
+        border-radius: 1rem;
+
+        &::placeholder {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: rgba(138, 145, 170, 1);
+        }
+    }
+
+    &__bottom {
+        width: 40%;
+        margin-left: auto;
+    }
+
+    &__btn {
+        margin-bottom: 3rem;
+        margin-right: 0;
+        justify-content: end;
+
+        span {
+            color: rgba(43, 47, 54, 1);
+        }
+    }
+    
+    &__dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        position: relative;
+
+        width: 100%;
+        background: #F7F7FD;
+        padding: 1.4rem 2rem 1.4rem 2.7rem;
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(138, 145, 170);
+        height: 100%;
+        height: 5rem;
+        border-radius: 1rem;
+        margin-bottom: 6rem;
+
+        &.active {
+            .popup__select-arrow {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    
+    &__select-arrow {
+        width: 2rem;
+        height: 2rem;
+        transition: 0.5s;
+    }
+    
+    &__dropdown-menu {
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        z-index: 100;
+
+        width: 100%;
+        background: rgba(247, 247, 253, 1);
+        padding: 2rem 3.5rem;
+        border-radius: 1rem;
+
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: rgba(138, 145, 170, 1);
+
+        li {
+            padding-top: 1rem;
+
+            &:not(:last-child) {
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #E8F0FC;
+            }
+        }
+    }
+}
