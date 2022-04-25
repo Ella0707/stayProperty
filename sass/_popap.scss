@@ -9,11 +9,7 @@
 
     overflow-y: auto;
 
-    // display: none;
-
-    &.back-call {
-        display: none;
-    }
+    display: none;
 
     &.mortgage-popup {
 
@@ -155,6 +151,7 @@
         height: 5rem;
         border-radius: 1rem;
         margin-bottom: 6rem;
+        cursor: pointer;
 
         &.active {
             .popup__select-arrow {
@@ -190,6 +187,334 @@
             &:not(:last-child) {
                 padding-bottom: 1rem;
                 border-bottom: 1px solid #E8F0FC;
+            }
+        }
+    }
+
+
+    &.vacancies-popup {
+
+        .popup {
+
+            &__content {
+                width: 87.2rem;
+                height: auto;
+                padding: 7.1rem;
+                background: #FFFFFF;
+            }
+            
+
+            &__title {
+                text-align: left;
+                margin: 0 0 2rem 0;
+                width: 100%;
+            }
+            &__subtitle {
+                font-size: 2rem;
+                font-weight: 400;
+                color: #2B2F36;
+                margin-bottom: 5.5rem;
+            }
+            &__description {
+
+            }
+            &__description-item {
+                display: flex;
+                justify-content: space-between;
+            }
+            &__description-item-key {
+                font-size: 2rem;
+                font-weight: 700;
+                width: 25rem;
+            }
+            &__description-item-value {
+                width: 80%;
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: #000000;
+                margin-bottom: 4.3rem;
+
+                li {
+                    position: relative;
+
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 1rem;
+                        height: 1rem;
+                        border-radius: 50%;
+                        background: #0075FF;
+
+                        position: absolute;
+                        top: 50%;
+                        left: -2rem;
+                        transform: translateY(-50%);
+                    }
+                }
+
+            }
+
+            &__form-title {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #2B2F36;
+                margin-bottom: 4rem;
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            &__bottom-left {
+                width: 20rem;
+            }
+
+            &__bottom-right {
+                width: 28rem;
+            }
+
+            &__bottom-add {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #2B2F36;
+                margin-bottom: 1.5rem;
+            }
+            &__add-wrap {
+                display: inline-flex;
+                align-items: center;
+                font-size: 1.7rem;
+                font-weight: 500;
+                color: #8A91AA;
+                margin-left: 2rem;
+                border-bottom: 0.1rem solid #8A91AA;
+                position: relative;
+
+                img {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    object-fit: contain;
+                    position: absolute;
+                    top: 50%;
+                    left: -2rem;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 48em) {
+
+    .popup {
+    
+        &.mortgage-popup {
+    
+            .popup__content {
+                height: auto;
+            }
+
+            .popup__substrate {
+                img {
+                    width: 21.2rem;
+                    height: 32rem;
+                }
+            }
+        }
+
+        &__body {
+            padding: 6rem 4rem;
+        }
+    
+        &__content {
+            width: 100%;
+            height: auto;
+            padding: 20.6rem 4rem 12rem 4rem;
+            border-radius: 6rem;
+        }
+    
+        &__close {
+            right: 5rem;
+            top: 5rem;
+        }
+    
+        &__substrate {
+            display: flex;
+            justify-content: center;
+            padding: 0rem;
+            margin-bottom: 6rem;
+    
+            position: relative;
+    
+            &::before {
+                height: 26rem;
+                border-radius: 3rem;
+                position: absolute;
+                top: -6rem;
+            }
+    
+            img {
+                width: 19.4rem;
+                height: 38.4rem;
+            }
+        }
+    
+        &__title {
+            font-size: 7rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 auto 5.3rem auto;
+            width: 102%;
+        }
+    
+        &__form-label {
+            display: flex;
+    
+            &:not(:last-child) {
+                margin-bottom: 4rem;
+            }
+        }
+    
+        &__form-input {
+            width: 100%;
+            background: #F7F7FD;
+            padding: 3rem 3rem 3rem 5.2rem;
+            font-size: 3.2rem;
+            height: 10rem;
+            border-radius: 2rem;
+    
+            &::placeholder {
+                font-size: 3.2rem;
+            }
+        }
+    
+        &__bottom {
+            width: 100%;
+            margin-left: 0;
+        }
+    
+        &__btn {
+            margin-right: 0;
+            justify-content: start;
+        }
+        
+        &__dropdown {
+            padding: 3rem 3rem 3rem 5.2rem;
+            font-size: 3.2rem;
+            height: 10rem;
+            border-radius: 2rem;
+        }
+        
+        &__select-arrow {
+            width: 4rem;
+            height: 4rem;
+        }
+        
+        &__dropdown-menu {
+            padding: 3rem 5.2rem;
+            border-radius: 2rem;
+    
+            font-size: 3.2rem;
+    
+            li {
+                padding-top: 2rem;
+    
+                &:not(:last-child) {
+                    padding-bottom: 2rem;
+                    border-bottom: 1px solid #E8F0FC;
+                }
+            }
+        }
+    
+    
+        &.vacancies-popup {
+    
+            .popup {
+    
+                &__content {
+                    width: 100%;
+                    padding: 10rem 4rem;
+                }
+                
+    
+                &__title {
+                    margin: 0 0 3rem 0;
+                }
+                &__subtitle {
+                    font-size: 3.2rem;
+                    margin-bottom: 4rem;
+                }
+
+                &__description-item {
+                    flex-direction: column;
+                }
+
+                &__description-item-key {
+                    font-size: 3.6rem;
+                    width: 100%;
+                    margin-bottom: 3rem;
+                }
+
+                &__description-item-value {
+                    width: 100%;
+                    font-size: 3.2rem;
+                    margin-bottom: 4rem;
+                    padding-left: 4rem;
+    
+                    li {
+                        position: relative;
+    
+                        &:not(:last-child) {
+                            margin-bottom: 2.6rem;
+                        }
+    
+                        &::before {
+                            width: 2rem;
+                            height: 2rem;
+                            left: -3rem;
+                            top: 2rem;
+                        }
+                    }
+    
+                }
+    
+                &__form-title {
+                    font-size: 3.6rem;
+                }
+    
+                &__bottom {
+                    flex-direction: column;
+                }
+    
+                &__bottom-left {
+                    width: 100%;
+                }
+    
+                &__bottom-right {
+                    width: 100%;
+                }
+    
+                &__bottom-add {
+                    font-size: 3.6rem;
+                    margin-bottom: 3rem;
+                }
+                &__add-wrap {
+                    font-size: 3.2rem;
+                    margin-left: 5rem;
+                    margin-bottom: 6rem;
+    
+                    img {
+                        width: 3rem;
+                        height: 3rem;
+                        left: -5rem;
+                    }
+                }
             }
         }
     }

@@ -708,17 +708,40 @@ $('.msg').html(msg + input + '</span>');
 
 
 // POPAP
-$('.popup-link').click(function (e) {
+$('.back-call-link').click(function (e) {
     e.preventDefault();
-    $('.popup').fadeIn(800);
+    $('.back-call').fadeIn(800);
     $('body').toggleClass('lock');
 });
 
-$('.close-popup').click(function () {
-    $('.popup').fadeOut(800);
+$('.back-call-close').click(function () {
+    $('.back-call').fadeOut(800);
     $('body').toggleClass('lock');
 });
 
+
+$('.mortgage-popup-link').click(function (e) {
+    e.preventDefault();
+    $('.mortgage-popup').fadeIn(800);
+    $('body').toggleClass('lock');
+});
+
+$('.mortgage-popup-close').click(function () {
+    $('.mortgage-popup').fadeOut(800);
+    $('body').toggleClass('lock');
+});
+
+// модальное окно на странице вакансии
+$('.vacancies-popup-link').click(function (e) {
+    e.preventDefault();
+    $('.vacancies-popup').fadeIn(800);
+    $('body').toggleClass('lock');
+});
+
+$('.vacancies-popup-close').click(function () {
+    $('.vacancies-popup').fadeOut(800);
+    $('body').toggleClass('lock');
+});
 
 // закрытие основного попапа в случае отправки заявки 
 $('.popup-accepted').click(function () {

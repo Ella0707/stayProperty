@@ -9558,8 +9558,6 @@ input[type=number] {
   top: 0;
   left: 0;
   overflow-y: auto;
-}
-.popup.back-call {
   display: none;
 }
 .popup.mortgage-popup .popup__content {
@@ -9721,6 +9719,7 @@ input[type=number] {
   height: 5rem;
   border-radius: 1rem;
   margin-bottom: 6rem;
+  cursor: pointer;
 }
 .popup__dropdown.active .popup__select-arrow {
   -webkit-transform: rotate(180deg);
@@ -9752,7 +9751,296 @@ input[type=number] {
   padding-bottom: 1rem;
   border-bottom: 1px solid #E8F0FC;
 }
+.popup.vacancies-popup .popup__content {
+  width: 87.2rem;
+  height: auto;
+  padding: 7.1rem;
+  background: #FFFFFF;
+}
+.popup.vacancies-popup .popup__title {
+  text-align: left;
+  margin: 0 0 2rem 0;
+  width: 100%;
+}
+.popup.vacancies-popup .popup__subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #2B2F36;
+  margin-bottom: 5.5rem;
+}
+.popup.vacancies-popup .popup__description-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.popup.vacancies-popup .popup__description-item-key {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 25rem;
+}
+.popup.vacancies-popup .popup__description-item-value {
+  width: 80%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 4.3rem;
+}
+.popup.vacancies-popup .popup__description-item-value li {
+  position: relative;
+}
+.popup.vacancies-popup .popup__description-item-value li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.popup.vacancies-popup .popup__description-item-value li::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #0075FF;
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.popup.vacancies-popup .popup__form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2B2F36;
+  margin-bottom: 4rem;
+}
+.popup.vacancies-popup .popup__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.popup.vacancies-popup .popup__bottom-left {
+  width: 20rem;
+}
+.popup.vacancies-popup .popup__bottom-right {
+  width: 28rem;
+}
+.popup.vacancies-popup .popup__bottom-add {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2B2F36;
+  margin-bottom: 1.5rem;
+}
+.popup.vacancies-popup .popup__add-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #8A91AA;
+  margin-left: 2rem;
+  border-bottom: 0.1rem solid #8A91AA;
+  position: relative;
+}
+.popup.vacancies-popup .popup__add-wrap img {
+  width: 1.6rem;
+  height: 1.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: -2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 
+@media (max-width: 48em) {
+  .popup.mortgage-popup .popup__content {
+    height: auto;
+  }
+  .popup.mortgage-popup .popup__substrate img {
+    width: 21.2rem;
+    height: 32rem;
+  }
+  .popup__body {
+    padding: 6rem 4rem;
+  }
+  .popup__content {
+    width: 100%;
+    height: auto;
+    padding: 20.6rem 4rem 12rem 4rem;
+    border-radius: 6rem;
+  }
+  .popup__close {
+    right: 5rem;
+    top: 5rem;
+  }
+  .popup__substrate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0rem;
+    margin-bottom: 6rem;
+    position: relative;
+  }
+  .popup__substrate::before {
+    height: 26rem;
+    border-radius: 3rem;
+    position: absolute;
+    top: -6rem;
+  }
+  .popup__substrate img {
+    width: 19.4rem;
+    height: 38.4rem;
+  }
+  .popup__title {
+    font-size: 7rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 5.3rem auto;
+    width: 102%;
+  }
+  .popup__form-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .popup__form-label:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+  .popup__form-input {
+    width: 100%;
+    background: #F7F7FD;
+    padding: 3rem 3rem 3rem 5.2rem;
+    font-size: 3.2rem;
+    height: 10rem;
+    border-radius: 2rem;
+  }
+  .popup__form-input::-webkit-input-placeholder {
+    font-size: 3.2rem;
+  }
+  .popup__form-input::-moz-placeholder {
+    font-size: 3.2rem;
+  }
+  .popup__form-input:-ms-input-placeholder {
+    font-size: 3.2rem;
+  }
+  .popup__form-input::-ms-input-placeholder {
+    font-size: 3.2rem;
+  }
+  .popup__form-input::placeholder {
+    font-size: 3.2rem;
+  }
+  .popup__bottom {
+    width: 100%;
+    margin-left: 0;
+  }
+  .popup__btn {
+    margin-right: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .popup__dropdown {
+    padding: 3rem 3rem 3rem 5.2rem;
+    font-size: 3.2rem;
+    height: 10rem;
+    border-radius: 2rem;
+  }
+  .popup__select-arrow {
+    width: 4rem;
+    height: 4rem;
+  }
+  .popup__dropdown-menu {
+    padding: 3rem 5.2rem;
+    border-radius: 2rem;
+    font-size: 3.2rem;
+  }
+  .popup__dropdown-menu li {
+    padding-top: 2rem;
+  }
+  .popup__dropdown-menu li:not(:last-child) {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #E8F0FC;
+  }
+  .popup.vacancies-popup .popup__content {
+    width: 100%;
+    padding: 10rem 4rem;
+  }
+  .popup.vacancies-popup .popup__title {
+    margin: 0 0 3rem 0;
+  }
+  .popup.vacancies-popup .popup__subtitle {
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+  .popup.vacancies-popup .popup__description-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popup.vacancies-popup .popup__description-item-key {
+    font-size: 3.6rem;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .popup.vacancies-popup .popup__description-item-value {
+    width: 100%;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+    padding-left: 4rem;
+  }
+  .popup.vacancies-popup .popup__description-item-value li {
+    position: relative;
+  }
+  .popup.vacancies-popup .popup__description-item-value li:not(:last-child) {
+    margin-bottom: 2.6rem;
+  }
+  .popup.vacancies-popup .popup__description-item-value li::before {
+    width: 2rem;
+    height: 2rem;
+    left: -3rem;
+    top: 2rem;
+  }
+  .popup.vacancies-popup .popup__form-title {
+    font-size: 3.6rem;
+  }
+  .popup.vacancies-popup .popup__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popup.vacancies-popup .popup__bottom-left {
+    width: 100%;
+  }
+  .popup.vacancies-popup .popup__bottom-right {
+    width: 100%;
+  }
+  .popup.vacancies-popup .popup__bottom-add {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+  }
+  .popup.vacancies-popup .popup__add-wrap {
+    font-size: 3.2rem;
+    margin-left: 5rem;
+    margin-bottom: 6rem;
+  }
+  .popup.vacancies-popup .popup__add-wrap img {
+    width: 3rem;
+    height: 3rem;
+    left: -5rem;
+  }
+}
 .mobile {
   display: none;
 }
